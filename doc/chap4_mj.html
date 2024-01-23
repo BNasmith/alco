@@ -106,14 +106,14 @@
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Indeterminate(Rationals, "a");; </span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := Indeterminate(Rationals, "b");; </span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Indeterminate(Rationals, "x");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JacobiPolynomial(0,a,b);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Indeterminate(Rationals, "a");; </span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">b := Indeterminate(Rationals, "b");; </span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Indeterminate(Rationals, "x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JacobiPolynomial(0,a,b);</span>
 [ 1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JacobiPolynomial(1,a,b);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JacobiPolynomial(1,a,b);</span>
 [ 1/2*a-1/2*b, 1/2*a+1/2*b+1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ValuePol(last,x);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ValuePol(last,x);</span>
 1/2*a*x+1/2*b*x+1/2*a-1/2*b+x </pre></div>
 
 <p><a id="X7C78C3A57DDC372B" name="X7C78C3A57DDC372B"></a></p>
@@ -146,13 +146,13 @@
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
 &lt;design with rank 3 and degree 8&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsDesign(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsDesign(D);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsSphericalDesign(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsSphericalDesign(D);</span>
 false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsProjectiveDesign(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsProjectiveDesign(D);</span>
 true </pre></div>
 
 <p><a id="X82BB5F997B7B7B3A" name="X82BB5F997B7B7B3A"></a></p>
@@ -165,9 +165,9 @@ true </pre></div>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
 &lt;design with rank 3 and degree 8&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[DesignJordanRank(D), DesignJordanDegree(D)];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[DesignJordanRank(D), DesignJordanDegree(D)];</span>
 [ 3, 8 ] </pre></div>
 
 <p><a id="X83768DF683E353F7" name="X83768DF683E353F7"></a></p>
@@ -179,15 +179,15 @@ true </pre></div>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
 &lt;design with rank 3 and degree 8&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">r := DesignJordanRank(D);; d := DesignJordanDegree(D);; </span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Indeterminate(Rationals, "x");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignQPolynomial(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">r := DesignJordanRank(D);; d := DesignJordanDegree(D);; </span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Indeterminate(Rationals, "x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignQPolynomial(D);</span>
 function( k ) ... end
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignQPolynomial(D)(2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignQPolynomial(D)(2);</span>
 [ 90, -585, 819 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CoefficientsOfUnivariatePolynomial(Q_k_epsilon(2,0,r,d,x));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CoefficientsOfUnivariatePolynomial(Q_k_epsilon(2,0,r,d,x));</span>
 [ 90, -585, 819 ]</pre></div>
 
 <p><a id="X7E14BB6A80B452AF" name="X7E14BB6A80B452AF"></a></p>
@@ -199,14 +199,14 @@ function( k ) ... end
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(3,8);</span>
 &lt;design with rank 3 and degree 8&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignConnectionCoefficients(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignConnectionCoefficients(D);</span>
 function( s ) ... end
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f := DesignConnectionCoefficients(D)(3);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f := DesignConnectionCoefficients(D)(3);</span>
 [ [ 1, 0, 0, 0 ], [ 1/3, 1/39, 0, 0 ], [ 5/39, 5/273, 1/819, 0 ],
   [ 5/91, 1/91, 1/728, 1/12376 ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">for j in [1..4] do Display(Sum(List([1..4], i -&gt; f[j][i]*DesignQPolynomial(D)(i-1))));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">for j in [1..4] do Display(Sum(List([1..4], i -&gt; f[j][i]*DesignQPolynomial(D)(i-1))));</span>
 od;
 [ 1, 0, 0, 0 ]
 [ 0, 1, 0, 0 ]
@@ -235,11 +235,11 @@ od;
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(4,4);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByJordanParameters(4,4);</span>
 &lt;design with rank 4 and degree 4&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAddAngleSet(D, [1/3,1/9]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAddAngleSet(D, [1/3,1/9]);</span>
 &lt;design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAngleSet(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAngleSet(D);</span>
 [ 1/9, 1/3 ]</pre></div>
 
 <p><a id="X7A9BAE857BD9C7AB" name="X7A9BAE857BD9C7AB"></a></p>
@@ -251,9 +251,9 @@ od;
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);</span>
 &lt;design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAngleSet(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAngleSet(D);</span>
 [ 1/9, 1/3 ]</pre></div>
 
 <p><a id="X7B61ECE08124EAFA" name="X7B61ECE08124EAFA"></a></p>
@@ -265,9 +265,9 @@ od;
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);</span>
 &lt;design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignNormalizedAnnihilatorPolynomial(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignNormalizedAnnihilatorPolynomial(D);</span>
 [ 1/16, -3/4, 27/16 ]</pre></div>
 
 <p><a id="X87A3F05881AE56B8" name="X87A3F05881AE56B8"></a></p>
@@ -279,13 +279,13 @@ od;
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);</span>
 &lt;design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f := DesignNormalizedIndicatorCoefficients(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f := DesignNormalizedIndicatorCoefficients(D);</span>
 [ 1/64, 7/960, 9/3520 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Sum(List([1..3], i -&gt; f[i]*DesignQPolynomial(D)(i-1)));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Sum(List([1..3], i -&gt; f[i]*DesignQPolynomial(D)(i-1)));</span>
 [ 1/16, -3/4, 27/16 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignNormalizedAnnihilatorPolynomial(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignNormalizedAnnihilatorPolynomial(D);</span>
 [ 1/16, -3/4, 27/16 ]</pre></div>
 
 <p><a id="X846C917E8683C0DC" name="X846C917E8683C0DC"></a></p>
@@ -304,11 +304,11 @@ od;
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3,1/9]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3,1/9]);</span>
 &lt;design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsDesignWithPositiveIndicatorCoefficients(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsDesignWithPositiveIndicatorCoefficients(D);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignSpecialBound(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignSpecialBound(D);</span>
 64</pre></div>
 
 <p><a id="X852F4CD17B4A6587" name="X852F4CD17B4A6587"></a></p>
@@ -343,15 +343,15 @@ true
 <p>This function stores the the specified cardinality <var class="Arg">v</var> as attribute <code class="code">DesignCardinality</code> of design <var class="Arg">D</var>. The method requires the <var class="Arg">D</var> satisfies <code class="code">IsDesignWithAngleSet</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3,1/9]);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3,1/9]);</span>
 &lt;design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignSpecialBound(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignSpecialBound(D);</span>
 64
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAddCardinality(D, 64);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAddCardinality(D, 64);</span>
 &lt;design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsSpecialBoundDesign(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsSpecialBoundDesign(D);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignCardinality(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignCardinality(D);</span>
 64</pre></div>
 
 <p><a id="X84289ABC794FBB20" name="X84289ABC794FBB20"></a></p>
@@ -369,13 +369,13 @@ true
 <p>For a design <var class="Arg">D</var> that satisfies <code class="code">IsDesignWithPositiveIndicatorCoefficients</code>, <code class="code">IsDesignWithCardinality</code>, and <code class="code">IsSpecialBoundDesign</code>, we can compute the strength <span class="SimpleMath">\(t\)</span> of the design using the normalized indicator coefficients. This allows us to immediately determine whether the design also satisfies <code class="code">IsTightDesign</code> or <code class="code">IsAssociationSchemeDesign</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D;</span>
 &lt;design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsAssociationSchemeDesign(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsAssociationSchemeDesign(D);</span>
 false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignStrength(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignStrength(D);</span>
 2
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;</pre></div>
 
 <p><a id="X855AB0FB83B45450" name="X855AB0FB83B45450"></a></p>
@@ -386,9 +386,9 @@ false
 <p>The annihilator polynomial for design <var class="Arg">D</var> is defined by multiplying the <code class="code">DesignNormalizedAnnihilatorPolynomial(<var class="Arg">D</var>)</code> by <code class="code"> DesignCardinality(<var class="Arg">D</var>)</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAnnihilatorPolynomial(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignAnnihilatorPolynomial(D);</span>
 [ 4, -48, 108 ]</pre></div>
 
 <p><a id="X7998AC4383F4F4C1" name="X7998AC4383F4F4C1"></a></p>
@@ -399,9 +399,9 @@ false
 <p>The indicator coefficients for design <var class="Arg">D</var> are defined by multiplying <code class="code"> DesignNormalizedIndicatorCoefficients(<var class="Arg">D</var>)</code> by <code class="code"> DesignCardinality(<var class="Arg"> D</var>)</code>. These indicator coefficients are often useful for directly determining the strength of a design at the special bound.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignIndicatorCoefficients(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignIndicatorCoefficients(D);</span>
 [ 1, 7/15, 9/55 ]</pre></div>
 
 <p><a id="X814E031B82F35E16" name="X814E031B82F35E16"></a></p>
@@ -416,9 +416,9 @@ false
 <p>For a design <var class="Arg">D</var> with cardinality and angle set that satisfies <code class="code">IsRegularSchemeDesign</code>, namely <span class="SimpleMath">\(t &gt;= s - 1\)</span>, we can compute the regular subdegrees as described in <a href="chapBib_mj.html#biBhoggar_t-designs_1992">[Hog92, Theorem 3.2]</a>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 4, [1/3, 1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignSubdegrees(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignSubdegrees(D);</span>
 [ 27, 36 ] </pre></div>
 
 <p><a id="X7EE9F8D97A51FBF9" name="X7EE9F8D97A51FBF9"></a></p>
@@ -435,13 +435,13 @@ false
 <p>For a design that satisfies <code class="code">IsAssociationSchemeDesign</code>, we can define the corresponding Bose-Mesner algebra <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, pp. 53-57]</a>. The canonical basis for this algebra corresponds to the adjacency matrices <span class="SimpleMath">\(A_i\)</span>, with the <code class="code">s+1</code>-th basis vector corresponding to <span class="SimpleMath">\(A_0\)</span>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := DesignBoseMesnerAlgebra(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := DesignBoseMesnerAlgebra(D);</span>
 &lt;algebra of dimension 3 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">BasisVectors(CanonicalBasis(B));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">BasisVectors(CanonicalBasis(B));</span>
 [ A1, A2, A3 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One(B);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One(B);</span>
 A3 </pre></div>
 
 <p><a id="X8524AF307BAF0680" name="X8524AF307BAF0680"></a></p>
@@ -452,12 +452,12 @@ A3 </pre></div>
 <p>For a design that satisfies <code class="code">IsAssociationSchemeDesign</code>, we can also define the idempotent basis of the corresponding Bose-Mesner algebra <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, pp. 53-57]</a>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignBoseMesnerIdempotentBasis(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignBoseMesnerIdempotentBasis(D);</span>
 Basis( &lt;algebra of dimension 3 over Rationals&gt;, [ (-5/64)*A1+(3/64)*A2+(27/64)*A3,
   (1/16)*A1+(-1/16)*A2+(9/16)*A3, (1/64)*A1+(1/64)*A2+(1/64)*A3 ] )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(last, x -&gt; x^2 = x);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(last, x -&gt; x^2 = x);</span>
 [ true, true, true ] </pre></div>
 
 <p><a id="X7D657DB680515A4C" name="X7D657DB680515A4C"></a></p>
@@ -468,12 +468,12 @@ Basis( &lt;algebra of dimension 3 over Rationals&gt;, [ (-5/64)*A1+(3/64)*A2+(27
 <p>The intersection numbers <span class="SimpleMath">\(p^k_{i,j}\)</span> are given by <code class="code">DesignIntersectionNumbers(<var class="Arg">D</var>)[k][i][j]</code>. These intersection numbers serve as the structure constants for the <code class="code">DesignBoseMesnerAlgebra(<var class="Arg">D</var>)</code>. Namely, <span class="SimpleMath">\(A_i A_j = \sum_{k = 1}^{s+1} p^{k}_{i,j} A_k\)</span> (see <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, pp. 53-57]</a>).</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := BasisVectors(Basis(DesignBoseMesnerAlgebra(D)));;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := BasisVectors(Basis(DesignBoseMesnerAlgebra(D)));;</span>
 [ A1, A2, A3 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">p := DesignIntersectionNumbers(D);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A[1]*A[2] = Sum(List([1..3]), k -&gt; p[k][1][2]*A[k]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">p := DesignIntersectionNumbers(D);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A[1]*A[2] = Sum(List([1..3]), k -&gt; p[k][1][2]*A[k]);</span>
 true</pre></div>
 
 <p><a id="X8590B283798CE233" name="X8590B283798CE233"></a></p>
@@ -484,9 +484,9 @@ true</pre></div>
 <p>The Krein numbers <span class="SimpleMath">\(q^k_{i,j}\)</span> are given by <code class="code"> DesignKreinNumbers(<var class="Arg">D</var>)[k][i][j]</code>. The Krein numbers serve as the structure constants for the <code class="code">DesignBoseMesnerAlgebra(<var class="Arg">D</var>)</code> in the idempotent basis given by <code class="code">DesignBoseMesnerIdempotentBasis(<var class="Arg">D</var>)</code> using the Hadamard matrix product <span class="SimpleMath">\(\circ\)</span>. Namely, for idempotent basis <span class="SimpleMath">\(E_i\)</span> and Hadamard product <span class="SimpleMath">\(\circ\)</span>, we have <span class="SimpleMath">\(E_i \circ E_j = \sum_{k = 1}^{s+1} q^{k}_{i,j} E_k\)</span> (see <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, pp. 53-57]</a>).</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">q := DesignKreinNumbers(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">q := DesignKreinNumbers(D);</span>
 [ [ [ 10, 16, 1 ], [ 16, 20, 0 ], [ 1, 0, 0 ] ],
   [ [ 12, 15, 0 ], [ 15, 20, 1 ], [ 0, 1, 0 ] ],
   [ [ 27, 0, 0 ], [ 0, 36, 0 ], [ 0, 0, 1 ] ] ]</pre></div>
@@ -499,10 +499,10 @@ true</pre></div>
 <p>As describe in <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, p. 58]</a>, the first eigenmatrix of a Bose-Mesner algebra <span class="SimpleMath">\(P_i(j)\)</span> defines the expansion of the adjacency matrix basis <span class="SimpleMath">\(A_i\)</span> in terms of the idempotent basis <span class="SimpleMath">\(E_j\)</span> as follows: <span class="SimpleMath">\(A_i = \sum_{j = 1}^{s+1} P_i(j) E_j \)</span>. This attribute returns the component <span class="SimpleMath">\(P_i(j)\)</span> as <code class="code">DesignFirstEigenmatrix(<var class="Arg">D</var>)[i][j]</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Basis(DesignBoseMesnerAlgebra(D));; e := DesignBoseMesnerIdempotentBasis(D);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List([1..3], i -&gt; a[i] = Sum([1..3], j -&gt; DesignFirstEigenmatrix(D)[i][j]*e[j]));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Basis(DesignBoseMesnerAlgebra(D));; e := DesignBoseMesnerIdempotentBasis(D);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List([1..3], i -&gt; a[i] = Sum([1..3], j -&gt; DesignFirstEigenmatrix(D)[i][j]*e[j]));</span>
 [ true, true, true ] </pre></div>
 
 <p><a id="X7BA18016817E9A9D" name="X7BA18016817E9A9D"></a></p>
@@ -513,12 +513,12 @@ true</pre></div>
 <p>As describe in <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, p. 58]</a>, the second eigenmatrix of a Bose-Mesner algebra <span class="SimpleMath">\(Q_i(j)\)</span> defines the expansion of the idempotent basis <span class="SimpleMath">\(E_i\)</span> in terms of the adjacency matrix basis <span class="SimpleMath">\(A_j\)</span> as follows: <span class="SimpleMath">\(E_i = (1/v)\sum_{j = 1}^{s+1} Q_i(j) A_j \)</span>. This attribute returns the component <span class="SimpleMath">\(Q_i(j)\)</span> as <code class="code">DesignSecondEigenmatrix(<var class="Arg">D</var>)[i][j]</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Basis(DesignBoseMesnerAlgebra(D));; e := DesignBoseMesnerIdempotentBasis(D);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List([1..3], i -&gt; e[i]*DesignCardinality(D) = Sum([1..3], j -&gt; DesignSecondEigenmatrix(D)[i][j]*a[j]));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">a := Basis(DesignBoseMesnerAlgebra(D));; e := DesignBoseMesnerIdempotentBasis(D);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List([1..3], i -&gt; e[i]*DesignCardinality(D) = Sum([1..3], j -&gt; DesignSecondEigenmatrix(D)[i][j]*a[j]));</span>
 [ true, true, true ] 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignFirstEigenmatrix(D) = Inverse(DesignSecondEigenmatrix(D))*DesignCardinality(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignFirstEigenmatrix(D) = Inverse(DesignSecondEigenmatrix(D))*DesignCardinality(D);</span>
 true</pre></div>
 
 <p><a id="X797F3A50809DAB1C" name="X797F3A50809DAB1C"></a></p>
@@ -529,9 +529,9 @@ true</pre></div>
 <p>As describe in <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, pp. 58-59]</a>, the design multiplicy <span class="SimpleMath">\(m_i\)</span> is defined as the dimension of the space that idempotent matrix <span class="SimpleMath">\(E_i\)</span> projects onto, or <span class="SimpleMath">\(m_i = trace(E_i)\)</span>. We also have <span class="SimpleMath">\(m_i = Q_i(s+1)\)</span>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignMultiplicities(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignMultiplicities(D);</span>
 [ 27, 36, 1 ]</pre></div>
 
 <p><a id="X7E7012EB7BFE889D" name="X7E7012EB7BFE889D"></a></p>
@@ -542,9 +542,9 @@ true</pre></div>
 <p>As describe in <a href="chapBib_mj.html#biBbannai_algebraic_2021">[BBIT21, pp. 55, 59]</a>, the design valency <span class="SimpleMath">\(k_i\)</span> is defined as the fixed number of <span class="SimpleMath">\(i\)</span>-associates of any element in the association scheme (also known as the subdegree). We also have <span class="SimpleMath">\(k_i = P_i(s+1)\)</span>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4,4,[1/3,1/9]);; DesignAddCardinality(D, 64);; D;</span>
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignValencies(D);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignValencies(D);</span>
 [ 27, 36, 1 ]</pre></div>
 
 <p><a id="X849A9E5B79E8C3EE" name="X849A9E5B79E8C3EE"></a></p>
@@ -561,35 +561,35 @@ true</pre></div>
 <p>This section provides a number of known examples that can be studied using the <strong class="pkg">ALCO</strong> package. The following tight projective t-designs are identified in <a href="chapBib_mj.html#biBhoggar_t-designs_1982">[Hog82, Examples 1-11]</a>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 1, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 1, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 2, degree 1, cardinality 4, and angle set [ 0, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 2, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 2, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 2, degree 2, cardinality 6, and angle set [ 0, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 4, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 4, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 2, degree 4, cardinality 10, and angle set [ 0, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 8, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 8, [0,1/2]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 2, degree 8, cardinality 18, and angle set [ 0, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 2, [1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 2, [1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 2-design with rank 3, degree 2, cardinality 9, and angle set [ 1/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 2, [0,1/3]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 2, [0,1/3]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 4, degree 2, cardinality 40, and angle set [ 0, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(6, 2, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(6, 2, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 6, degree 2, cardinality 126, and angle set [ 0, 1/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(8, 2, [1/9]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(8, 2, [1/9]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 2-design with rank 8, degree 2, cardinality 64, and angle set [ 1/9 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(5, 4, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(5, 4, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 3-design with rank 5, degree 4, cardinality 165, and angle set [ 0, 1/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 8, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 8, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
 t));
 &lt;Tight 5-design with rank 3, degree 8, cardinality 819, and angle set [ 0, 1/4, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(24, 1, [0,1/16,1/4]);; DesignAddCardinality(last, DesignSpecialBound(l</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(24, 1, [0,1/16,1/4]);; DesignAddCardinality(last, DesignSpecialBound(l</span>
 ast));
 &lt;Tight 5-design with rank 24, degree 1, cardinality 98280, and angle set [ 0, 1/16, 1/4 ]&gt;</pre></div>
 
 <p>An additional icosahedron projective example is identified in <a href="chapBib_mj.html#biBlyubich_tight_2009">[Lyu09]</a>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 2, [ 0, (5-Sqrt(5))/10, (5+Sqrt(5))/10 ]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 2, [ 0, (5-Sqrt(5))/10, (5+Sqrt(5))/10 ]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;Tight 5-design with rank 2, degree 2, cardinality 12, and angle set
 [ 0, -3/5*E(5)-2/5*E(5)^2-2/5*E(5)^3-3/5*E(5)^4,
   -2/5*E(5)-3/5*E(5)^2-3/5*E(5)^3-2/5*E(5)^4 ]&gt;</pre></div>
@@ -597,27 +597,27 @@ ast));
 <p>The Leech lattice short vector design and several other tight spherical designs are given below:</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 23, [ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]);; DesignAddCardinality(last, De</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 23, [ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]);; DesignAddCardinality(last, De</span>
 signSpecialBound(last));
 &lt;Tight 11-design with rank 2, degree 23, cardinality 196560, and angle set
 [ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 5, [ 1/4, 5/8 ]);; DesignAddCardinality(last, DesignSpecialBound(la</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 5, [ 1/4, 5/8 ]);; DesignAddCardinality(last, DesignSpecialBound(la</span>
 st));
 &lt;Tight 4-design with rank 2, degree 5, cardinality 27, and angle set [ 1/4, 5/8 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 6, [0,1/3,2/3]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 6, [0,1/3,2/3]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
 t));
 &lt;Tight 5-design with rank 2, degree 6, cardinality 56, and angle set [ 0, 1/3, 2/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 21, [3/8, 7/12]);; DesignAddCardinality(last, DesignSpecialBound(la</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 21, [3/8, 7/12]);; DesignAddCardinality(last, DesignSpecialBound(la</span>
 st));
 &lt;Tight 4-design with rank 2, degree 21, cardinality 275, and angle set [ 3/8, 7/12 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 22, [0,2/5,3/5]);; DesignAddCardinality(last, DesignSpecialBound(la</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 22, [0,2/5,3/5]);; DesignAddCardinality(last, DesignSpecialBound(la</span>
 st));
 &lt;Tight 5-design with rank 2, degree 22, cardinality 552, and angle set [ 0, 2/5, 3/5 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 7, [0,1/4,1/2,3/4]);; DesignAddCardinality(last, DesignSpecialBound</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 7, [0,1/4,1/2,3/4]);; DesignAddCardinality(last, DesignSpecialBound</span>
 (last));
 &lt;Tight 7-design with rank 2, degree 7, cardinality 240, and angle set [ 0, 1/4, 1/2, 3/4
  ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 22, [0,1/3,1/2,2/3]);; DesignAddCardinality(last, DesignSpecialBoun</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(2, 22, [0,1/3,1/2,2/3]);; DesignAddCardinality(last, DesignSpecialBoun</span>
 d(last));
 &lt;Tight 7-design with rank 2, degree 22, cardinality 4600, and angle set
 [ 0, 1/3, 1/2, 2/3 ]&gt;</pre></div>
@@ -625,41 +625,41 @@ d(last));
 <p>Some projective designs meeting the special bound are given in <a href="chapBib_mj.html#biBhoggar_t-designs_1982">[Hog82, Examples 1-11]</a>:</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 4, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 4, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
 t));
 &lt;3-design with rank 4, degree 4, cardinality 180, and angle set [ 0, 1/4, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 2, [0,1/3]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 2, [0,1/3]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;2-design with rank 3, degree 2, cardinality 12, and angle set [ 0, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(5, 2, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(5, 2, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;2-design with rank 5, degree 2, cardinality 45, and angle set [ 0, 1/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(9, 2, [0,1/9]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(9, 2, [0,1/9]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;2-design with rank 9, degree 2, cardinality 90, and angle set [ 0, 1/9 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(28, 2, [0,1/16]);; DesignAddCardinality(last, DesignSpecialBound(last)</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(28, 2, [0,1/16]);; DesignAddCardinality(last, DesignSpecialBound(last)</span>
 );
 &lt;2-design with rank 28, degree 2, cardinality 4060, and angle set [ 0, 1/16 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 4, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 4, [0,1/4]);; DesignAddCardinality(last, DesignSpecialBound(last));</span>
 &lt;2-design with rank 4, degree 4, cardinality 36, and angle set [ 0, 1/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 4, [1/9,1/3]);; DesignAddCardinality(last, DesignSpecialBound(last)</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 4, [1/9,1/3]);; DesignAddCardinality(last, DesignSpecialBound(last)</span>
 );
 &lt;2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(16, 1, [0,1/9]);; DesignAddCardinality(last, DesignSpecialBound(last))</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(16, 1, [0,1/9]);; DesignAddCardinality(last, DesignSpecialBound(last))</span>
 ;
 &lt;2-design with rank 16, degree 1, cardinality 256, and angle set [ 0, 1/9 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 2, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(4, 2, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
 t));
 &lt;3-design with rank 4, degree 2, cardinality 60, and angle set [ 0, 1/4, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(16, 1, [0,1/16,1/4]);; DesignAddCardinality(last, DesignSpecialBound(l</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(16, 1, [0,1/16,1/4]);; DesignAddCardinality(last, DesignSpecialBound(l</span>
 ast));
 &lt;3-design with rank 16, degree 1, cardinality 2160, and angle set [ 0, 1/16, 1/4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 4, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 4, [0,1/4,1/2]);; DesignAddCardinality(last, DesignSpecialBound(las</span>
 t));
 &lt;3-design with rank 3, degree 4, cardinality 63, and angle set [ 0, 1/4, 1/2 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 4, [0,1/4,1/2,(3+Sqrt(5))/8, (3-Sqrt(5))/8]);; DesignAddCardinality</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(3, 4, [0,1/4,1/2,(3+Sqrt(5))/8, (3-Sqrt(5))/8]);; DesignAddCardinality</span>
 (last, DesignSpecialBound(last));
 &lt;5-design with rank 3, degree 4, cardinality 315, and angle set
 [ 0, 1/4, 1/2, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,
   -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(12, 2, [0,1/3,1/4,1/12]);; DesignAddCardinality(last, DesignSpecialBou</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DesignByAngleSet(12, 2, [0,1/3,1/4,1/12]);; DesignAddCardinality(last, DesignSpecialBou</span>
 nd(last));
 &lt;5-design with rank 12, degree 2, cardinality 32760, and angle set [ 0, 1/12, 1/4, 1/3 ]&gt;</pre></div>
 
@@ -667,11 +667,11 @@ nd(last));
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := [ 0, 1/4, 1/2, 3/4, (5-Sqrt(5))/8, (5+Sqrt(5))/8, (3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(2, 3, A);; DesignAddCardinality(D, DesignSpecialBound(D));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := [ 0, 1/4, 1/2, 3/4, (5-Sqrt(5))/8, (5+Sqrt(5))/8, (3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(2, 3, A);; DesignAddCardinality(D, DesignSpecialBound(D));</span>
 &lt;11-design with rank 2, degree 3, cardinality 120, and angle set [ 0, 1/4, 1/2, 3/4, -3/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-3/4*E(5)^4, -1/2*E(5)-3/4*E(5)^2-3/4*E(5)^3-1/2*E(5)^4, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4, -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := [ 0, 1/4, (3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 1, A);; DesignAddCardinality(D, DesignSpecialBound(D));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := [ 0, 1/4, (3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">D := DesignByAngleSet(4, 1, A);; DesignAddCardinality(D, DesignSpecialBound(D));</span>
 &lt;5-design with rank 4, degree 1, cardinality 60, and angle set
 [ 0, 1/4, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,
   -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]&gt; </pre></div>

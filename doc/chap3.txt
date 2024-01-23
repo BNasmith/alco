@@ -74,9 +74,9 @@
   [33X[0;0YReturns a simple Euclidean Jordan algebra over ℚ in an orthogonal basis.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJ := SimpleEuclideanJordanAlgebra(3,8);[127X[104X
-    [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(J)));[127X[104X
+    [4X[25Xgap>[125X [27XJ := SimpleEuclideanJordanAlgebra(3,8);[127X[104X
+    [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(J)));[127X[104X
     [4X[28X"F4"[128X[104X
   [4X[32X[104X
   
@@ -88,24 +88,24 @@
   matrix.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJ := JordanSpinFactor(IdentityMat(8));[127X[104X
-    [4X[28X<algebra of dimension 9 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XOne(J);[127X[104X
-    [4X[28Xv.1[128X[104X
-    [4X[25Xgap>[125X [27X[JordanRank(J), JordanDegree(J)];[127X[104X
-    [4X[28X[ 2, 7 ][128X[104X
-    [4X[25Xgap>[125X [27XDerivations(Basis(J));[127X[104X
-    [4X[28X<Lie algebra of dimension 28 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XSemiSimpleType(last);[127X[104X
-    [4X[28X"D4"[128X[104X
-    [4X[25Xgap>[125X [27Xx := Random(J);[127X[104X
-    [4X[28Xv.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9[128X[104X
-    [4X[25Xgap>[125X [27X[Trace(x), Determinant(x)];[127X[104X
-    [4X[28X[ 0, -39/4 ][128X[104X
-    [4X[25Xgap>[125X [27Xp := GenericMinimalPolynomial(x);[127X[104X
-    [4X[28X[ -39/4, 0, 1 ][128X[104X
-    [4X[25Xgap>[125X [27XValuePol(p, x);[127X[104X
-    [4X[28X0*v.1[128X[104X
+    [4X[25Xgap>[125X [27XJ := JordanSpinFactor(IdentityMat(8));[127X[104X
+    [4X[28X<algebra of dimension 9 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XOne(J);[127X[104X
+    [4X[28Xv.1[128X[104X
+    [4X[25Xgap>[125X [27X[JordanRank(J), JordanDegree(J)];[127X[104X
+    [4X[28X[ 2, 7 ][128X[104X
+    [4X[25Xgap>[125X [27XDerivations(Basis(J));[127X[104X
+    [4X[28X<Lie algebra of dimension 28 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XSemiSimpleType(last);[127X[104X
+    [4X[28X"D4"[128X[104X
+    [4X[25Xgap>[125X [27Xx := Random(J);[127X[104X
+    [4X[28Xv.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9[128X[104X
+    [4X[25Xgap>[125X [27X[Trace(x), Determinant(x)];[127X[104X
+    [4X[28X[ 0, -39/4 ][128X[104X
+    [4X[25Xgap>[125X [27Xp := GenericMinimalPolynomial(x);[127X[104X
+    [4X[28X[ -39/4, 0, 1 ][128X[104X
+    [4X[25Xgap>[125X [27XValuePol(p, x);[127X[104X
+    [4X[28X0*v.1[128X[104X
   [4X[32X[104X
   
   [1X3.2-3 HermitianSimpleJordanAlgebra[101X
@@ -116,14 +116,14 @@
   off-diagonal components defined using composition algebra basis [3XB[103X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XB := OctonionE8Basis;;[127X[104X
-    [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(3,B);[127X[104X
-    [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27X[JordanRank(J), JordanDegree(J)];[127X[104X
-    [4X[28X[ 3, 8 ][128X[104X
-    [4X[25Xgap>[125X [27XDerivations(Basis(J));[127X[104X
-    [4X[28X<Lie algebra of dimension 52 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XSemiSimpleType(last);[127X[104X
+    [4X[25Xgap>[125X [27XB := OctonionE8Basis;;[127X[104X
+    [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(3,B);[127X[104X
+    [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27X[JordanRank(J), JordanDegree(J)];[127X[104X
+    [4X[28X[ 3, 8 ][128X[104X
+    [4X[25Xgap>[125X [27XDerivations(Basis(J));[127X[104X
+    [4X[28X<Lie algebra of dimension 52 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XSemiSimpleType(last);[127X[104X
     [4X[28X"F4"[128X[104X
   [4X[32X[104X
   
@@ -140,17 +140,17 @@
   basis vectors in the new algebra.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJ := SimpleEuclideanJordanAlgebra(2,7);[127X[104X
-    [4X[28X<algebra of dimension 9 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27Xu := Random(J);[127X[104X
-    [4X[28X(-1/6)*v.1+(3)*v.2+(1/3)*v.3+(-2)*v.4+(-4)*v.6+(-1)*v.8+(-3)*v.9[128X[104X
-    [4X[25Xgap>[125X [27XGenericMinimalPolynomial(u);[127X[104X
-    [4X[28X[ -469/12, 1/3, 1 ][128X[104X
-    [4X[25Xgap>[125X [27XH := JordanHomotope(J, u);[127X[104X
-    [4X[28X<algebra of dimension 9 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(J)));[127X[104X
-    [4X[28X"D4"[128X[104X
-    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(H)));[127X[104X
+    [4X[25Xgap>[125X [27XJ := SimpleEuclideanJordanAlgebra(2,7);[127X[104X
+    [4X[28X<algebra of dimension 9 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27Xu := Random(J);[127X[104X
+    [4X[28X(-1/6)*v.1+(3)*v.2+(1/3)*v.3+(-2)*v.4+(-4)*v.6+(-1)*v.8+(-3)*v.9[128X[104X
+    [4X[25Xgap>[125X [27XGenericMinimalPolynomial(u);[127X[104X
+    [4X[28X[ -469/12, 1/3, 1 ][128X[104X
+    [4X[25Xgap>[125X [27XH := JordanHomotope(J, u);[127X[104X
+    [4X[28X<algebra of dimension 9 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(J)));[127X[104X
+    [4X[28X"D4"[128X[104X
+    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(H)));[127X[104X
     [4X[28X"D4"[128X[104X
   [4X[32X[104X
   
@@ -181,13 +181,13 @@
   These are respectively labeled using [10Xk,i,j[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XA := AlbertAlgebra(Rationals);[127X[104X
-    [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27Xi := Basis(A){[1..8]}; j := Basis(A){[9..16]}; k := Basis(A){[17..24]}; e := Basis(A){[[127X[104X
-    [4X[28X25..27]};[128X[104X
-    [4X[28X[ i1, i2, i3, i4, i5, i6, i7, i8 ][128X[104X
-    [4X[28X[ j1, j2, j3, j4, j5, j6, j7, j8 ][128X[104X
-    [4X[28X[ k1, k2, k3, k4, k5, k6, k7, k8 ][128X[104X
+    [4X[25Xgap>[125X [27XA := AlbertAlgebra(Rationals);[127X[104X
+    [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27Xi := Basis(A){[1..8]}; j := Basis(A){[9..16]}; k := Basis(A){[17..24]}; e := Basis(A){[[127X[104X
+    [4X[28X25..27]};[128X[104X
+    [4X[28X[ i1, i2, i3, i4, i5, i6, i7, i8 ][128X[104X
+    [4X[28X[ j1, j2, j3, j4, j5, j6, j7, j8 ][128X[104X
+    [4X[28X[ k1, k2, k3, k4, k5, k6, k7, k8 ][128X[104X
     [4X[28X[ ei, ej, ek ][128X[104X
   [4X[32X[104X
   
@@ -199,7 +199,7 @@
   rationals.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XAlb;[127X[104X
+    [4X[25Xgap>[125X [27XAlb;[127X[104X
     [4X[28X<algebra of dimension 27 over Rationals>[128X[104X
   [4X[32X[104X
   
@@ -208,24 +208,25 @@
   [33X[1;0Y[29X[2XAlbertVectorToHermitianMatrix[102X( [3Xx[103X ) [32X function[133X
   
   [33X[0;0YFor  an  element  [3Xx[103X  in  [10XAlb[110X  (see  [2XAlb[102X  ([14X3.3-2[114X)), this function returns the
-  corresponding  3  x 3 Hermitian matrix with octonion entries in [10XOct[110X (see [2XOct[102X
-  ([14X2.1-4[114X)).[133X
+  corresponding   3   x   3   Hermitian   matrix   with  octonion  entries  in
+  [10XOctonionAlgebra([3XRationals[103X[10X)[110X (see [2XOctonionAlgebra[102X ([14X2.1-2[114X)).[133X
   
   [1X3.3-4 HermitianMatrixToAlbertVector[101X
   
   [33X[1;0Y[29X[2XHermitianMatrixToAlbertVector[102X( [3Xx[103X ) [32X function[133X
   
-  [33X[0;0YFor  3  x  3  Hermitian  matrix with elements in [10XOct[110X (see [2XOct[102X ([14X2.1-4[114X)), this
-  function returns the corresponding vector in in [10XAlb[110X (see [2XAlb[102X ([14X3.3-2[114X)).[133X
+  [33X[0;0YFor 3 x 3 Hermitian matrix with elements in [10XOctonionAlgebra([3X Rationals[103X[10X)[110X (see
+  [2XOctonionAlgebra[102X  ([14X2.1-2[114X)), this function returns the corresponding vector in
+  in [10XAlb[110X (see [2XAlb[102X ([14X3.3-2[114X)).[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xj := Basis(Alb){[9..16]};[127X[104X
-    [4X[28X[ j1, j2, j3, j4, j5, j6, j7, j8 ][128X[104X
-    [4X[25Xgap>[125X [27Xmat := AlbertVectorToHermitianMatrix(j[3]);; Display(mat);[127X[104X
-    [4X[28X[ [     0*e1,     0*e1,  (-1)*e3 ],[128X[104X
-    [4X[28X  [     0*e1,     0*e1,     0*e1 ],[128X[104X
-    [4X[28X  [       e3,     0*e1,     0*e1 ] ][128X[104X
-    [4X[25Xgap>[125X [27XHermitianMatrixToAlbertVector(mat);[127X[104X
+    [4X[25Xgap>[125X [27Xj := Basis(Alb){[9..16]};[127X[104X
+    [4X[28X[ j1, j2, j3, j4, j5, j6, j7, j8 ][128X[104X
+    [4X[25Xgap>[125X [27Xmat := AlbertVectorToHermitianMatrix(j[3]);; Display(mat);[127X[104X
+    [4X[28X[ [     0*e1,     0*e1,  (-1)*e3 ],[128X[104X
+    [4X[28X  [     0*e1,     0*e1,     0*e1 ],[128X[104X
+    [4X[28X  [       e3,     0*e1,     0*e1 ] ][128X[104X
+    [4X[25Xgap>[125X [27XHermitianMatrixToAlbertVector(mat);[127X[104X
     [4X[28Xj3[128X[104X
   [4X[32X[104X
   
@@ -250,23 +251,23 @@
   x)[110X, the operation [10XP([3Xx[103X[10X)[110X returns the matrix [10X2 L(x)^2 - L(x^2)[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJ := JordanSpinFactor(IdentityMat(3));[127X[104X
-    [4X[28X<algebra of dimension 4 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27Xx := Random(J); y := Random(J);[127X[104X
-    [4X[28X(-1)*v.1+(4/3)*v.2+(-1)*v.3+v.4[128X[104X
-    [4X[28X(-1)*v.1+(-1/2)*v.2+(2)*v.3+(-1/2)*v.4[128X[104X
-    [4X[25Xgap>[125X [27XP(x,y);[127X[104X
-    [4X[28X(14/9)*v.1+(-79/18)*v.2+(-11/9)*v.3+(-53/18)*v.4[128X[104X
-    [4X[25Xgap>[125X [27XP(x);; Display(last);[127X[104X
-    [4X[28X[ [  43/9,  -8/3,     2,    -2 ],[128X[104X
-    [4X[28X  [  -8/3,   7/9,  -8/3,   8/3 ],[128X[104X
-    [4X[28X  [     2,  -8/3,  -7/9,    -2 ],[128X[104X
-    [4X[28X  [    -2,   8/3,    -2,  -7/9 ] ][128X[104X
-    [4X[25Xgap>[125X [27XLinearCombination(Basis(J), P(x)*ExtRepOfObj(y)) = P(x,y);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XExtRepOfObj(P(x,y)) = P(x)*ExtRepOfObj(y);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XP(2*x) = 4*P(x);[127X[104X
+    [4X[25Xgap>[125X [27XJ := JordanSpinFactor(IdentityMat(3));[127X[104X
+    [4X[28X<algebra of dimension 4 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27Xx := Random(J); y := Random(J);[127X[104X
+    [4X[28X(-1)*v.1+(4/3)*v.2+(-1)*v.3+v.4[128X[104X
+    [4X[28X(-1)*v.1+(-1/2)*v.2+(2)*v.3+(-1/2)*v.4[128X[104X
+    [4X[25Xgap>[125X [27XP(x,y);[127X[104X
+    [4X[28X(14/9)*v.1+(-79/18)*v.2+(-11/9)*v.3+(-53/18)*v.4[128X[104X
+    [4X[25Xgap>[125X [27XP(x);; Display(last);[127X[104X
+    [4X[28X[ [  43/9,  -8/3,     2,    -2 ],[128X[104X
+    [4X[28X  [  -8/3,   7/9,  -8/3,   8/3 ],[128X[104X
+    [4X[28X  [     2,  -8/3,  -7/9,    -2 ],[128X[104X
+    [4X[28X  [    -2,   8/3,    -2,  -7/9 ] ][128X[104X
+    [4X[25Xgap>[125X [27XLinearCombination(Basis(J), P(x)*ExtRepOfObj(y)) = P(x,y);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XExtRepOfObj(P(x,y)) = P(x)*ExtRepOfObj(y);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XP(2*x) = 4*P(x);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -280,9 +281,9 @@
   to [10XP(x+z, y) - P(x, y) - P(z, y)[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XList(Basis(Alb), x -> JTS(i[1],i[1],x));[127X[104X
-    [4X[28X[ i1, i2, i3, i4, i5, i6, i7, i8, (1/2)*j1, (1/2)*j2, (1/2)*j3, (1/2)*j4, (1/2)*j5,[128X[104X
-    [4X[28X  (1/2)*j6, (1/2)*j7, (1/2)*j8, (1/2)*k1, (1/2)*k2, (1/2)*k3, (1/2)*k4, (1/2)*k5,[128X[104X
+    [4X[25Xgap>[125X [27XList(Basis(Alb), x -> JTS(i[1],i[1],x));[127X[104X
+    [4X[28X[ i1, i2, i3, i4, i5, i6, i7, i8, (1/2)*j1, (1/2)*j2, (1/2)*j3, (1/2)*j4, (1/2)*j5,[128X[104X
+    [4X[28X  (1/2)*j6, (1/2)*j7, (1/2)*j8, (1/2)*k1, (1/2)*k2, (1/2)*k3, (1/2)*k4, (1/2)*k5,[128X[104X
     [4X[28X  (1/2)*k6, (1/2)*k7, (1/2)*k8, 0*i1, ej, ek ][128X[104X
   [4X[32X[104X
   
@@ -299,20 +300,20 @@
   determined by basis [3XB[103X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XH := QuaternionAlgebra(Rationals);; AsList(Basis(H));[127X[104X
-    [4X[28X[ e, i, j, k ][128X[104X
-    [4X[25Xgap>[125X [27Xfor x in HermitianJordanAlgebraBasis(2, Basis(H)) do Display(x); od;[127X[104X
-    [4X[28X[ [    e,  0*e ],[128X[104X
-    [4X[28X  [  0*e,  0*e ] ][128X[104X
-    [4X[28X[ [  0*e,  0*e ],[128X[104X
-    [4X[28X  [  0*e,    e ] ][128X[104X
-    [4X[28X[ [  0*e,    e ],[128X[104X
-    [4X[28X  [    e,  0*e ] ][128X[104X
-    [4X[28X[ [     0*e,       i ],[128X[104X
-    [4X[28X  [  (-1)*i,     0*e ] ][128X[104X
-    [4X[28X[ [     0*e,       j ],[128X[104X
-    [4X[28X  [  (-1)*j,     0*e ] ][128X[104X
-    [4X[28X[ [     0*e,       k ],[128X[104X
+    [4X[25Xgap>[125X [27XH := QuaternionAlgebra(Rationals);; AsList(Basis(H));[127X[104X
+    [4X[28X[ e, i, j, k ][128X[104X
+    [4X[25Xgap>[125X [27Xfor x in HermitianJordanAlgebraBasis(2, Basis(H)) do Display(x); od;[127X[104X
+    [4X[28X[ [    e,  0*e ],[128X[104X
+    [4X[28X  [  0*e,  0*e ] ][128X[104X
+    [4X[28X[ [  0*e,  0*e ],[128X[104X
+    [4X[28X  [  0*e,    e ] ][128X[104X
+    [4X[28X[ [  0*e,    e ],[128X[104X
+    [4X[28X  [    e,  0*e ] ][128X[104X
+    [4X[28X[ [     0*e,       i ],[128X[104X
+    [4X[28X  [  (-1)*i,     0*e ] ][128X[104X
+    [4X[28X[ [     0*e,       j ],[128X[104X
+    [4X[28X  [  (-1)*j,     0*e ] ][128X[104X
+    [4X[28X[ [     0*e,       k ],[128X[104X
     [4X[28X  [  (-1)*k,     0*e ] ][128X[104X
   [4X[32X[104X
   
@@ -331,17 +332,17 @@
   [33X[0;0YConverts matrix [3Xmat[103X into an element of Jordan algebra [3XJ[103X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X            gap> H := QuaternionAlgebra(Rationals);; AsList(Basis(H));[128X[104X
-    [4X[28X[ e, i, j, k ][128X[104X
-    [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(2,Basis(H));[127X[104X
-    [4X[28X<algebra of dimension 6 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XAsList(CanonicalBasis(J));[127X[104X
-    [4X[28X[ v.1, v.2, v.3, v.4, v.5, v.6 ][128X[104X
-    [4X[25Xgap>[125X [27XJordanMatrixBasis(J);[127X[104X
-    [4X[28X[ [ [ e, 0*e ], [ 0*e, 0*e ] ], [ [ 0*e, 0*e ], [ 0*e, e ] ], [ [ 0*e, e ], [ e, 0*e ] ],[128X[104X
-    [4X[28X  [ [ 0*e, i ], [ (-1)*i, 0*e ] ], [ [ 0*e, j ], [ (-1)*j, 0*e ] ],[128X[104X
-    [4X[28X  [ [ 0*e, k ], [ (-1)*k, 0*e ] ] ][128X[104X
-    [4X[25Xgap>[125X [27XList(JordanMatrixBasis(J), x -> HermitianMatrixToJordanVector(x, J));[127X[104X
+    [4X[28X            gap> H := QuaternionAlgebra(Rationals);; AsList(Basis(H));[128X[104X
+    [4X[28X[ e, i, j, k ][128X[104X
+    [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(2,Basis(H));[127X[104X
+    [4X[28X<algebra of dimension 6 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XAsList(CanonicalBasis(J));[127X[104X
+    [4X[28X[ v.1, v.2, v.3, v.4, v.5, v.6 ][128X[104X
+    [4X[25Xgap>[125X [27XJordanMatrixBasis(J);[127X[104X
+    [4X[28X[ [ [ e, 0*e ], [ 0*e, 0*e ] ], [ [ 0*e, 0*e ], [ 0*e, e ] ], [ [ 0*e, e ], [ e, 0*e ] ],[128X[104X
+    [4X[28X  [ [ 0*e, i ], [ (-1)*i, 0*e ] ], [ [ 0*e, j ], [ (-1)*j, 0*e ] ],[128X[104X
+    [4X[28X  [ [ 0*e, k ], [ (-1)*k, 0*e ] ] ][128X[104X
+    [4X[25Xgap>[125X [27XList(JordanMatrixBasis(J), x -> HermitianMatrixToJordanVector(x, J));[127X[104X
     [4X[28X[ v.1, v.2, v.3, v.4, v.5, v.6 ][128X[104X
   [4X[32X[104X
   
@@ -353,18 +354,18 @@
   using inner product [10XTrace(x*y)[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(2,OctonionE8Basis);[127X[104X
-    [4X[28X<algebra of dimension 10 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(JordanAlgebraGramMatrix(J));[127X[104X
-    [4X[28X[ [   1,   0,   0,   0,   0,   0,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   1,   0,   0,   0,   0,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   2,   0,  -1,   0,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   2,   0,  -1,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,  -1,   0,   2,  -1,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,  -1,  -1,   2,  -1,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   0,   0,  -1,   2,  -1,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   0,   0,   0,  -1,   2,  -1,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   0,   0,   0,   0,  -1,   2,  -1 ],[128X[104X
+    [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(2,OctonionE8Basis);[127X[104X
+    [4X[28X<algebra of dimension 10 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(JordanAlgebraGramMatrix(J));[127X[104X
+    [4X[28X[ [   1,   0,   0,   0,   0,   0,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   1,   0,   0,   0,   0,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   2,   0,  -1,   0,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   2,   0,  -1,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,  -1,   0,   2,  -1,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,  -1,  -1,   2,  -1,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   0,   0,  -1,   2,  -1,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   0,   0,   0,  -1,   2,  -1,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   0,   0,   0,   0,  -1,   2,  -1 ],[128X[104X
     [4X[28X  [   0,   0,   0,   0,   0,   0,   0,   0,  -1,   2 ] ]  [128X[104X
   [4X[32X[104X
   

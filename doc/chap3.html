@@ -141,9 +141,9 @@
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := SimpleEuclideanJordanAlgebra(3,8);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := SimpleEuclideanJordanAlgebra(3,8);</span>
 &lt;algebra of dimension 27 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(J)));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(J)));</span>
 "F4"</pre></div>
 
 <p><a id="X86C6713C8178A69F" name="X86C6713C8178A69F"></a></p>
@@ -155,23 +155,23 @@
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := JordanSpinFactor(IdentityMat(8));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := JordanSpinFactor(IdentityMat(8));</span>
 &lt;algebra of dimension 9 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One(J);</span>
 v.1
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[JordanRank(J), JordanDegree(J)];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[JordanRank(J), JordanDegree(J)];</span>
 [ 2, 7 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Derivations(Basis(J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Derivations(Basis(J));</span>
 &lt;Lie algebra of dimension 28 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(last);</span>
 "D4"
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Random(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Random(J);</span>
 v.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[Trace(x), Determinant(x)];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[Trace(x), Determinant(x)];</span>
 [ 0, -39/4 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">p := GenericMinimalPolynomial(x);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">p := GenericMinimalPolynomial(x);</span>
 [ -39/4, 0, 1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ValuePol(p, x);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ValuePol(p, x);</span>
 0*v.1
 </pre></div>
 
@@ -184,14 +184,14 @@ v.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := OctonionE8Basis;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(3,B);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">B := OctonionE8Basis;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(3,B);</span>
 &lt;algebra of dimension 27 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[JordanRank(J), JordanDegree(J)];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">[JordanRank(J), JordanDegree(J)];</span>
 [ 3, 8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Derivations(Basis(J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Derivations(Basis(J));</span>
 &lt;Lie algebra of dimension 52 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(last);</span>
 "F4"</pre></div>
 
 <p><a id="X800B48C383196E06" name="X800B48C383196E06"></a></p>
@@ -202,17 +202,17 @@ v.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9
 <p>For <var class="Arg">J</var> a Jordan algebra satisfying <code class="code">IsJordanAlgebra(<var class="Arg">J</var>)</code>, and for <var class="Arg">u</var> a vector in <var class="Arg">J</var>, this function returns the corresponding <var class="Arg">u</var>-homotope algebra with the product of <span class="Math">x</span> and <span class="Math">y</span> defined as <span class="Math">x(uy)+(xu)y - u(xy)</span>. The <var class="Arg">u</var>-homotope algebra also belongs to the filter <code class="code">IsJordanAlgebra</code>. Of note, if <var class="Arg">u</var> is invertible in <var class="Arg">J</var> then the corresponding <var class="Arg">u</var>-homotope algebra is called a <var class="Arg">u</var>-isotope. The optional argument <var class="Arg">s</var> is a string that determines the labels of the canonical basis vectors in the new algebra.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := SimpleEuclideanJordanAlgebra(2,7);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := SimpleEuclideanJordanAlgebra(2,7);</span>
 &lt;algebra of dimension 9 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">u := Random(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">u := Random(J);</span>
 (-1/6)*v.1+(3)*v.2+(1/3)*v.3+(-2)*v.4+(-4)*v.6+(-1)*v.8+(-3)*v.9
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GenericMinimalPolynomial(u);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GenericMinimalPolynomial(u);</span>
 [ -469/12, 1/3, 1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := JordanHomotope(J, u);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := JordanHomotope(J, u);</span>
 &lt;algebra of dimension 9 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(J)));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(J)));</span>
 "D4"
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(H)));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(H)));</span>
 "D4"</pre></div>
 
 <p><a id="X7B9397277AF7F920" name="X7B9397277AF7F920"></a></p>
@@ -229,9 +229,9 @@ v.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9
 <p>For <var class="Arg">F</var> a field, this function returns an Albert algebra over <var class="Arg">F</var>. For <code class="code"><var class="Arg">F</var> = Rationals</code>, this algebra is isomorphic to <code class="code">HermitianSimpleJordanAlgebra(3,8,Basis(Oct))</code> but in a basis that is more convenient for reproducing certain calculations in the literature. Specifically, while <code class="code">HermitianSimpleJordanAlgebra(3,8,Basis(Oct))</code> uses the upper-triangular elements of a Hermitian matrix as representative, <code class="code">AlbertAlgebra(<var class="Arg">F</var>)</code> uses the <code class="code">[1][2], [2][3], [3][1]</code> entries as representative. These are respectively labeled using <code class="code">k,i,j</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := AlbertAlgebra(Rationals);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := AlbertAlgebra(Rationals);</span>
 &lt;algebra of dimension 27 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">i := Basis(A){[1..8]}; j := Basis(A){[9..16]}; k := Basis(A){[17..24]}; e := Basis(A){[</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">i := Basis(A){[1..8]}; j := Basis(A){[9..16]}; k := Basis(A){[17..24]}; e := Basis(A){[</span>
 25..27]};
 [ i1, i2, i3, i4, i5, i6, i7, i8 ]
 [ j1, j2, j3, j4, j5, j6, j7, j8 ]
@@ -246,7 +246,7 @@ v.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9
 <p>The <strong class="pkg">ALCO</strong> package includes a loaded instance of the Albert algebra over the rationals.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Alb;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Alb;</span>
 &lt;algebra of dimension 27 over Rationals&gt;</pre></div>
 
 <p><a id="X860036647BB9325E" name="X860036647BB9325E"></a></p>
@@ -254,23 +254,23 @@ v.2+(-1)*v.3+(-1)*v.4+(1/2)*v.5+(-2)*v.7+(1/2)*v.8+(-3/2)*v.9
 <h5>3.3-3 AlbertVectorToHermitianMatrix</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AlbertVectorToHermitianMatrix</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For an element <var class="Arg">x</var> in <code class="code">Alb</code> (see <code class="func">Alb</code> (<a href="chap3.html#X7B456B2582F195DB"><span class="RefLink">3.3-2</span></a>)), this function returns the corresponding 3 x 3 Hermitian matrix with octonion entries in <code class="code">Oct</code> (see <code class="func">Oct</code> (<a href="chap2.html#X7CD8436C85792B3B"><span class="RefLink">2.1-4</span></a>)).</p>
+<p>For an element <var class="Arg">x</var> in <code class="code">Alb</code> (see <code class="func">Alb</code> (<a href="chap3.html#X7B456B2582F195DB"><span class="RefLink">3.3-2</span></a>)), this function returns the corresponding 3 x 3 Hermitian matrix with octonion entries in <code class="code">OctonionAlgebra(<var class="Arg">Rationals</var>)</code> (see <code class="func">OctonionAlgebra</code> (<a href="chap2.html#X78767B4A7F44F77D"><span class="RefLink">2.1-2</span></a>)).</p>
 
 <p><a id="X8385802B7AE842E6" name="X8385802B7AE842E6"></a></p>
 
 <h5>3.3-4 HermitianMatrixToAlbertVector</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; HermitianMatrixToAlbertVector</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For 3 x 3 Hermitian matrix with elements in <code class="code">Oct</code> (see <code class="func">Oct</code> (<a href="chap2.html#X7CD8436C85792B3B"><span class="RefLink">2.1-4</span></a>)), this function returns the corresponding vector in in <code class="code">Alb</code> (see <code class="func">Alb</code> (<a href="chap3.html#X7B456B2582F195DB"><span class="RefLink">3.3-2</span></a>)).</p>
+<p>For 3 x 3 Hermitian matrix with elements in <code class="code">OctonionAlgebra(<var class="Arg"> Rationals</var>)</code> (see <code class="func">OctonionAlgebra</code> (<a href="chap2.html#X78767B4A7F44F77D"><span class="RefLink">2.1-2</span></a>)), this function returns the corresponding vector in in <code class="code">Alb</code> (see <code class="func">Alb</code> (<a href="chap3.html#X7B456B2582F195DB"><span class="RefLink">3.3-2</span></a>)).</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">j := Basis(Alb){[9..16]};</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">j := Basis(Alb){[9..16]};</span>
 [ j1, j2, j3, j4, j5, j6, j7, j8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">mat := AlbertVectorToHermitianMatrix(j[3]);; Display(mat);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">mat := AlbertVectorToHermitianMatrix(j[3]);; Display(mat);</span>
 [ [     0*e1,     0*e1,  (-1)*e3 ],
   [     0*e1,     0*e1,     0*e1 ],
   [       e3,     0*e1,     0*e1 ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HermitianMatrixToAlbertVector(mat);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">HermitianMatrixToAlbertVector(mat);</span>
 j3</pre></div>
 
 <p><a id="X7F03850D819127E2" name="X7F03850D819127E2"></a></p>
@@ -287,23 +287,23 @@ j3</pre></div>
 <p>For <var class="Arg">x</var> and <var class="Arg">y</var> Jordan algebra elements, satisfying <code class="code">IsJordanAlgebraObj</code> this operation applies two methods. In the case of <code class="code">P(<var class="Arg">x</var>, y)</code>, this operation returns <code class="code">2*x*(x*y) - (x^2)*y</code>. In the case of <code class="code">P(x)</code>, this operation returns the matrix representing the quadratic map in the canonical basis of the Jordan algebra <var class="Arg">J</var> containing <var class="Arg">x</var>. For <code class="code">L(x)</code> the matrix <code class="code">AdjointMatrix(CanonicalBasis(J), x)</code>, the operation <code class="code">P(<var class="Arg">x</var>)</code> returns the matrix <code class="code">2 L(x)^2 - L(x^2)</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := JordanSpinFactor(IdentityMat(3));</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := JordanSpinFactor(IdentityMat(3));</span>
 &lt;algebra of dimension 4 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Random(J); y := Random(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x := Random(J); y := Random(J);</span>
 (-1)*v.1+(4/3)*v.2+(-1)*v.3+v.4
 (-1)*v.1+(-1/2)*v.2+(2)*v.3+(-1/2)*v.4
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P(x,y);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P(x,y);</span>
 (14/9)*v.1+(-79/18)*v.2+(-11/9)*v.3+(-53/18)*v.4
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P(x);; Display(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P(x);; Display(last);</span>
 [ [  43/9,  -8/3,     2,    -2 ],
   [  -8/3,   7/9,  -8/3,   8/3 ],
   [     2,  -8/3,  -7/9,    -2 ],
   [    -2,   8/3,    -2,  -7/9 ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LinearCombination(Basis(J), P(x)*ExtRepOfObj(y)) = P(x,y);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LinearCombination(Basis(J), P(x)*ExtRepOfObj(y)) = P(x,y);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ExtRepOfObj(P(x,y)) = P(x)*ExtRepOfObj(y);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ExtRepOfObj(P(x,y)) = P(x)*ExtRepOfObj(y);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P(2*x) = 4*P(x);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">P(2*x) = 4*P(x);</span>
 true</pre></div>
 
 <p><a id="X850A8E5182734D52" name="X850A8E5182734D52"></a></p>
@@ -314,7 +314,7 @@ true</pre></div>
 <p>For Jordan algebra elements <var class="Arg">x</var>, <var class="Arg">y</var>, <var class="Arg">z</var> satisfying <code class="code">IsJordanAlgebraObj</code>, <code class="code">JTS(<var class="Arg">x</var>,<var class="Arg">y</var>,<var class="Arg">z</var>)</code> returns the Jordan triple product defined in terms of the Jordan product as <code class="code"><var class="Arg">x</var>*(<var class="Arg">y</var>*<var class="Arg">z</var>) + (<var class="Arg">x</var>*<var class="Arg">y</var>)*<var class="Arg">z</var> - <var class="Arg">y</var>*(<var class="Arg">x</var>*<var class="Arg">z</var>)</code>. Equivalently, <code class="code">2*JTS(<var class="Arg">x</var>,<var class="Arg">y</var>,<var class="Arg">z</var>)</code> is equal to <code class="code">P(x+z, y) - P(x, y) - P(z, y)</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(Basis(Alb), x -&gt; JTS(i[1],i[1],x));</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(Basis(Alb), x -&gt; JTS(i[1],i[1],x));</span>
 [ i1, i2, i3, i4, i5, i6, i7, i8, (1/2)*j1, (1/2)*j2, (1/2)*j3, (1/2)*j4, (1/2)*j5,
   (1/2)*j6, (1/2)*j7, (1/2)*j8, (1/2)*k1, (1/2)*k2, (1/2)*k3, (1/2)*k4, (1/2)*k5,
   (1/2)*k6, (1/2)*k7, (1/2)*k8, 0*i1, ej, ek ]</pre></div>
@@ -332,9 +332,9 @@ true</pre></div>
 
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := QuaternionAlgebra(Rationals);; AsList(Basis(H));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := QuaternionAlgebra(Rationals);; AsList(Basis(H));</span>
 [ e, i, j, k ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">for x in HermitianJordanAlgebraBasis(2, Basis(H)) do Display(x); od;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">for x in HermitianJordanAlgebraBasis(2, Basis(H)) do Display(x); od;</span>
 [ [    e,  0*e ],
   [  0*e,  0*e ] ]
 [ [  0*e,  0*e ],
@@ -366,15 +366,15 @@ true</pre></div>
 <div class="example"><pre>
             gap&gt; H := QuaternionAlgebra(Rationals);; AsList(Basis(H));
 [ e, i, j, k ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(2,Basis(H));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(2,Basis(H));</span>
 &lt;algebra of dimension 6 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AsList(CanonicalBasis(J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AsList(CanonicalBasis(J));</span>
 [ v.1, v.2, v.3, v.4, v.5, v.6 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JordanMatrixBasis(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JordanMatrixBasis(J);</span>
 [ [ [ e, 0*e ], [ 0*e, 0*e ] ], [ [ 0*e, 0*e ], [ 0*e, e ] ], [ [ 0*e, e ], [ e, 0*e ] ],
   [ [ 0*e, i ], [ (-1)*i, 0*e ] ], [ [ 0*e, j ], [ (-1)*j, 0*e ] ],
   [ [ 0*e, k ], [ (-1)*k, 0*e ] ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(JordanMatrixBasis(J), x -&gt; HermitianMatrixToJordanVector(x, J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(JordanMatrixBasis(J), x -&gt; HermitianMatrixToJordanVector(x, J));</span>
 [ v.1, v.2, v.3, v.4, v.5, v.6 ]</pre></div>
 
 <p><a id="X7B6084887C1C5AF1" name="X7B6084887C1C5AF1"></a></p>
@@ -385,9 +385,9 @@ true</pre></div>
 <p>For <code class="code">IsJordanAlgebra( <var class="Arg">J</var> )</code>, returns the Gram matrix on <code class="code">CanonicalBasis( <var class="Arg">J</var> )</code> using inner product <code class="code">Trace(x*y)</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(2,OctonionE8Basis);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(2,OctonionE8Basis);</span>
 &lt;algebra of dimension 10 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(JordanAlgebraGramMatrix(J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(JordanAlgebraGramMatrix(J));</span>
 [ [   1,   0,   0,   0,   0,   0,   0,   0,   0,   0 ],
   [   0,   1,   0,   0,   0,   0,   0,   0,   0,   0 ],
   [   0,   0,   2,   0,  -1,   0,   0,   0,   0,   0 ],

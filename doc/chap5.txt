@@ -45,7 +45,7 @@
   rows, with the inner product computed as [10Xx*y/8[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XIsLeechLatticeGramMatrix(MOGLeechLatticeGramMatrix);[127X[104X
+    [4X[25Xgap>[125X [27XIsLeechLatticeGramMatrix(MOGLeechLatticeGramMatrix);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -67,9 +67,9 @@
   Trace([3Xx[103X[10X*[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XO := OctonionArithmetic(Integers);; [127X[104X
-    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
-    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
+    [4X[25Xgap>[125X [27XO := OctavianIntegers;;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
+    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
     [4X[28X<free left module over Integers, with 24 generators>[128X[104X
   [4X[32X[104X
   
@@ -214,23 +214,21 @@
   vector [3Xy[103X in the canonical basis of octonion lattice [3XL[103X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XO := OctonionArithmetic(Integers); B := Basis(O);[127X[104X
-    [4X[28X<algebra of dimension 8 over Integers>[128X[104X
-    [4X[28XCanonicalBasis( <algebra of dimension 8 over Integers> )[128X[104X
-    [4X[25Xgap>[125X [27XL := OctonionLatticeByGenerators(Concatenation(List(B, x -> x*IdentityMat(3))));[127X[104X
-    [4X[28X<free left module over Integers, with 24 generators>[128X[104X
-    [4X[28XTime of last command: 464 ms[128X[104X
-    [4X[25Xgap>[125X [27XList(IdentityMat(24), x -> RealToOctonionVector(L, x)) = List(LLLReducedBasisCoefficien[127X[104X
-    [4X[28Xts(L), y -> RealToOctonionVector(Basis(O), y));[128X[104X
+    [4X[25Xgap>[125X [27XO := OctavianIntegers;;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
+    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
+    [4X[28X<free left module over Integers, with 24 generators>[128X[104X
+    [4X[25Xgap>[125X [27XList(IdentityMat(24), x -> RealToOctonionVector(O3, x)) = List(LLLReducedBasisCoefficien[127X[104X
+    [4X[28Xts(O3), y -> RealToOctonionVector(Basis(O), y));[128X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
   [33X[0;0YAnother example illustrates the inverse properties of these functions.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XOctonionToRealVector(L, RealToOctonionVector(L, [1..24])) = [1..24];[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XOctonionToRealVector(Basis(O),RealToOctonionVector(Basis(O), [1..24])) = [1..24];[127X[104X
+    [4X[25Xgap>[125X [27XOctonionToRealVector(L, RealToOctonionVector(L, [1..24])) = [1..24];[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XOctonionToRealVector(Basis(O),RealToOctonionVector(Basis(O), [1..24])) = [1..24];[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
