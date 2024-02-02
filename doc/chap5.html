@@ -102,7 +102,7 @@
 <p>The variable <code class="code">MOGLeechLatticeGeneratorMatrix</code> stores the 24 x 24 integer matrix that span the Leech lattice <a href="chapBib.html#biBconway_sphere_2013">[CS13, p. 133]</a>. The variable <code class="code">MOGLeechLatticeGramMatrix</code> stores the Gram matrix of the generator matrix rows, with the inner product computed as <code class="code">x*y/8</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeechLatticeGramMatrix(MOGLeechLatticeGramMatrix);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeechLatticeGramMatrix(MOGLeechLatticeGramMatrix);</span>
 true</pre></div>
 
 <p><a id="X7F6AA3C97E706F4F" name="X7F6AA3C97E706F4F"></a></p>
@@ -114,12 +114,12 @@ true</pre></div>
 <h5>5.2-1 OctonionLatticeByGenerators</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OctonionLatticeByGenerators</code>( <var class="Arg">gens</var>[, <var class="Arg">g</var>] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">gens</var> a list of octonion vectors, so that <var class="Arg">gens</var> satisfies <code class="code">IsOctonionCollColl</code>, this function constructs a free left ℤ-module that satisfies <code class="code">IsOctonionLattice</code>. The attribute <code class="code">LeftActingDomain</code> is set to <code class="code">Integers</code> and the input <var class="Arg">gens</var> is stored as the attribute <code class="code">GeneratorsOfLeftOperatorAdditiveGroup</code>. The inner product on the lattice is defined by optional argument <var class="Arg">g</var>, which is an octonion square matrix that defaults to the identity matrix. For <var class="Arg">x,y</var> octonion vectors in the lattice, the inner product is computed as <code class="code"> ScalarProduct(<var class="Arg">L</var>, <var class="Arg">x</var>, <var class="Arg">y</var>) = Trace(<var class="Arg">x</var>*<var class="Arg">g</var>*ComplexConjugate(<var class="Arg">y</var>))</code>.</p>
+<p>For <var class="Arg">gens</var> a list of octonion vectors, so that <var class="Arg">gens</var> satisfies <code class="code">IsOctonionCollColl</code>, this function constructs a free left ℤ-module that satisfies <code class="code">IsOctonionLattice</code>. The attribute <code class="code">LeftActingDomain</code> is set to <code class="code">Integers</code> and the input <var class="Arg">gens</var> is stored as the attribute <code class="code"> GeneratorsOfLeftOperatorAdditiveGroup</code>. The inner product on the lattice is defined by optional argument <var class="Arg">g</var>, which is an octonion square matrix that defaults to the identity matrix. For <var class="Arg">x,y</var> octonion vectors in the lattice, the inner product is computed as <code class="code"> ScalarProduct(<var class="Arg">L</var>, <var class="Arg">x</var>, <var class="Arg">y</var>) = Trace(<var class="Arg">x</var> *<var class="Arg">g</var>*ComplexConjugate(<var class="Arg">y</var>))</code>.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O := OctavianIntegers;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Concatenation(List(Basis(O), x -&gt; x*IdentityMat(3)));;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O3 := OctonionLatticeByGenerators(gens);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O := OctavianIntegers;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Concatenation(List(Basis(O), x -&gt; x*IdentityMat(3)));;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O3 := OctonionLatticeByGenerators(gens);</span>
 &lt;free left module over Integers, with 24 generators&gt;</pre></div>
 
 <p><a id="X786A725B7ADE7BDE" name="X786A725B7ADE7BDE"></a></p>
@@ -131,14 +131,14 @@ true</pre></div>
 <h5>5.3-1 UnderlyingOctonionRing</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; UnderlyingOctonionRing</code>( <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>This attribute stores the octonion algebra containing the octonion coefficients of the generating vectors, stored as <code class="code">GeneratorsOfLeftOperatorAdditiveGroup(<var class="Arg">L</var>)</code>.</p>
+<p>This attribute stores the octonion algebra containing the octonion coefficients of the generating vectors, stored as <code class="code">GeneratorsOfLeftOperatorAdditiveGroup(<var class="Arg"> L</var>)</code>.</p>
 
 <p><a id="X8120692484549A5B" name="X8120692484549A5B"></a></p>
 
 <h5>5.3-2 OctonionGramMatrix</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OctonionGramMatrix</code>( <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>This attribute stores the optional argument <var class="Arg">g</var> of <code class="code">OctonionLatticeByGenerators(<var class="Arg">gens</var> [,<var class="Arg">g</var>])</code>. This attribute stores the octonion matrix used to calculate the inner product on the lattice via <code class="code">Trace(<var class="Arg">x</var>*<var class="Arg">g</var>*ComplexConjugate(<var class="Arg">y</var>))</code>. The default value of this attribute is the identity matrix.</p>
+<p>This attribute stores the optional argument <var class="Arg">g</var> of <code class="code"> OctonionLatticeByGenerators(<var class="Arg">gens</var> [,<var class="Arg">g</var>])</code>. This attribute stores the octonion matrix used to calculate the inner product on the lattice via <code class="code">Trace(<var class="Arg">x</var> *<var class="Arg">g</var>*ComplexConjugate(<var class="Arg">y</var>))</code>. The default value of this attribute is the identity matrix.</p>
 
 <p><a id="X7E6926C6850E7C4E" name="X7E6926C6850E7C4E"></a></p>
 
@@ -152,21 +152,21 @@ true</pre></div>
 <h5>5.3-4 GeneratorsAsCoefficients</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; GeneratorsAsCoefficients</code>( <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>This attributes converts the lattice generators, stored as <code class="code">GeneratorsOfLeftOperatorAdditiveGroup(<var class="Arg">L</var>)</code>, into a list of coefficients. For each generating vector <var class="Arg">x</var>, the coefficient list <code class="code">OctonionToRealVector(CanonicalBasis(UnderlyingOctonionRing(<var class="Arg">L</var>)), <var class="Arg">x</var>)</code> is added to the list <code class="code"> GeneratorsAsCoefficients(<var class="Arg">L</var>)</code>.</p>
+<p>This attributes converts the lattice generators, stored as <code class="code"> GeneratorsOfLeftOperatorAdditiveGroup(<var class="Arg">L</var>)</code>, into a list of coefficients. For each generating vector <var class="Arg">x</var>, the coefficient list <code class="code"> OctonionToRealVector(CanonicalBasis(UnderlyingOctonionRing(<var class="Arg">L</var>)), <var class="Arg">x</var>)</code> is added to the list <code class="code"> GeneratorsAsCoefficients(<var class="Arg">L</var>)</code>.</p>
 
 <p><a id="X80B8907778F550EE" name="X80B8907778F550EE"></a></p>
 
 <h5>5.3-5 LLLReducedBasisCoefficients</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; LLLReducedBasisCoefficients</code>( <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>This attribute stores the result of <code class="code">LLLReducedBasis(<var class="Arg">L</var>, GeneratorsAsCoefficients(<var class="Arg">L</var>)).basis</code>. This provides a set of basis vectors as coefficients for <var class="Arg">L</var>, since there is no test to ensure that <code class="code">GeneratorsOfLeftOperatorAdditiveGroup</code> form a ℤ-module basis.</p>
+<p>This attribute stores the result of <code class="code">LLLReducedBasis(<var class="Arg">L</var>, GeneratorsAsCoefficients(<var class="Arg">L</var>)).basis</code>. This provides a set of basis vectors as coefficients for <var class="Arg">L</var>, since there is no test to ensure that <code class="code"> GeneratorsOfLeftOperatorAdditiveGroup</code> form a ℤ-module basis.</p>
 
 <p><a id="X8728E0997EFD3E63" name="X8728E0997EFD3E63"></a></p>
 
 <h5>5.3-6 GramMatrix</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; GramMatrix</code>( <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>This attribute stores the Gram matrix of vectors <code class="code">LLLReducedBasisCoefficients(<var class="Arg">L</var>)</code> relative to <code class="code">ScalarProduct(<var class="Arg">L</var>, <var class="Arg">x</var>, <var class="Arg">y</var>)</code>.</p>
+<p>This attribute stores the Gram matrix of vectors <code class="code"> LLLReducedBasisCoefficients(<var class="Arg">L</var>)</code> relative to <code class="code">ScalarProduct(<var class="Arg">L</var>, <var class="Arg"> x</var>, <var class="Arg">y</var>)</code>.</p>
 
 <p><a id="X8127307B7E5A01CC" name="X8127307B7E5A01CC"></a></p>
 
@@ -183,7 +183,7 @@ true</pre></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CanonicalBasis</code>( <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; BasisVectors</code>( <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsOctonionLatticeBasis</code></td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">L</var> satisfying <code class="code">IsOctonionLattice</code> the attributes <code class="code">Basis(<var class="Arg">L</var>)</code> and <code class="code"> CanonicalBasis(<var class="Arg">L</var>)</code> are equivalent. The corresponding basis satisfies <code class="code">IsOctonionLatticeBasis(<var class="Arg">B</var>)</code> and provides a basis for octonion lattice <var class="Arg">L</var> as a left free Z-module. In turn, <code class="code">BasisVectors(<var class="Arg">B</var>)</code> are given by <code class="code">LLLReducedBasisCoefficients(<var class="Arg">L</var>)</code>.</p>
+<p>For <var class="Arg">L</var> satisfying <code class="code">IsOctonionLattice</code> the attributes <code class="code"> Basis(<var class="Arg">L</var>)</code> and <code class="code"> CanonicalBasis(<var class="Arg">L</var>)</code> are equivalent. The corresponding basis satisfies <code class="code">IsOctonionLatticeBasis(<var class="Arg">B</var>)</code> and provides a basis for octonion lattice <var class="Arg">L</var> as a left free Z-module. In turn, <code class="code">BasisVectors(<var class="Arg"> B</var>)</code> are given by <code class="code">LLLReducedBasisCoefficients(<var class="Arg">L</var>)</code>.</p>
 
 <p><a id="X79F28E887AF17FFC" name="X79F28E887AF17FFC"></a></p>
 
@@ -201,14 +201,14 @@ true</pre></div>
 <h5>5.4-2 ScalarProduct</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ScalarProduct</code>( <var class="Arg">L</var>, <var class="Arg">x</var>, <var class="Arg">y</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">L</var> that satisfies <code class="code">IsOctonionLattice</code> and <var class="Arg">x</var>, <var class="Arg">y</var> either octonion vectors or coefficient vectors, this operation computes <code class="code">Trace(<var class="Arg">x</var>*<var class="Arg">g</var>*ComplexConjugate(<var class="Arg">y</var>))</code> where <var class="Arg">g</var> is equal to <code class="code">OctonionGramMatrix(<var class="Arg">L</var>)</code>.</p>
+<p>For <var class="Arg">L</var> that satisfies <code class="code">IsOctonionLattice</code> and <var class="Arg">x</var> , <var class="Arg">y</var> either octonion vectors or coefficient vectors, this operation computes <code class="code"> Trace(<var class="Arg">x</var>*<var class="Arg">g</var>*ComplexConjugate(<var class="Arg">y</var>))</code> where <var class="Arg">g</var> is equal to <code class="code">OctonionGramMatrix(<var class="Arg">L</var>)</code>.</p>
 
 <p><a id="X87BDB89B7AAFE8AD" name="X87BDB89B7AAFE8AD"></a></p>
 
 <h5><code>5.4-3 \in</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \in</code>( <var class="Arg">x</var>, <var class="Arg">L</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">x</var> an octonion vector (satisfies <code class="code">IsOctonionCollection</code> and <var class="Arg">L</var> an octonion lattice (satisfies <code class="code">IsOctonionLattice</code>), this function evaluates inclusion of <var class="Arg">x</var> in <var class="Arg">L</var>. Note that <code class="code">\in(<var class="Arg">x</var>,<var class="Arg">L</var>)</code> and <code class="code"><var class="Arg">x</var> in <var class="Arg">L</var></code> are equivalent expression.</p>
+<p>For <var class="Arg">x</var> an octonion vector (satisfies <code class="code">IsOctonionCollection</code> and <var class="Arg">L</var> an octonion lattice (satisfies <code class="code">IsOctonionLattice</code>), this function evaluates inclusion of <var class="Arg">x</var> in <var class="Arg">L</var>. Note that <code class="code">\in(<var class="Arg">x</var>,<var class="Arg">L</var> )</code> and <code class="code"><var class="Arg">x</var> in <var class="Arg">L</var></code> are equivalent expression.</p>
 
 <p><a id="X7F68456883DCEE5D" name="X7F68456883DCEE5D"></a></p>
 
@@ -216,14 +216,14 @@ true</pre></div>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsSublattice</code>( <var class="Arg">L</var>, <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsSubset</code>( <var class="Arg">L</var>, <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>For both <var class="Arg">L</var> and <var class="Arg">M</var> octonion lattices (satisfies <code class="code">IsOctonionLattice</code>) these two functions determine whether the elements of <var class="Arg">M</var> are contained in <var class="Arg">L</var>.</p>
+<p>For both <var class="Arg">L</var> and <var class="Arg">M</var> octonion lattices (satisfies <code class="code"> IsOctonionLattice</code>) these two functions determine whether the elements of <var class="Arg">M</var> are contained in <var class="Arg">L</var>.</p>
 
 <p><a id="X806A4814806A4814" name="X806A4814806A4814"></a></p>
 
 <h5><code>5.4-5 \=</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \=</code>( <var class="Arg">L</var>, <var class="Arg">M</var> )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>For both <var class="Arg">L</var> and <var class="Arg">M</var> octonion lattices (satisfies <code class="code">IsOctonionLattice</code>) the expression <code class="code"><var class="Arg">L</var> = <var class="Arg">M</var></code> return true when <code class="code">IsSublattice(<var class="Arg">L</var>, <var class="Arg">M</var>) and IsSublattice(<var class="Arg">L</var>, <var class="Arg">M</var>)</code>.</p>
+<p>For both <var class="Arg">L</var> and <var class="Arg">M</var> octonion lattices (satisfies <code class="code"> IsOctonionLattice</code>) the expression <code class="code"><var class="Arg">L</var> = <var class="Arg">M</var></code> return true when <code class="code">IsSublattice(<var class="Arg">L</var>, <var class="Arg">M</var>) and IsSublattice(<var class="Arg">L</var>, <var class="Arg">M</var> )</code>.</p>
 
 <p><a id="X8677AEDB8631EF5E" name="X8677AEDB8631EF5E"></a></p>
 
@@ -231,23 +231,25 @@ true</pre></div>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RealToOctonionVector</code>( <var class="Arg">L</var>, <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; OctonionToRealVector</code>( <var class="Arg">L</var>, <var class="Arg">y</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Let <var class="Arg">L</var> be an octonion lattice, satisfying <code class="code">IsOctonionLattice</code>, and let <var class="Arg">B</var> be a basis for the octonion algebra <code class="code">UnderlyingOctonionRing(<var class="Arg">L</var>)</code>. Let <var class="Arg">x</var> be a real vector with <code class="code">Length(<var class="Arg">x</var>) mod 8 = 0</code> and let <var class="Arg">y</var> be an octonion vector of length <code class="code">Dimension(<var class="Arg">L</var>)/8</code>. The function <code class="code">RealToOctonionVector(<var class="Arg">B</var>, <var class="Arg">x</var>)</code> returns an octonion vector constructed by taking each successive octonion entry as the linear combination in the eight basis vectors of <var class="Arg">B</var> of the corresponding eight real coefficients. Likewise, the function <code class="code">OctonionToRealVector(<var class="Arg">B</var>, <var class="Arg">y</var>)</code> is the concatenation of the real coefficients of the octonion entries computed using the basis <var class="Arg">B</var>. In contrast, <code class="code">RealToOctonionVector(<var class="Arg">L</var>, <var class="Arg">x</var>)</code> returns the linear combination of the octonion lattice canonical basis vectors defined by <code class="code">LLLReducedBasisCoefficients(<var class="Arg">L</var>)</code> given by the coefficients <var class="Arg">x</var>. The function <code class="code">OctonionToRealVector(<var class="Arg">L</var>, <var class="Arg">y</var>)</code> determines the lattice coefficients of octonion vector <var class="Arg">y</var> in the canonical basis of octonion lattice <var class="Arg">L</var>.</p>
+<p>Let <var class="Arg">L</var> be an octonion lattice, satisfying <code class="code">IsOctonionLattice</code>, and let <var class="Arg">B</var> be a basis for the octonion algebra <code class="code">UnderlyingOctonionRing(<var class="Arg">L</var> )</code>. Let <var class="Arg">x</var> be a real vector with <code class="code">Length(<var class="Arg">x</var>) mod 8 = 0</code> and let <var class="Arg">y</var> be an octonion vector of length <code class="code">Dimension(<var class="Arg">L</var>)/8</code>. The function <code class="code">RealToOctonionVector(<var class="Arg">B</var>, <var class="Arg">x</var>)</code> returns an octonion vector constructed by taking each successive octonion entry as the linear combination in the eight basis vectors of <var class="Arg">B</var> of the corresponding eight real coefficients. Likewise, the function <code class="code">OctonionToRealVector(<var class="Arg">B</var>, <var class="Arg">y</var>)</code> is the concatenation of the real coefficients of the octonion entries computed using the basis <var class="Arg">B</var>. In contrast, <code class="code">RealToOctonionVector(<var class="Arg">L</var>, <var class="Arg">x</var>)</code> returns the linear combination of the octonion lattice canonical basis vectors defined by <code class="code"> LLLReducedBasisCoefficients(<var class="Arg">L</var>)</code> given by the coefficients <var class="Arg">x</var>. The function <code class="code">OctonionToRealVector(<var class="Arg">L</var>, <var class="Arg">y</var>)</code> determines the lattice coefficients of octonion vector <var class="Arg">y</var> in the canonical basis of octonion lattice <var class="Arg">L</var> .</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O := OctavianIntegers;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Concatenation(List(Basis(O), x -&gt; x*IdentityMat(3)));;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O3 := OctonionLatticeByGenerators(gens);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O := OctavianIntegers;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Concatenation(List(Basis(O), x -&gt; x*IdentityMat(3)));;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O3 := OctonionLatticeByGenerators(gens);</span>
 &lt;free left module over Integers, with 24 generators&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(IdentityMat(24), x -&gt; RealToOctonionVector(O3, x)) = List(LLLReducedBasisCoefficien</span>
-ts(O3), y -&gt; RealToOctonionVector(Basis(O), y));
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(IdentityMat(24), x -&gt; RealToOctonionVector(O3, x)) = </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">List(LLLReducedBasisCoefficients(O3), y -&gt; </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">RealToOctonionVector(Basis(O), y));</span>
 true</pre></div>
 
 <p>Another example illustrates the inverse properties of these functions.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OctonionToRealVector(L, RealToOctonionVector(L, [1..24])) = [1..24];</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OctonionToRealVector(O3, RealToOctonionVector(O3, [1..24])) = [1..24];</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OctonionToRealVector(Basis(O),RealToOctonionVector(Basis(O), [1..24])) = [1..24];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OctonionToRealVector(Basis(O), RealToOctonionVector(Basis(O), [1..24]))</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">= [1..24];</span>
 true</pre></div>
 
 

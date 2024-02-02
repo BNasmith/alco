@@ -45,7 +45,7 @@
   rows, with the inner product computed as [10Xx*y/8[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XIsLeechLatticeGramMatrix(MOGLeechLatticeGramMatrix);[127X[104X
+    [4X[25Xgap>[125X [27XIsLeechLatticeGramMatrix(MOGLeechLatticeGramMatrix);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -59,17 +59,17 @@
   [33X[0;0YFor   [3Xgens[103X   a   list   of   octonion   vectors,   so  that  [3Xgens[103X  satisfies
   [10XIsOctonionCollColl[110X,  this  function  constructs  a  free  left ℤ-module that
   satisfies  [10XIsOctonionLattice[110X.  The  attribute  [10XLeftActingDomain[110X  is  set  to
-  [10XIntegers[110X    and    the    input    [3Xgens[103X   is   stored   as   the   attribute
-  [10XGeneratorsOfLeftOperatorAdditiveGroup[110X.  The  inner product on the lattice is
+  [10XIntegers[110X    and   the   input   [3Xgens[103X   is   stored   as   the   attribute   [10X
+  GeneratorsOfLeftOperatorAdditiveGroup[110X.  The  inner product on the lattice is
   defined  by  optional  argument  [3Xg[103X,  which is an octonion square matrix that
   defaults  to  the  identity matrix. For [3Xx,y[103X octonion vectors in the lattice,
-  the   inner   product   is   computed   as   [10X   ScalarProduct([3XL[103X[10X,   [3Xx[103X[10X,  [3Xy[103X[10X)  =
-  Trace([3Xx[103X[10X*[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X.[133X
+  the  inner  product  is  computed  as  [10X  ScalarProduct([3XL[103X[10X,  [3Xx[103X[10X,  [3Xy[103X[10X)  = Trace([3Xx[103X[10X
+  *[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XO := OctavianIntegers;;[127X[104X
-    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
-    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
+    [4X[25Xgap>[125X [27XO := OctavianIntegers;;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
+    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
     [4X[28X<free left module over Integers, with 24 generators>[128X[104X
   [4X[32X[104X
   
@@ -82,17 +82,17 @@
   
   [33X[0;0YThis   attribute   stores  the  octonion  algebra  containing  the  octonion
   coefficients      of      the      generating     vectors,     stored     as
-  [10XGeneratorsOfLeftOperatorAdditiveGroup([3XL[103X[10X)[110X.[133X
+  [10XGeneratorsOfLeftOperatorAdditiveGroup([3X L[103X[10X)[110X.[133X
   
   [1X5.3-2 OctonionGramMatrix[101X
   
   [33X[1;0Y[29X[2XOctonionGramMatrix[102X( [3XL[103X ) [32X attribute[133X
   
-  [33X[0;0YThis     attribute     stores     the     optional     argument     [3Xg[103X     of
-  [10XOctonionLatticeByGenerators([3Xgens[103X[10X  [,[3Xg[103X[10X])[110X.  This attribute stores the octonion
-  matrix   used   to   calculate   the   inner  product  on  the  lattice  via
-  [10XTrace([3Xx[103X[10X*[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X.  The  default value of this attribute is the
-  identity matrix.[133X
+  [33X[0;0YThis     attribute     stores     the    optional    argument    [3Xg[103X    of    [10X
+  OctonionLatticeByGenerators([3Xgens[103X[10X  [,[3Xg[103X[10X])[110X.  This attribute stores the octonion
+  matrix  used  to  calculate  the  inner  product  on the lattice via [10XTrace([3Xx[103X[10X
+  *[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X. The default value of this attribute is the identity
+  matrix.[133X
   
   [1X5.3-3 Dimension[101X
   
@@ -106,10 +106,10 @@
   
   [33X[1;0Y[29X[2XGeneratorsAsCoefficients[102X( [3XL[103X ) [32X attribute[133X
   
-  [33X[0;0YThis    attributes    converts    the    lattice   generators,   stored   as
-  [10XGeneratorsOfLeftOperatorAdditiveGroup([3XL[103X[10X)[110X,  into  a list of coefficients. For
-  each      generating      vector      [3Xx[103X,      the      coefficient      list
-  [10XOctonionToRealVector(CanonicalBasis(UnderlyingOctonionRing([3XL[103X[10X)),  [3Xx[103X[10X)[110X is added
+  [33X[0;0YThis    attributes   converts   the   lattice   generators,   stored   as   [10X
+  GeneratorsOfLeftOperatorAdditiveGroup([3XL[103X[10X)[110X,  into  a list of coefficients. For
+  each      generating     vector     [3Xx[103X,     the     coefficient     list     [10X
+  OctonionToRealVector(CanonicalBasis(UnderlyingOctonionRing([3XL[103X[10X)),  [3Xx[103X[10X)[110X is added
   to the list [10X GeneratorsAsCoefficients([3XL[103X[10X)[110X.[133X
   
   [1X5.3-5 LLLReducedBasisCoefficients[101X
@@ -118,15 +118,15 @@
   
   [33X[0;0YThis     attribute     stores     the     result    of    [10XLLLReducedBasis([3XL[103X[10X,
   GeneratorsAsCoefficients([3XL[103X[10X)).basis[110X.  This provides a set of basis vectors as
-  coefficients   for   [3XL[103X,   since   there   is   no   test   to   ensure  that
-  [10XGeneratorsOfLeftOperatorAdditiveGroup[110X form a ℤ-module basis.[133X
+  coefficients   for   [3XL[103X,   since   there   is   no   test  to  ensure  that  [10X
+  GeneratorsOfLeftOperatorAdditiveGroup[110X form a ℤ-module basis.[133X
   
   [1X5.3-6 GramMatrix[101X
   
   [33X[1;0Y[29X[2XGramMatrix[102X( [3XL[103X ) [32X attribute[133X
   
-  [33X[0;0YThis     attribute     stores     the     Gram     matrix     of     vectors
-  [10XLLLReducedBasisCoefficients([3XL[103X[10X)[110X relative to [10XScalarProduct([3XL[103X[10X, [3Xx[103X[10X, [3Xy[103X[10X)[110X.[133X
+  [33X[0;0YThis     attribute     stores     the    Gram    matrix    of    vectors    [10X
+  LLLReducedBasisCoefficients([3XL[103X[10X)[110X relative to [10XScalarProduct([3XL[103X[10X, [3X x[103X[10X, [3Xy[103X[10X)[110X.[133X
   
   [1X5.3-7 TotallyIsotropicCode[101X
   
@@ -144,10 +144,10 @@
   [33X[1;0Y[29X[2XBasisVectors[102X( [3XB[103X ) [32X attribute[133X
   [33X[1;0Y[29X[2XIsOctonionLatticeBasis[102X [32X filter[133X
   
-  [33X[0;0YFor   [3XL[103X   satisfying   [10XIsOctonionLattice[110X   the   attributes  [10XBasis([3XL[103X[10X)[110X  and  [10X
+  [33X[0;0YFor   [3XL[103X   satisfying   [10XIsOctonionLattice[110X  the  attributes  [10X  Basis([3XL[103X[10X)[110X  and  [10X
   CanonicalBasis([3XL[103X[10X)[110X   are   equivalent.   The  corresponding  basis  satisfies
   [10XIsOctonionLatticeBasis([3XB[103X[10X)[110X  and  provides a basis for octonion lattice [3XL[103X as a
-  left    free    Z-module.    In   turn,   [10XBasisVectors([3XB[103X[10X)[110X   are   given   by
+  left   free   Z-module.   In   turn,   [10XBasisVectors([3X   B[103X[10X)[110X   are   given   by
   [10XLLLReducedBasisCoefficients([3XL[103X[10X)[110X.[133X
   
   
@@ -165,8 +165,8 @@
   
   [33X[1;0Y[29X[2XScalarProduct[102X( [3XL[103X, [3Xx[103X, [3Xy[103X ) [32X operation[133X
   
-  [33X[0;0YFor  [3XL[103X  that satisfies [10XIsOctonionLattice[110X and [3Xx[103X, [3Xy[103X either octonion vectors or
-  coefficient  vectors, this operation computes [10XTrace([3Xx[103X[10X*[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X
+  [33X[0;0YFor  [3XL[103X that satisfies [10XIsOctonionLattice[110X and [3Xx[103X , [3Xy[103X either octonion vectors or
+  coefficient vectors, this operation computes [10X Trace([3Xx[103X[10X*[3Xg[103X[10X*ComplexConjugate([3Xy[103X[10X))[110X
   where [3Xg[103X is equal to [10XOctonionGramMatrix([3XL[103X[10X)[110X.[133X
   
   [1X5.4-3 \in[101X
@@ -175,7 +175,7 @@
   
   [33X[0;0YFor  [3Xx[103X  an octonion vector (satisfies [10XIsOctonionCollection[110X and [3XL[103X an octonion
   lattice  (satisfies [10XIsOctonionLattice[110X), this function evaluates inclusion of
-  [3Xx[103X in [3XL[103X. Note that [10X\in([3Xx[103X[10X,[3XL[103X[10X)[110X and [10X[3Xx[103X[10X in [3XL[103X[10X[110X are equivalent expression.[133X
+  [3Xx[103X in [3XL[103X. Note that [10X\in([3Xx[103X[10X,[3XL[103X[10X )[110X and [10X[3Xx[103X[10X in [3XL[103X[10X[110X are equivalent expression.[133X
   
   
   [1X5.4-4 [33X[0;0YSublattice Identification[133X[101X
@@ -183,15 +183,16 @@
   [33X[1;0Y[29X[2XIsSublattice[102X( [3XL[103X, [3XM[103X ) [32X operation[133X
   [33X[1;0Y[29X[2XIsSubset[102X( [3XL[103X, [3XM[103X ) [32X operation[133X
   
-  [33X[0;0YFor  both  [3XL[103X and [3XM[103X octonion lattices (satisfies [10XIsOctonionLattice[110X) these two
+  [33X[0;0YFor  both [3XL[103X and [3XM[103X octonion lattices (satisfies [10X IsOctonionLattice[110X) these two
   functions determine whether the elements of [3XM[103X are contained in [3XL[103X.[133X
   
   [1X5.4-5 \=[101X
   
   [33X[1;0Y[29X[2X\=[102X( [3XL[103X, [3XM[103X ) [32X operation[133X
   
-  [33X[0;0YFor  both  [3XL[103X  and  [3XM[103X  octonion  lattices  (satisfies  [10XIsOctonionLattice[110X) the
-  expression [10X[3XL[103X[10X = [3XM[103X[10X[110X return true when [10XIsSublattice([3XL[103X[10X, [3XM[103X[10X) and IsSublattice([3XL[103X[10X, [3XM[103X[10X)[110X.[133X
+  [33X[0;0YFor  both  [3XL[103X  and  [3XM[103X  octonion  lattices  (satisfies [10X IsOctonionLattice[110X) the
+  expression  [10X[3XL[103X[10X  = [3XM[103X[10X[110X return true when [10XIsSublattice([3XL[103X[10X, [3XM[103X[10X) and IsSublattice([3XL[103X[10X, [3XM[103X[10X
+  )[110X.[133X
   
   
   [1X5.4-6 [33X[0;0YConverting Between Real and Octonion Vectors[133X[101X
@@ -200,7 +201,7 @@
   [33X[1;0Y[29X[2XOctonionToRealVector[102X( [3XL[103X, [3Xy[103X ) [32X function[133X
   
   [33X[0;0YLet  [3XL[103X  be an octonion lattice, satisfying [10XIsOctonionLattice[110X, and let [3XB[103X be a
-  basis  for  the  octonion algebra [10XUnderlyingOctonionRing([3XL[103X[10X)[110X. Let [3Xx[103X be a real
+  basis  for  the octonion algebra [10XUnderlyingOctonionRing([3XL[103X[10X )[110X. Let [3Xx[103X be a real
   vector  with  [10XLength([3Xx[103X[10X)  mod 8 = 0[110X and let [3Xy[103X be an octonion vector of length
   [10XDimension([3XL[103X[10X)/8[110X.  The function [10XRealToOctonionVector([3XB[103X[10X, [3Xx[103X[10X)[110X returns an octonion
   vector  constructed  by  taking each successive octonion entry as the linear
@@ -209,26 +210,28 @@
   concatenation  of  the  real  coefficients  of the octonion entries computed
   using  the  basis  [3XB[103X.  In  contrast,  [10XRealToOctonionVector([3XL[103X[10X, [3Xx[103X[10X)[110X returns the
   linear  combination  of the octonion lattice canonical basis vectors defined
-  by  [10XLLLReducedBasisCoefficients([3XL[103X[10X)[110X given by the coefficients [3Xx[103X. The function
+  by [10X LLLReducedBasisCoefficients([3XL[103X[10X)[110X given by the coefficients [3Xx[103X. The function
   [10XOctonionToRealVector([3XL[103X[10X,  [3Xy[103X[10X)[110X  determines the lattice coefficients of octonion
-  vector [3Xy[103X in the canonical basis of octonion lattice [3XL[103X.[133X
+  vector [3Xy[103X in the canonical basis of octonion lattice [3XL[103X .[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XO := OctavianIntegers;;[127X[104X
-    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
-    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
-    [4X[28X<free left module over Integers, with 24 generators>[128X[104X
-    [4X[25Xgap>[125X [27XList(IdentityMat(24), x -> RealToOctonionVector(O3, x)) = List(LLLReducedBasisCoefficien[127X[104X
-    [4X[28Xts(O3), y -> RealToOctonionVector(Basis(O), y));[128X[104X
+    [4X[25Xgap>[125X [27XO := OctavianIntegers;;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := Concatenation(List(Basis(O), x -> x*IdentityMat(3)));;[127X[104X
+    [4X[25Xgap>[125X [27XO3 := OctonionLatticeByGenerators(gens);[127X[104X
+    [4X[28X<free left module over Integers, with 24 generators>[128X[104X
+    [4X[25Xgap>[125X [27XList(IdentityMat(24), x -> RealToOctonionVector(O3, x)) = [127X[104X
+    [4X[25X>[125X [27XList(LLLReducedBasisCoefficients(O3), y -> [127X[104X
+    [4X[25X>[125X [27XRealToOctonionVector(Basis(O), y));[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
   [33X[0;0YAnother example illustrates the inverse properties of these functions.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XOctonionToRealVector(L, RealToOctonionVector(L, [1..24])) = [1..24];[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XOctonionToRealVector(Basis(O),RealToOctonionVector(Basis(O), [1..24])) = [1..24];[127X[104X
+    [4X[25Xgap>[125X [27XOctonionToRealVector(O3, RealToOctonionVector(O3, [1..24])) = [1..24];[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XOctonionToRealVector(Basis(O), RealToOctonionVector(Basis(O), [1..24]))[127X[104X
+    [4X[25X>[125X [27X= [1..24];[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   

@@ -45,13 +45,15 @@ citeas: |
 bibtex: |
     @misc{ ALCO0.1,
       author =           {Nasmith, B.},
-      title =            {{ALCO}, Tools for algebraic combinatorics, {V}ersion 0.1},
+      title =            {{ALCO},  Tools  for algebraic combinatorics, {V}ersion
+                          0.1},
       month =            {Jan},
       year =             {2024},
       note =             {GAP package},
-      howpublished =     {\href                           {https://github.com/BNasmith/alco}
+      howpublished =     {\href               {https://github.com/BNasmith/alco}
                           {\texttt{https://github.com/}\discretionary
-                          {}{}{}\texttt{BNasmith/}\discretionary {}{}{}\texttt{alco}}},
+                          {}{}{}\texttt{BNasmith/}\discretionary
+                          {}{}{}\texttt{alco}}},
       keywords =         {Octonions; Jordan algebras; t-Designs},
       printedkey =       {Nas24}
     }

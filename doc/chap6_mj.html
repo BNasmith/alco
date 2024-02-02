@@ -51,18 +51,18 @@
 <h5>6.1-1 Closure</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Closure</code>( <var class="Arg">gens</var>, <var class="Arg">op</var>[, <var class="Arg">option</var>] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">gens</var> satisfying <code class="code">IsHomogeneousList</code>, this function computes the closure of <var class="Arg">gens</var> by addition of all elements of the form <code class="code"><var class="Arg">op</var>(x,y)</code>, starting with <code class="code">x</code> and <code class="code">y</code> any elements in <var class="Arg">gens</var>. The function will not terminate until no new members are produced when applying <var class="Arg">op</var> to all ordered pairs of generated elements. The argument <var class="Arg">option</var>, if supplied, ensures that the function treats <var class="Arg">op</var> as a commutative operation.</p>
+<p>For <var class="Arg">gens</var> satisfying <code class="code">IsHomogeneousList</code>, this function computes the closure of <var class="Arg">gens</var> by addition of all elements of the form <code class="code"><var class="Arg">op</var> (x,y)</code>, starting with <code class="code">x</code> and <code class="code">y</code> any elements in <var class="Arg">gens</var>. The function will not terminate until no new members are produced when applying <var class="Arg">op</var> to all ordered pairs of generated elements. The argument <var class="Arg">option</var>, if supplied, ensures that the function treats <var class="Arg">op</var> as a commutative operation.</p>
 
 <p>Caution must be exercised when using this function to prevent attempting to compute the closure of infinite sets.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure([1,E(7)], \*);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure([1,E(7)], \*);</span>
 [ 1, E(7)^6, E(7)^5, E(7)^4, E(7)^3, E(7)^2, E(7) ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QuaternionD4Basis;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QuaternionD4Basis;</span>
 Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 [ (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,
   (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, e ] )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure(QuaternionD4Basis,\*);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure(QuaternionD4Basis,\*);</span>
 [ (-1)*e, (-1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k, (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k,
   (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k,
   (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, (-1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k,
@@ -83,14 +83,14 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <h5>6.2-1 RandomClosure</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RandomClosure</code>( <var class="Arg">gens</var>, <var class="Arg">op</var>[, <var class="Arg">N</var>[, <var class="Arg">print</var>]] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">gens</var> satisfying <code class="code">IsHomogeneousList</code>, this function selects a random element <var class="Arg">r</var> in <var class="Arg">gens</var> and computes all elements of the form <code class="code"><var class="Arg">op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code> for <var class="Arg">x</var> either in <var class="Arg">gens</var> or obtained in a previous closure step. Once this process yields a set of elements with equal cardinality <code class="code"><var class="Arg">N</var>+1</code> times, the function terminates and returns all elements obtained so far as a set. The default value of <var class="Arg">N</var> is <code class="code">1</code>. The optional <var class="Arg">print</var> argument, if supplied, prints the cardinality of the set of elements obtain so far at each iteration.</p>
+<p>For <var class="Arg">gens</var> satisfying <code class="code">IsHomogeneousList</code>, this function selects a random element <var class="Arg">r</var> in <var class="Arg">gens</var> and computes all elements of the form <code class="code"><var class="Arg"> op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code> for <var class="Arg">x</var> either in <var class="Arg">gens</var> or obtained in a previous closure step. Once this process yields a set of elements with equal cardinality <code class="code"><var class="Arg">N</var>+1</code> times, the function terminates and returns all elements obtained so far as a set. The default value of <var class="Arg">N</var> is <code class="code">1</code>. The optional <var class="Arg">print</var> argument, if supplied, prints the cardinality of the set of elements obtain so far at each iteration.</p>
 
 <p>Caution must be exercised when using this function to prevent attempting to compute the random closure of an infinite set. Caution is also required in interpreting the output. Even for large values of <var class="Arg">N</var>, the result is not necessarily the full closure of set <var class="Arg">gens</var>. Furthermore, repeated calls to this function may result in different outputs due to the random selection of elements involved throughout.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AsList(Basis(Oct));</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">AsList(Basis(Oct));</span>
 [ e1, e2, e3, e4, e5, e6, e7, e8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RandomClosure(Basis(Oct), \*, 2, true);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RandomClosure(Basis(Oct), \*, 2, true);</span>
 8
 12
 14
@@ -104,16 +104,16 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <h5>6.2-2 RandomOrbitOnSets</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RandomOrbitOnSets</code>( <var class="Arg">gens</var>, <var class="Arg">start</var>, <var class="Arg">op</var>[, <var class="Arg">N</var>[, <var class="Arg">print</var>]] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>This function proceeds in a manner very similar to <code class="func">RandomClosure</code> (<a href="chap6_mj.html#X826F76067E4D7122"><span class="RefLink">6.2-1</span></a>) with the following differences. This function instead selects a random element random element <var class="Arg">r</var> in <var class="Arg">gens</var> and then for every <var class="Arg">x</var> in <var class="Arg">start</var>, or the set of previously generated elements, computes <code class="code"><var class="Arg">op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code>. At each step the cardinality of the union of <var class="Arg">start</var> and any previously generated elements is computed. Once the cardinality is fixed for <var class="Arg">N + 1</var> steps, the function returns the set of generated elements.</p>
+<p>This function proceeds in a manner very similar to <code class="func">RandomClosure</code> (<a href="chap6_mj.html#X826F76067E4D7122"><span class="RefLink">6.2-1</span></a>) with the following differences. This function instead selects a random element random element <var class="Arg"> r</var> in <var class="Arg">gens</var> and then for every <var class="Arg">x</var> in <var class="Arg">start</var>, or the set of previously generated elements, computes <code class="code"><var class="Arg">op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code>. At each step the cardinality of the union of <var class="Arg">start</var> and any previously generated elements is computed. Once the cardinality is fixed for <var class="Arg">N + 1</var> steps, the function returns the set of generated elements.</p>
 
 <p>The same cautions as described in <code class="func">RandomClosure</code> (<a href="chap6_mj.html#X826F76067E4D7122"><span class="RefLink">6.2-1</span></a>) apply. Note that while <var class="Arg">start</var> is always a subset of the output, <code class="code">Difference(<var class="Arg">gens</var>,<var class="Arg">start</var>)</code> is not a subset of the output.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Basis(Oct){[1,2,3]};</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Basis(Oct){[1,2,3]};</span>
 [ e1, e2, e3 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(Oct){[8]};</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(Oct){[8]};</span>
 [ e8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RandomOrbitOnSets(gens, start, {x,y} -&gt; x*y, 3, true);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RandomOrbitOnSets(gens, start, {x,y} -&gt; x*y, 3, true);</span>
 1
 2
 4
