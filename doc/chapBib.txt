@@ -45,9 +45,6 @@
   [[20XHog92[120X] [16XHoggar, S. G.[116X, [17Xt-Designs with general angle set[117X, [18XEuropean Journal of
   Combinatorics[118X, [19X13[119X, 4 (1992), 257--271.
   
-  [[20XLM82[120X] [16XLepowsky, J. and Meurman, A.[116X, [17XAn E8-approach to the Leech lattice and
-  the Conway group[117X, [18XJournal of Algebra[118X, [19X77[119X, 2 (1982), 484--504.
-  
   [[20XLyu09[120X]  [16XLyubich,  Y.  I.[116X,  [17XOn  tight projective designs[117X, [18XDesigns, Codes and
   Cryptography[118X, [19X51[119X, 1 (2009), 21--31.
   

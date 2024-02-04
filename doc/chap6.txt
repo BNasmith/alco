@@ -14,14 +14,14 @@
   [33X[1;0Y[29X[2XClosure[102X( [3Xgens[103X, [3Xop[103X[, [3Xoption[103X] ) [32X function[133X
   
   [33X[0;0YFor [3Xgens[103X satisfying [10XIsHomogeneousList[110X, this function computes the closure of
-  [3Xgens[103X by addition of all elements of the form [10X[3Xop[103X[10X (x,y)[110X, starting with [10Xx[110X and [10Xy[110X
+  [3Xgens[103X  by addition of all elements of the form [10X[3Xop[103X[10X(x,y)[110X, starting with [10Xx[110X and [10Xy[110X
   any  elements  in [3Xgens[103X. The function will not terminate until no new members
   are  produced  when  applying [3Xop[103X to all ordered pairs of generated elements.
   The  argument  [3Xoption[103X, if supplied, ensures that the function treats [3Xop[103X as a
   commutative operation.[133X
   
   [33X[0;0YCaution  must be exercised when using this function to prevent attempting to
-  compute the closure of infinite sets.[133X
+  compute the closure of large or possibly infinite sets.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XClosure([1,E(7)], \*);[127X[104X
@@ -69,16 +69,13 @@
   elements involved throughout.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XAsList(Basis(Oct));[127X[104X
-    [4X[28X[ e1, e2, e3, e4, e5, e6, e7, e8 ][128X[104X
-    [4X[25Xgap>[125X [27XRandomClosure(Basis(Oct), \*, 2, true);[127X[104X
-    [4X[28X8[128X[104X
-    [4X[28X12[128X[104X
-    [4X[28X14[128X[104X
-    [4X[28X16[128X[104X
-    [4X[28X16[128X[104X
-    [4X[28X16[128X[104X
-    [4X[28X[ (-1)*e1, (-1)*e2, (-1)*e3, (-1)*e4, (-1)*e5, (-1)*e6, (-1)*e7, (-1)*e8, e8, e7, e6, e5, e4, e3, e2, e1 ][128X[104X
+    [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[2,3]};[127X[104X
+    [4X[28X[ i, j ][128X[104X
+    [4X[25Xgap>[125X [27Xrepeat[127X[104X
+    [4X[25X>[125X [27Xstart := RandomClosure(start, \*);[127X[104X
+    [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
+    [4X[25Xgap>[125X [27Xstart;[127X[104X
+    [4X[28X[ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ][128X[104X
   [4X[32X[104X
   
   [1X6.2-2 RandomOrbitOnSets[101X
@@ -87,32 +84,25 @@
   
   [33X[0;0YThis  function  proceeds  in  a manner very similar to [2XRandomClosure[102X ([14X6.2-1[114X)
   with  the  following  differences.  This  function  instead selects a random
-  element  random element [3X r[103X in [3Xgens[103X and then for every [3Xx[103X in [3Xstart[103X, or the set
-  of  previously  generated  elements,  computes  [10X[3Xop[103X[10X([3Xr[103X[10X,[3Xx[103X[10X)[110X.  At  each  step the
-  cardinality  of  the union of [3Xstart[103X and any previously generated elements is
-  computed.  Once  the  cardinality  is  fixed  for  [3XN + 1[103X steps, the function
-  returns the set of generated elements.[133X
+  element  [3Xr[103X  in  [3Xgens[103X and then for every [3Xx[103X in [3Xstart[103X, or the set of previously
+  generated  elements,  computes  [10X[3Xop[103X[10X([3Xr[103X[10X,[3Xx[103X[10X)[110X. At each step the cardinality of the
+  union  of  [3Xstart[103X and any previously generated elements is computed. Once the
+  cardinality  is  fixed  for  [3XN  +  1[103X  steps, the function returns the set of
+  generated elements.[133X
   
   [33X[0;0YThe  same  cautions  as  described in [2XRandomClosure[102X ([14X6.2-1[114X) apply. Note that
   while  [3Xstart[103X is always a subset of the output, [10XDifference([3Xgens[103X[10X,[3Xstart[103X[10X)[110X is not
   a subset of the output.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xgens := Basis(Oct){[1,2,3]};[127X[104X
-    [4X[28X[ e1, e2, e3 ][128X[104X
-    [4X[25Xgap>[125X [27Xstart := Basis(Oct){[8]};[127X[104X
-    [4X[28X[ e8 ][128X[104X
-    [4X[25Xgap>[125X [27XRandomOrbitOnSets(gens, start, {x,y} -> x*y, 3, true);[127X[104X
-    [4X[28X1[128X[104X
-    [4X[28X2[128X[104X
-    [4X[28X4[128X[104X
-    [4X[28X6[128X[104X
-    [4X[28X7[128X[104X
-    [4X[28X8[128X[104X
-    [4X[28X8[128X[104X
-    [4X[28X16[128X[104X
-    [4X[28X16[128X[104X
-    [4X[28X16[128X[104X
-    [4X[28X[ (-1)*e1, (-1)*e2, (-1)*e3, (-1)*e4, (-1)*e5, (-1)*e6, (-1)*e7, (-1)*e8, e8, e7, e6, e5, e4, e3, e2, e1 ][128X[104X
+    [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[1,2]};[127X[104X
+    [4X[28X[ e, i ][128X[104X
+    [4X[25Xgap>[125X [27Xgens := Basis(QuaternionAlgebra(Rationals)){[3]};[127X[104X
+    [4X[28X[ j ][128X[104X
+    [4X[25Xgap>[125X [27Xrepeat [127X[104X
+    [4X[25X>[125X [27Xstart := RandomOrbitOnSets(gens, start, {x,y} -> x*y);[127X[104X
+    [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
+    [4X[25Xgap>[125X [27Xstart;[127X[104X
+    [4X[28X[ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ][128X[104X
   [4X[32X[104X
   
