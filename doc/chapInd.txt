@@ -51,7 +51,7 @@
   [2XHermitianMatrixToJordanVector[102X 3.5-3 
   [2XHermitianSimpleJordanAlgebra[102X 3.2-3 
   [2XHurwitzIntegers[102X 2.4-3 
-  [2XIcosianH4Basis[102X 2.5-2 
+  [2XIcosianH4Generators[102X 2.5-2 
   [2XIcosianRing[102X 2.5-1 
   [2XIsAssociationSchemeDesign[102X 4.4-6 
   [2XIsDesign[102X 4.2-1 

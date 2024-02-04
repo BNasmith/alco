@@ -6,10 +6,10 @@
                       [1X Tools for algebraic combinatorics [101X
   
   
-                                      0.1
+                                      0.2
   
   
-                                15 January 2024
+                                4 February 2024
   
   
                                 Benjamin Nasmith
@@ -71,7 +71,7 @@
       2.4-4 QuaternionD4Basis
     2.5 [33X[0;0YIcosian Tools[133X
       2.5-1 [33X[0;0YIcosian Ring[133X
-      2.5-2 IcosianH4Basis
+      2.5-2 IcosianH4Generators
       2.5-3 [33X[0;0YGoldenModSigma[133X
     2.6 [33X[0;0YOther Integer Rings[133X
       2.6-1 EisensteinIntegers

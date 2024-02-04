@@ -71,7 +71,7 @@
 
 <h3>3 <span class="Heading">Simple Euclidean Jordan Algebras</span></h3>
 
-<p>A Jordan algebra is a commutative yet nonassociative algebra with product <span class="Math">\circ</span> that satisfies the Jordan identity <span class="Math">x\circ (x^2 \circ y) = x^2 \circ (x\circ y)</span>. Given an associative algebra, we can define a Jordan algebra on the same elements using the product <span class="Math">x \circ y = (xy + yx)/2</span>. A Jordan algebra <span class="Math">V</span> is <em>Euclidean</em> when there exists an inner product <span class="Math"> (x,y)</span> on <span class="Math">V</span> that satisfies <span class="Math">(x\circ y, z) = (y, x\circ z)</span> for all <span class="Math">x,y,z</span> in <span class="Math">V</span> <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, p. 42]</a>. Euclidean Jordan algebras are in one-to-one correspondence with structures known as symmetric cones, and any Euclidean Jordan algebra is the direct sum of simple Euclidean Jordan algebras <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, chap. 3]</a>.</p>
+<p>A Jordan algebra is a commutative yet nonassociative algebra with product <span class="Math">\circ</span> that satisfies the Jordan identity <span class="Math">x\circ(x^2 \circ y) = x^2 \circ (x\circ y)</span>. Given an associative algebra, we can define a Jordan algebra on the same elements using the product <span class="Math">x \circ y = (xy + yx)/2</span>. A Jordan algebra <span class="Math">V</span> is <em>Euclidean</em> when there exists an inner product <span class="Math">(x,y)</span> on <span class="Math">V</span> that satisfies <span class="Math">(x\circ y, z) = (y, x\circ z)</span> for all <span class="Math">x,y,z</span> in <span class="Math">V</span> <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, p. 42]</a>. Euclidean Jordan algebras are in one-to-one correspondence with structures known as symmetric cones, and any Euclidean Jordan algebra is the direct sum of simple Euclidean Jordan algebras <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, chap. 3]</a>.</p>
 
 <p>The simple Euclidean Jordan algebras, in turn, are classified by rank and degree into four families and one exception <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, chap. 5]</a>. The first family consists of rank 2 algebras with degree any positive integer. The remaining three families consist Jordan algebras with degree 1, 2, or 4 with rank a positive integer greater than 2. The exceptional algebra has rank 3 and degree 8.</p>
 
@@ -87,7 +87,7 @@
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsJordanAlgebra</code></td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsJordanAlgebraObj</code></td><td class="tdright">(&nbsp;filter&nbsp;)</td></tr></table></div>
-<p>These filters determine whether an element is a Jordan algebra (<code class="code">IsJordanAlgebra</code>) or is an element in a Jordan algebra (<code class="code">IsJordanAlgebraObj</code> ).</p>
+<p>These filters determine whether an element is a Jordan algebra (<code class="code">IsJordanAlgebra</code>) or is an element in a Jordan algebra (<code class="code">IsJordanAlgebraObj</code>).</p>
 
 <p><a id="X7D20807E8513CEE8" name="X7D20807E8513CEE8"></a></p>
 
@@ -95,7 +95,7 @@
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; JordanRank</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Rank</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
-<p>The rank of a Jordan algeba is the size of a maximal set of mutually orthogonal primitive idempotents in the algebra. The rank and degree are used to classify the simple Euclidean Jordan algebras. This method returns the rank of <var class="Arg">x</var> when <code class="code"> IsJordanAlgebra(<var class="Arg">x</var>)</code> or the rank of the Jordan algebra containing <var class="Arg">x</var> (computed as <code class="code">FamilyObj(x)!.fullSCAlgebra</code>) when <code class="code">IsJordanAlgebraObj(<var class="Arg">x</var>)</code>. The method <code class="code">Rank(<var class="Arg">x</var>)</code> returns <code class="code">JordanRank(<var class="Arg">x</var>)</code> when <var class="Arg">x</var> satisfies either <code class="code"> IsJordanAlgebra</code> or <code class="code">IsJordanAlgebraObj</code>.</p>
+<p>The rank of a Jordan algeba is the size of a maximal set of mutually orthogonal primitive idempotents in the algebra. The rank and degree are used to classify the simple Euclidean Jordan algebras. This method returns the rank of <var class="Arg">x</var> when <code class="code">IsJordanAlgebra(<var class="Arg">x</var>)</code> or the rank of the Jordan algebra containing <var class="Arg">x</var> (computed as <code class="code">FamilyObj(x)!.fullSCAlgebra</code>) when <code class="code">IsJordanAlgebraObj(<var class="Arg">x</var>)</code>. The method <code class="code">Rank(<var class="Arg">x</var>)</code> returns <code class="code">JordanRank(<var class="Arg">x</var>)</code> when <var class="Arg">x</var> satisfies either <code class="code">IsJordanAlgebra</code> or <code class="code">IsJordanAlgebraObj</code>.</p>
 
 <p><a id="X7CFD4EB480976FF8" name="X7CFD4EB480976FF8"></a></p>
 
@@ -103,7 +103,7 @@
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; JordanDegree</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Degree</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;method&nbsp;)</td></tr></table></div>
-<p>The degree of a Jordan algebra is the dimension of the off-diagonal entries in a Pierce decomposition of the Jordan algebra. For example, a Jordan algebra of quaternion hermitian matrices has degree 4. This method returns the degree of <var class="Arg">x</var> when <code class="code"> IsJordanAlgebra(<var class="Arg">x</var>)</code> or the degree of the Jordan algebra containing <var class="Arg">x</var> (computed as <code class="code">FamilyObj(x)!.fullSCAlgebra</code>) when <code class="code">IsJordanAlgebraObj(<var class="Arg">x</var>)</code>. The method <code class="code">Degree(<var class="Arg">x</var>)</code> returns <code class="code">JordanDegree(<var class="Arg">x</var>)</code> when <var class="Arg">x</var> satisfies either <code class="code"> IsJordanAlgebra</code> or <code class="code">IsJordanAlgebraObj</code>.</p>
+<p>The degree of a Jordan algebra is the dimension of the off-diagonal entries in a Pierce decomposition of the Jordan algebra. For example, a Jordan algebra of quaternion hermitian matrices has degree 4. This method returns the degree of <var class="Arg">x</var> when <code class="code">IsJordanAlgebra(<var class="Arg">x</var>)</code> or the degree of the Jordan algebra containing <var class="Arg">x</var> (computed as <code class="code">FamilyObj(x)!.fullSCAlgebra</code>) when <code class="code">IsJordanAlgebraObj(<var class="Arg">x</var>)</code>. The method <code class="code">Degree(<var class="Arg">x</var>)</code> returns <code class="code">JordanDegree(<var class="Arg">x</var>)</code> when <var class="Arg">x</var> satisfies either <code class="code">IsJordanAlgebra</code> or <code class="code">IsJordanAlgebraObj</code>.</p>
 
 <p>Each vector in a simple Euclidean Jordan algebra can be written as a ℝ-linear combination of mutually orthogonal primitive idempotents. This is called the <em>spectral decomposition</em> of a Jordan algebra element. The coefficients in the decomposition are the <em>eigenvalues</em> of the element. The Jordan trace and determinant, described below, are respectively the sum and product of these eigenvalues with multiplicities included <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, p. 44]</a>.</p>
 
@@ -133,7 +133,7 @@
 <h5>3.1-7 GenericMinimalPolynomial</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; GenericMinimalPolynomial</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>Returns the generic minimal polynomial of <var class="Arg">x</var> when <code class="code"> IsJordanAlgebraObj(<var class="Arg">x</var>)</code> as defined in <a href="chapBib.html#biBfaraut_analysis_2000">[FKK+00, p. 478]</a> (see also <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, pp. 27-31]</a>). The output is given as a list of polynomial coefficients. Note that the generic minimal polynomial is a monic polynomial of degree equal to the rank of the Jordan algebra. The trace and determinant of a Jordan algebra element are, to within a sign, given by the coefficients of the second highest degree term and the constant term.</p>
+<p>Returns the generic minimal polynomial of <var class="Arg">x</var> when <code class="code">IsJordanAlgebraObj(<var class="Arg">x</var>)</code> as defined in <a href="chapBib.html#biBfaraut_analysis_2000">[FKK+00, p. 478]</a> (see also <a href="chapBib.html#biBfaraut_analysis_1994">[FK94, pp. 27-31]</a>). The output is given as a list of polynomial coefficients. Note that the generic minimal polynomial is a monic polynomial of degree equal to the rank of the Jordan algebra. The trace and determinant of a Jordan algebra element are, to within a sign, given by the coefficients of the second highest degree term and the constant term.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := AlbertAlgebra(Rationals);;</span>
@@ -251,7 +251,7 @@ v.1+v.2+v.7+v.8
 <h5>3.3-1 AlbertAlgebra</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AlbertAlgebra</code>( <var class="Arg">F</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">F</var> a field, this function returns an Albert algebra over <var class="Arg"> F</var>. For <code class="code"><var class="Arg">F</var> = Rationals</code>, this algebra is isomorphic to <code class="code"> HermitianSimpleJordanAlgebra(3,8,Basis(Oct))</code> but in a basis that is more convenient for reproducing certain calculations in the literature. Specifically, while <code class="code"> HermitianSimpleJordanAlgebra(3,8,Basis(Oct))</code> uses the upper-triangular elements of a Hermitian matrix as representative, <code class="code">AlbertAlgebra(<var class="Arg">F</var>)</code> uses the <code class="code">[1][2], [2][3], [3][1]</code> entries as representative. These are respectively labeled using <code class="code"> k,i,j</code>.</p>
+<p>For <var class="Arg">F</var> a field, this function returns an Albert algebra over <var class="Arg">F</var>. For <code class="code"><var class="Arg">F</var> = Rationals</code>, this algebra is isomorphic to <code class="code">HermitianSimpleJordanAlgebra(3,8,Basis(Oct))</code> but in a basis that is more convenient for reproducing certain calculations in the literature. Specifically, while <code class="code">HermitianSimpleJordanAlgebra(3,8,Basis(Oct))</code> uses the upper-triangular elements of a Hermitian matrix as representative, <code class="code">AlbertAlgebra(<var class="Arg">F</var>)</code> uses the <code class="code">[1][2], [2][3], [3][1]</code> entries as representative. These are respectively labeled using <code class="code">k,i,j</code>.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">A := AlbertAlgebra(Rationals);</span>
@@ -271,7 +271,7 @@ v.1+v.2+v.7+v.8
 <h5>3.3-2 AlbertVectorToHermitianMatrix</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; AlbertVectorToHermitianMatrix</code>( <var class="Arg">x</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For an element <var class="Arg">x</var> in <code class="code">AlbertAlgebra(<var class="Arg">Rationals</var>)</code>, this function returns the corresponding 3 x 3 Hermitian matrix with octonion entries in <code class="code"> OctonionAlgebra(<var class="Arg">Rationals</var>)</code>.</p>
+<p>For an element <var class="Arg">x</var> in <code class="code">AlbertAlgebra(<var class="Arg">Rationals</var>)</code>, this function returns the corresponding 3 x 3 Hermitian matrix with octonion entries in <code class="code">OctonionAlgebra(<var class="Arg">Rationals</var>)</code>.</p>
 
 <p><a id="X8385802B7AE842E6" name="X8385802B7AE842E6"></a></p>
 
@@ -301,7 +301,7 @@ j3</pre></div>
 <h5>3.4-1 JordanQuadraticOperator</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; JordanQuadraticOperator</code>( <var class="Arg">x</var>[, <var class="Arg">y</var>] )</td><td class="tdright">(&nbsp;operation&nbsp;)</td></tr></table></div>
-<p>For <var class="Arg">x</var> and <var class="Arg">y</var> Jordan algebra elements, satisfying <code class="code">IsJordanAlgebraObj</code> this operation applies two methods. In the case of <code class="code">JordanQuadraticOperator(<var class="Arg">x</var>, y)</code>, this operation returns <code class="code">2*x*(x*y) - (x^2)*y</code>. In the case of <code class="code">JordanQuadraticOperator(x)</code>, this operation returns the matrix representing the quadratic map in the canonical basis of the Jordan algebra <var class="Arg">J</var> containing <var class="Arg">x</var>. For <code class="code">L(x)</code> the matrix <code class="code">AdjointMatrix(CanonicalBasis(J), x)</code>, the operation <code class="code">P(<var class="Arg">x</var>)</code> returns the matrix <code class="code">2 L(x)^2 - L(x^2)</code>.</p>
+<p>For <var class="Arg">x</var> and <var class="Arg">y</var> Jordan algebra elements, satisfying <code class="code">IsJordanAlgebraObj</code> this operation applies two methods. In the case of <code class="code">JordanQuadraticOperator(<var class="Arg">x</var>, y)</code>, this operation returns <code class="code">2*x*(x*y) - (x^2)*y</code>. In the case of <code class="code">JordanQuadraticOperator(x)</code>, this operation returns the matrix representing the quadratic map in the canonical basis of the Jordan algebra <var class="Arg">J</var> containing <var class="Arg">x</var>. For <code class="code">L(x)</code> the matrix <code class="code">AdjointMatrix(CanonicalBasis(J), x)</code>, the operation <code class="code">JordanQuadraticOperator(<var class="Arg">x</var>)</code> returns the matrix <code class="code">2 L(x)^2 - L(x^2)</code>.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := JordanSpinFactor(IdentityMat(3));</span>
@@ -317,9 +317,11 @@ j3</pre></div>
   [  -8/3,   7/9,  -8/3,   8/3 ],
   [     2,  -8/3,  -7/9,    -2 ],
   [    -2,   8/3,    -2,  -7/9 ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LinearCombination(Basis(J), JordanQuadraticOperator(x)*ExtRepOfObj(y)) = JordanQuadraticOperator(x,y);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LinearCombination(Basis(J), JordanQuadraticOperator(x)</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">*ExtRepOfObj(y)) = JordanQuadraticOperator(x,y);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ExtRepOfObj(JordanQuadraticOperator(x,y)) = JordanQuadraticOperator(x)*ExtRepOfObj(y);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ExtRepOfObj(JordanQuadraticOperator(x,y)) = </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">JordanQuadraticOperator(x)*ExtRepOfObj(y);</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">JordanQuadraticOperator(2*x) = 4*JordanQuadraticOperator(x);</span>
 true</pre></div>
@@ -360,7 +362,7 @@ true</pre></div>
 <h5>3.5-1 HermitianJordanAlgebraBasis</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; HermitianJordanAlgebraBasis</code>( <var class="Arg">r</var>, <var class="Arg">B</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Returns a set of Hermitian matrices to serve as a basis for the Jordan algebra with or rank <var class="Arg">r</var> and degree given by the cardinality of composition algebra basis <var class="Arg">B</var>. The elements spanning each off-diagonal components are determined by basis <var class="Arg"> B</var>.</p>
+<p>Returns a set of Hermitian matrices to serve as a basis for the Jordan algebra of rank <var class="Arg">r</var> and degree given by the cardinality of composition algebra basis <var class="Arg">B</var>. The elements spanning each off-diagonal components are determined by basis <var class="Arg">B</var>.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := QuaternionAlgebra(Rationals);;</span>
@@ -385,14 +387,14 @@ true</pre></div>
 <h5>3.5-2 JordanMatrixBasis</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; JordanMatrixBasis</code>( <var class="Arg">J</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>If <code class="code">IsJordanAlgebra( <var class="Arg">J</var> )</code> and <var class="Arg">J</var> has been constructed using a matrix basis, then the set of matrices corresponding to <code class="code">CanonicalBasis( <var class="Arg">J</var> )</code> can be obtained using <code class="code">JordanMatrixBasis( <var class="Arg">J</var> )</code>.</p>
+<p>If <code class="code">IsJordanAlgebra( <var class="Arg">J</var> )</code> and <var class="Arg">J</var> has been constructed using <code class="func">HermitianSimpleJordanAlgebra</code> (<a href="chap3.html#X859F001D7CB6CBD8"><span class="RefLink">3.2-3</span></a>), then the set of matrices corresponding to <code class="code">CanonicalBasis( <var class="Arg">J</var> )</code> can be obtained using <code class="code">JordanMatrixBasis( <var class="Arg">J</var> )</code>.</p>
 
 <p><a id="X7D167A057F3CB029" name="X7D167A057F3CB029"></a></p>
 
 <h5>3.5-3 HermitianMatrixToJordanVector</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; HermitianMatrixToJordanVector</code>( <var class="Arg">mat</var>, <var class="Arg">J</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>Converts matrix <var class="Arg">mat</var> into an element of Jordan algebra <var class="Arg">J</var> .</p>
+<p>Converts matrix <var class="Arg">mat</var> into an element of Jordan algebra <var class="Arg">J</var>.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := QuaternionAlgebra(Rationals);;</span>
@@ -421,12 +423,13 @@ true</pre></div>
 <h5>3.5-4 JordanAlgebraGramMatrix</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; JordanAlgebraGramMatrix</code>( <var class="Arg">J</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
-<p>For <code class="code">IsJordanAlgebra( <var class="Arg">J</var> )</code>, returns the Gram matrix on <code class="code"> CanonicalBasis( <var class="Arg">J</var> )</code> using inner product <code class="code">Trace(x*y)</code>.</p>
+<p>For <code class="code">IsJordanAlgebra( <var class="Arg">J</var> )</code>, returns the Gram matrix on <code class="code">CanonicalBasis( <var class="Arg">J</var> )</code> using inner product <code class="code">Trace(x*y)</code>.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := HermitianSimpleJordanAlgebra(2,OctonionE8Basis);</span>
 &lt;algebra-with-one of dimension 10 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(Basis(J), x -&gt; List(Basis(J), y -&gt; Trace(x*y))) = JordanAlgebraGramMatrix(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(Basis(J), x -&gt; List(Basis(J), y -&gt; Trace(x*y))) = </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">JordanAlgebraGramMatrix(J);</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">DiagonalOfMat(JordanAlgebraGramMatrix(J));</span>
 [ 1, 1, 2, 2, 2, 2, 2, 2, 2, 2 ]</pre></div>

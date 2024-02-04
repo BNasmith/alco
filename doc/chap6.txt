@@ -31,11 +31,12 @@
     [4X[28X[ (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
     [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, e ] )[128X[104X
     [4X[25Xgap>[125X [27XClosure(QuaternionD4Basis,\*);[127X[104X
-    [4X[28X[ (-1)*e, (-1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k, (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, (-1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(1/2)*i+(1/2)*j+(-1/2)*k, (-1/2)*e+(1/2)*i+(1/2)*j+(1/2)*k, (-1)*i, (-1)*j,[128X[104X
-    [4X[28X  (-1)*k, k, j, i, (1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
+    [4X[28X[ (-1)*e, (-1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(1/2)*i+(1/2)*j+(1/2)*k, (-1)*i, (-1)*j, (-1)*k, k, j, i,[128X[104X
+    [4X[28X  (1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
     [4X[28X  (1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k,[128X[104X
     [4X[28X  (1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
     [4X[28X  (1/2)*e+(1/2)*i+(1/2)*j+(-1/2)*k, (1/2)*e+(1/2)*i+(1/2)*j+(1/2)*k, e ][128X[104X
@@ -66,7 +67,9 @@
   interpreting  the  output.  Even  for  large  values of [3XN[103X, the result is not
   necessarily  the  full  closure  of set [3Xgens[103X. Furthermore, repeated calls to
   this function may result in different outputs due to the random selection of
-  elements involved throughout.[133X
+  elements  involved  throughout.  If  the  size of the expected closed set is
+  known,  use  of  a  [10Xrepeat[110X-[10Xuntil[110X  loop can permit generating the full set of
+  elements faster than [2XClosure[102X ([14X6.1-1[114X) would.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[2,3]};[127X[104X
@@ -91,8 +94,8 @@
   generated elements.[133X
   
   [33X[0;0YThe  same  cautions  as  described in [2XRandomClosure[102X ([14X6.2-1[114X) apply. Note that
-  while  [3Xstart[103X is always a subset of the output, [10XDifference([3Xgens[103X[10X,[3Xstart[103X[10X)[110X is not
-  a subset of the output.[133X
+  while  [3Xstart[103X  is always a subset of the output, the elements of [3Xgens[103X are not
+  necessarily included in the output.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[1,2]};[127X[104X

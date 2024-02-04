@@ -47,7 +47,7 @@ OctavianIntegers
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsGossetLatticeGramMatrix(g);</span>
 true</pre></div>
 
-<p>The <strong class="pkg">ALCO</strong> package also provides tools to construct octonion lattices, including octonion Leech lattices (see for example <a href="chapBib.html#biBwilson_octonions_2009">[Wil09b]</a>). In the following example we compute the shortest vectors in the <code class="code">OctavianIntegers</code> lattice and select one that is a root of polynomial <span class="Math">x^2 + x + 2</span>. We use this root <code class="code">s</code> to define a set <code class="code"> gens</code> of octonion triples to serve as generators for the lattice. Finally, we construct the lattice <code class="code">L</code> and confirm that it is a Leech lattice.</p>
+<p>The <strong class="pkg">ALCO</strong> package also provides tools to construct octonion lattices, including octonion Leech lattices (see for example <a href="chapBib.html#biBwilson_octonions_2009">[Wil09b]</a>). In the following example we compute the shortest vectors in the <code class="code">OctavianIntegers</code> lattice and select one that is a root of polynomial <span class="Math">x^2 + x + 2</span>. We use this root <code class="code">s</code> to define a set <code class="code">gens</code> of octonion triples to serve as generators for the lattice. Finally, we construct the lattice <code class="code">L</code> and confirm that it is a Leech lattice.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">short := Set(ShortestVectors(g,4).vectors, y -&gt; </span>
@@ -77,8 +77,8 @@ true</pre></div>
 [ k1, k2, k3, k4, k5, k6, k7, k8 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := Basis(J){[25..27]};</span>
 [ ei, ej, ek ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(e, IsIdempotent);</span>
-[ true, true, true ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ForAll(e, IsIdempotent);</span>
+true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set(i, x -&gt; x^2);</span>
 [ ej+ek ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set(j, x -&gt; x^2);</span>

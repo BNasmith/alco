@@ -2,10 +2,10 @@
   [1X3 [33X[0;0YSimple Euclidean Jordan Algebras[133X[101X
   
   [33X[0;0YA  Jordan  algebra  is a commutative yet nonassociative algebra with product
-  [23X\circ[123X  that  satisfies  the Jordan identity [23Xx\circ (x^2 \circ y) = x^2 \circ
+  [23X\circ[123X  that  satisfies  the  Jordan identity [23Xx\circ(x^2 \circ y) = x^2 \circ
   (x\circ  y)[123X. Given an associative algebra, we can define a Jordan algebra on
   the  same  elements  using  the  product  [23Xx  \circ y = (xy + yx)/2[123X. A Jordan
-  algebra  [23XV[123X  is [13XEuclidean[113X when there exists an inner product [23X (x,y)[123X on [23XV[123X that
+  algebra  [23XV[123X  is  [13XEuclidean[113X when there exists an inner product [23X(x,y)[123X on [23XV[123X that
   satisfies  [23X(x\circ  y,  z) = (y, x\circ z)[123X for all [23Xx,y,z[123X in [23XV[123X [FK94, p. 42].
   Euclidean  Jordan  algebras are in one-to-one correspondence with structures
   known as symmetric cones, and any Euclidean Jordan algebra is the direct sum
@@ -34,8 +34,7 @@
   [33X[1;0Y[29X[2XIsJordanAlgebraObj[102X [32X filter[133X
   
   [33X[0;0YThese   filters   determine   whether   an   element  is  a  Jordan  algebra
-  ([10XIsJordanAlgebra[110X)  or  is an element in a Jordan algebra ([10XIsJordanAlgebraObj[110X
-  ).[133X
+  ([10XIsJordanAlgebra[110X) or is an element in a Jordan algebra ([10XIsJordanAlgebraObj[110X).[133X
   
   
   [1X3.1-2 [33X[0;0YJordan Rank[133X[101X
@@ -46,10 +45,10 @@
   [33X[0;0YThe  rank  of  a  Jordan  algeba  is  the  size of a maximal set of mutually
   orthogonal  primitive  idempotents  in  the algebra. The rank and degree are
   used  to  classify the simple Euclidean Jordan algebras. This method returns
-  the  rank  of  [3Xx[103X  when [10X IsJordanAlgebra([3Xx[103X[10X)[110X or the rank of the Jordan algebra
+  the  rank  of  [3Xx[103X  when  [10XIsJordanAlgebra([3Xx[103X[10X)[110X or the rank of the Jordan algebra
   containing     [3Xx[103X     (computed    as    [10XFamilyObj(x)!.fullSCAlgebra[110X)    when
   [10XIsJordanAlgebraObj([3Xx[103X[10X)[110X.  The  method  [10XRank([3Xx[103X[10X)[110X  returns  [10XJordanRank([3Xx[103X[10X)[110X  when [3Xx[103X
-  satisfies either [10X IsJordanAlgebra[110X or [10XIsJordanAlgebraObj[110X.[133X
+  satisfies either [10XIsJordanAlgebra[110X or [10XIsJordanAlgebraObj[110X.[133X
   
   
   [1X3.1-3 [33X[0;0YJordan Degree[133X[101X
@@ -60,10 +59,10 @@
   [33X[0;0YThe  degree of a Jordan algebra is the dimension of the off-diagonal entries
   in  a  Pierce  decomposition  of  the  Jordan algebra. For example, a Jordan
   algebra  of  quaternion hermitian matrices has degree 4. This method returns
-  the degree of [3Xx[103X when [10X IsJordanAlgebra([3Xx[103X[10X)[110X or the degree of the Jordan algebra
+  the  degree of [3Xx[103X when [10XIsJordanAlgebra([3Xx[103X[10X)[110X or the degree of the Jordan algebra
   containing     [3Xx[103X     (computed    as    [10XFamilyObj(x)!.fullSCAlgebra[110X)    when
   [10XIsJordanAlgebraObj([3Xx[103X[10X)[110X.  The  method [10XDegree([3Xx[103X[10X)[110X returns [10XJordanDegree([3Xx[103X[10X)[110X when [3Xx[103X
-  satisfies either [10X IsJordanAlgebra[110X or [10XIsJordanAlgebraObj[110X.[133X
+  satisfies either [10XIsJordanAlgebra[110X or [10XIsJordanAlgebraObj[110X.[133X
   
   [33X[0;0YEach  vector  in  a  simple  Euclidean  Jordan  algebra  can be written as a
   ℝ-linear  combination  of mutually orthogonal primitive idempotents. This is
@@ -99,7 +98,7 @@
   
   [33X[1;0Y[29X[2XGenericMinimalPolynomial[102X( [3Xx[103X ) [32X attribute[133X
   
-  [33X[0;0YReturns  the  generic minimal polynomial of [3Xx[103X when [10X IsJordanAlgebraObj([3Xx[103X[10X)[110X as
+  [33X[0;0YReturns  the  generic  minimal polynomial of [3Xx[103X when [10XIsJordanAlgebraObj([3Xx[103X[10X)[110X as
   defined  in  [FKK+00,  p.  478]  (see also [FK94, pp. 27-31]). The output is
   given  as  a  list of polynomial coefficients. Note that the generic minimal
   polynomial  is  a monic polynomial of degree equal to the rank of the Jordan
@@ -263,14 +262,14 @@
   
   [33X[1;0Y[29X[2XAlbertAlgebra[102X( [3XF[103X ) [32X function[133X
   
-  [33X[0;0YFor  [3XF[103X  a  field,  this  function returns an Albert algebra over [3X F[103X. For [10X[3XF[103X[10X =
-  Rationals[110X,       this       algebra       is       isomorphic       to      [10X
-  HermitianSimpleJordanAlgebra(3,8,Basis(Oct))[110X  but  in  a  basis that is more
+  [33X[0;0YFor  [3XF[103X  a  field,  this  function  returns an Albert algebra over [3XF[103X. For [10X[3XF[103X[10X =
+  Rationals[110X,         this        algebra        is        isomorphic        to
+  [10XHermitianSimpleJordanAlgebra(3,8,Basis(Oct))[110X  but  in  a  basis that is more
   convenient   for   reproducing   certain  calculations  in  the  literature.
-  Specifically,  while  [10X HermitianSimpleJordanAlgebra(3,8,Basis(Oct))[110X uses the
+  Specifically,  while  [10XHermitianSimpleJordanAlgebra(3,8,Basis(Oct))[110X  uses the
   upper-triangular   elements   of   a  Hermitian  matrix  as  representative,
   [10XAlbertAlgebra([3XF[103X[10X)[110X  uses the [10X[1][2], [2][3], [3][1][110X entries as representative.
-  These are respectively labeled using [10X k,i,j[110X.[133X
+  These are respectively labeled using [10Xk,i,j[110X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XA := AlbertAlgebra(Rationals);[127X[104X
@@ -291,8 +290,8 @@
   [33X[1;0Y[29X[2XAlbertVectorToHermitianMatrix[102X( [3Xx[103X ) [32X function[133X
   
   [33X[0;0YFor  an  element  [3Xx[103X  in  [10XAlbertAlgebra([3XRationals[103X[10X)[110X, this function returns the
-  corresponding   3   x   3   Hermitian  matrix  with  octonion  entries  in  [10X
-  OctonionAlgebra([3XRationals[103X[10X)[110X.[133X
+  corresponding   3   x   3   Hermitian   matrix   with  octonion  entries  in
+  [10XOctonionAlgebra([3XRationals[103X[10X)[110X.[133X
   
   [1X3.3-3 HermitianMatrixToAlbertVector[101X
   
@@ -331,7 +330,7 @@
   [10XJordanQuadraticOperator(x)[110X,  this  operation returns the matrix representing
   the  quadratic map in the canonical basis of the Jordan algebra [3XJ[103X containing
   [3Xx[103X.  For  [10XL(x)[110X  the matrix [10XAdjointMatrix(CanonicalBasis(J), x)[110X, the operation
-  [10XP([3Xx[103X[10X)[110X returns the matrix [10X2 L(x)^2 - L(x^2)[110X.[133X
+  [10XJordanQuadraticOperator([3Xx[103X[10X)[110X returns the matrix [10X2 L(x)^2 - L(x^2)[110X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XJ := JordanSpinFactor(IdentityMat(3));[127X[104X
@@ -347,9 +346,11 @@
     [4X[28X  [  -8/3,   7/9,  -8/3,   8/3 ],[128X[104X
     [4X[28X  [     2,  -8/3,  -7/9,    -2 ],[128X[104X
     [4X[28X  [    -2,   8/3,    -2,  -7/9 ] ][128X[104X
-    [4X[25Xgap>[125X [27XLinearCombination(Basis(J), JordanQuadraticOperator(x)*ExtRepOfObj(y)) = JordanQuadraticOperator(x,y);[127X[104X
+    [4X[25Xgap>[125X [27XLinearCombination(Basis(J), JordanQuadraticOperator(x)[127X[104X
+    [4X[25X>[125X [27X*ExtRepOfObj(y)) = JordanQuadraticOperator(x,y);[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XExtRepOfObj(JordanQuadraticOperator(x,y)) = JordanQuadraticOperator(x)*ExtRepOfObj(y);[127X[104X
+    [4X[25Xgap>[125X [27XExtRepOfObj(JordanQuadraticOperator(x,y)) = [127X[104X
+    [4X[25X>[125X [27XJordanQuadraticOperator(x)*ExtRepOfObj(y);[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XJordanQuadraticOperator(2*x) = 4*JordanQuadraticOperator(x);[127X[104X
     [4X[28Xtrue[128X[104X
@@ -395,9 +396,9 @@
   [33X[1;0Y[29X[2XHermitianJordanAlgebraBasis[102X( [3Xr[103X, [3XB[103X ) [32X function[133X
   
   [33X[0;0YReturns  a  set  of  Hermitian  matrices  to serve as a basis for the Jordan
-  algebra  with  or  rank [3Xr[103X and degree given by the cardinality of composition
-  algebra  basis  [3XB[103X.  The  elements  spanning each off-diagonal components are
-  determined by basis [3X B[103X.[133X
+  algebra of rank [3Xr[103X and degree given by the cardinality of composition algebra
+  basis  [3XB[103X.  The elements spanning each off-diagonal components are determined
+  by basis [3XB[103X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XH := QuaternionAlgebra(Rationals);;[127X[104X
@@ -422,15 +423,15 @@
   
   [33X[1;0Y[29X[2XJordanMatrixBasis[102X( [3XJ[103X ) [32X attribute[133X
   
-  [33X[0;0YIf  [10XIsJordanAlgebra(  [3XJ[103X[10X  )[110X  and [3XJ[103X has been constructed using a matrix basis,
-  then  the  set  of  matrices  corresponding  to  [10XCanonicalBasis(  [3XJ[103X[10X )[110X can be
-  obtained using [10XJordanMatrixBasis( [3XJ[103X[10X )[110X.[133X
+  [33X[0;0YIf    [10XIsJordanAlgebra(    [3XJ[103X[10X   )[110X   and   [3XJ[103X   has   been   constructed   using
+  [2XHermitianSimpleJordanAlgebra[102X ([14X3.2-3[114X), then the set of matrices corresponding
+  to [10XCanonicalBasis( [3XJ[103X[10X )[110X can be obtained using [10XJordanMatrixBasis( [3XJ[103X[10X )[110X.[133X
   
   [1X3.5-3 HermitianMatrixToJordanVector[101X
   
   [33X[1;0Y[29X[2XHermitianMatrixToJordanVector[102X( [3Xmat[103X, [3XJ[103X ) [32X function[133X
   
-  [33X[0;0YConverts matrix [3Xmat[103X into an element of Jordan algebra [3XJ[103X .[133X
+  [33X[0;0YConverts matrix [3Xmat[103X into an element of Jordan algebra [3XJ[103X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XH := QuaternionAlgebra(Rationals);;[127X[104X
@@ -459,13 +460,14 @@
   
   [33X[1;0Y[29X[2XJordanAlgebraGramMatrix[102X( [3XJ[103X ) [32X attribute[133X
   
-  [33X[0;0YFor  [10XIsJordanAlgebra(  [3XJ[103X[10X  )[110X, returns the Gram matrix on [10X CanonicalBasis( [3XJ[103X[10X )[110X
+  [33X[0;0YFor  [10XIsJordanAlgebra(  [3XJ[103X[10X  )[110X,  returns the Gram matrix on [10XCanonicalBasis( [3XJ[103X[10X )[110X
   using inner product [10XTrace(x*y)[110X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XJ := HermitianSimpleJordanAlgebra(2,OctonionE8Basis);[127X[104X
     [4X[28X<algebra-with-one of dimension 10 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XList(Basis(J), x -> List(Basis(J), y -> Trace(x*y))) = JordanAlgebraGramMatrix(J);[127X[104X
+    [4X[25Xgap>[125X [27XList(Basis(J), x -> List(Basis(J), y -> Trace(x*y))) = [127X[104X
+    [4X[25X>[125X [27XJordanAlgebraGramMatrix(J);[127X[104X
     [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XDiagonalOfMat(JordanAlgebraGramMatrix(J));[127X[104X
     [4X[28X[ 1, 1, 2, 2, 2, 2, 2, 2, 2, 2 ][128X[104X
