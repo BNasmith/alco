@@ -1,7 +1,7 @@
 name: ALCO
-version: "0.2"
+version: "1.0"
 license: "GPL-3.0-or-later"
-date: 2024-02-04
+date: 2025-01-16
 description: |
     Tools for algebraic combinatorics
 
@@ -15,13 +15,13 @@ maintainers:
 
 GAP: "4.12"
 
-www: https://github.com/BNasmith/alco
+www: https://bnasmith.github.io/alco/
 readme: README.md
-packageinfo: https://github.com/BNasmith/alco/PackageInfo.g
+packageinfo: https://bnasmith.github.io/alco//PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/BNasmith/alco/releases/download/v0.2/ALCO-0.2.tar.gz
+      url: https://github.com/BNasmith/alco/releases/download/v1.0/ALCO-1.0.tar.gz
 
 abstract: |
     The <span class="pkgname">ALCO</span> package provides tools for algebraic combinatorics including implementations of octonion and Jordan algebras.
@@ -33,28 +33,27 @@ keywords: |
     Octonions, Jordan algebras, t-Designs.
 citeas: |
     <p class='BibEntry'>
-    [<span class='BibKey'>Nas24</span>]   <b class='BibAuthor'>Nasmith, B.</b>,
+    [<span class='BibKey'>Nas25</span>]   <b class='BibAuthor'>Nasmith, B.</b>,
      <i class='BibTitle'>ALCO, Tools for algebraic combinatorics,
-             Version 0.2</i>
-     (<span class='BibYear'>2024</span>)<br />
+             Version 1.0</i>
+     (<span class='BibYear'>2025</span>)<br />
     (<span class='BibNote'>GAP package</span>),
-    <span class='BibHowpublished'><a href="https://github.com/BNasmith/alco">https://github.com/BNasmith/alco</a></span>.
+    <span class='BibHowpublished'><a href="https://bnasmith.github.io/alco/">https://bnasmith.github.io/alco/</a></span>.
     </p>
     
 
 bibtex: |
-    @misc{ ALCO0.2,
+    @misc{ ALCO1.0,
       author =           {Nasmith, B.},
       title =            {{ALCO},  Tools  for algebraic combinatorics, {V}ersion
-                          0.2},
-      month =            {Feb},
-      year =             {2024},
+                          1.0},
+      month =            {Jan},
+      year =             {2025},
       note =             {GAP package},
-      howpublished =     {\href               {https://github.com/BNasmith/alco}
-                          {\texttt{https://github.com/}\discretionary
-                          {}{}{}\texttt{BNasmith/}\discretionary
-                          {}{}{}\texttt{alco}}},
+      howpublished =     {\href               {https://bnasmith.github.io/alco/}
+                          {\texttt{https://bnasmith.github.io/}\discretionary
+                          {}{}{}\texttt{alco/}}},
       keywords =         {Octonions; Jordan algebras; t-Designs},
-      printedkey =       {Nas24}
+      printedkey =       {Nas25}
     }
 
