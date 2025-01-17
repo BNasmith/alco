@@ -24,21 +24,21 @@
   compute the closure of large or possibly infinite sets.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XClosure([1,E(7)], \*);[127X[104X
-    [4X[28X[ 1, E(7)^6, E(7)^5, E(7)^4, E(7)^3, E(7)^2, E(7) ][128X[104X
-    [4X[25Xgap>[125X [27XQuaternionD4Basis;[127X[104X
-    [4X[28XBasis( <algebra-with-one of dimension 4 over Rationals>,[128X[104X
-    [4X[28X[ (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, e ] )[128X[104X
-    [4X[25Xgap>[125X [27XClosure(QuaternionD4Basis,\*);[127X[104X
-    [4X[28X[ (-1)*e, (-1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
-    [4X[28X  (-1/2)*e+(1/2)*i+(1/2)*j+(1/2)*k, (-1)*i, (-1)*j, (-1)*k, k, j, i,[128X[104X
-    [4X[28X  (1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
-    [4X[28X  (1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k,[128X[104X
-    [4X[28X  (1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
+    [4X[25Xgap>[125X [27XClosure([1,E(7)], \*);[127X[104X
+    [4X[28X[ 1, E(7)^6, E(7)^5, E(7)^4, E(7)^3, E(7)^2, E(7) ][128X[104X
+    [4X[25Xgap>[125X [27XQuaternionD4Basis;[127X[104X
+    [4X[28XBasis( <algebra-with-one of dimension 4 over Rationals>,[128X[104X
+    [4X[28X[ (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, e ] )[128X[104X
+    [4X[25Xgap>[125X [27XClosure(QuaternionD4Basis,\*);[127X[104X
+    [4X[28X[ (-1)*e, (-1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(1/2)*j+(-1/2)*k,[128X[104X
+    [4X[28X  (-1/2)*e+(1/2)*i+(1/2)*j+(1/2)*k, (-1)*i, (-1)*j, (-1)*k, k, j, i,[128X[104X
+    [4X[28X  (1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
+    [4X[28X  (1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k, (1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k,[128X[104X
+    [4X[28X  (1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, (1/2)*e+(1/2)*i+(-1/2)*j+(1/2)*k,[128X[104X
     [4X[28X  (1/2)*e+(1/2)*i+(1/2)*j+(-1/2)*k, (1/2)*e+(1/2)*i+(1/2)*j+(1/2)*k, e ][128X[104X
   [4X[32X[104X
   
@@ -72,12 +72,12 @@
   elements faster than [2XClosure[102X ([14X6.1-1[114X) would.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[2,3]};[127X[104X
-    [4X[28X[ i, j ][128X[104X
-    [4X[25Xgap>[125X [27Xrepeat[127X[104X
-    [4X[25X>[125X [27Xstart := RandomClosure(start, \*);[127X[104X
-    [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
-    [4X[25Xgap>[125X [27Xstart;[127X[104X
+    [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[2,3]};[127X[104X
+    [4X[28X[ i, j ][128X[104X
+    [4X[25Xgap>[125X [27Xrepeat[127X[104X
+    [4X[25X>[125X [27Xstart := RandomClosure(start, \*);[127X[104X
+    [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
+    [4X[25Xgap>[125X [27Xstart;[127X[104X
     [4X[28X[ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ][128X[104X
   [4X[32X[104X
   
@@ -98,14 +98,14 @@
   necessarily included in the output.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[1,2]};[127X[104X
-    [4X[28X[ e, i ][128X[104X
-    [4X[25Xgap>[125X [27Xgens := Basis(QuaternionAlgebra(Rationals)){[3]};[127X[104X
-    [4X[28X[ j ][128X[104X
-    [4X[25Xgap>[125X [27Xrepeat [127X[104X
-    [4X[25X>[125X [27Xstart := RandomOrbitOnSets(gens, start, {x,y} -> x*y);[127X[104X
-    [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
-    [4X[25Xgap>[125X [27Xstart;[127X[104X
+    [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[1,2]};[127X[104X
+    [4X[28X[ e, i ][128X[104X
+    [4X[25Xgap>[125X [27Xgens := Basis(QuaternionAlgebra(Rationals)){[3]};[127X[104X
+    [4X[28X[ j ][128X[104X
+    [4X[25Xgap>[125X [27Xrepeat [127X[104X
+    [4X[25X>[125X [27Xstart := RandomOrbitOnSets(gens, start, {x,y} -> x*y);[127X[104X
+    [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
+    [4X[25Xgap>[125X [27Xstart;[127X[104X
     [4X[28X[ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ][128X[104X
   [4X[32X[104X
   
