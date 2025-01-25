@@ -1,7 +1,7 @@
 name: ALCO
-version: "1.1"
+version: "1.1.1"
 license: "GPL-3.0-or-later"
-date: 2025-01-25
+date: 2025-01-26
 description: |
     Tools for algebraic combinatorics
 
@@ -15,13 +15,18 @@ maintainers:
 
 GAP: "4.14"
 
+needed-pkgs:
+    - name: "ResClasses"
+      version: ">=4.7.3"
+      url: "https://gap-packages.github.io/resclasses/"
+
 www: https://bnasmith.github.io/alco/
 readme: README.md
 packageinfo: https://bnasmith.github.io/alco//PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/BNasmith/alco/releases/download/v1.1/ALCO-1.1.tar.gz
+      url: https://github.com/BNasmith/alco/releases/download/v1.1.1/ALCO-1.1.1.tar.gz
 
 abstract: |
     The <span class="pkgname">ALCO</span> package provides tools for algebraic combinatorics including implementations of octonion and Jordan algebras.
@@ -35,7 +40,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Nas25</span>]   <b class='BibAuthor'>Nasmith, B.</b>,
      <i class='BibTitle'>ALCO, Tools for algebraic combinatorics,
-             Version 1.1</i>
+             Version 1.1.1</i>
      (<span class='BibYear'>2025</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://bnasmith.github.io/alco/">https://bnasmith.github.io/alco/</a></span>.
@@ -46,7 +51,7 @@ bibtex: |
     @misc{ ALCO,
       author =           {Nasmith, B.},
       title =            {{ALCO}, {Tools for algebraic combinatorics}, {V}ersion
-                          1.1},
+                          1.1.1},
       month =            {Jan},
       year =             {2025},
       note =             {GAP package},
