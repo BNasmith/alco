@@ -1,7 +1,7 @@
 name: ALCO
-version: "1.0"
+version: "1.1"
 license: "GPL-3.0-or-later"
-date: 2025-01-16
+date: 2025-01-25
 description: |
     Tools for algebraic combinatorics
 
@@ -13,7 +13,7 @@ maintainers:
     - name: Benjamin Nasmith
       url: https://github.com/BNasmith/
 
-GAP: "4.12"
+GAP: "4.14"
 
 www: https://bnasmith.github.io/alco/
 readme: README.md
@@ -21,12 +21,12 @@ packageinfo: https://bnasmith.github.io/alco//PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/BNasmith/alco/releases/download/v1.0/ALCO-1.0.tar.gz
+      url: https://github.com/BNasmith/alco/releases/download/v1.1/ALCO-1.1.tar.gz
 
 abstract: |
     The <span class="pkgname">ALCO</span> package provides tools for algebraic combinatorics including implementations of octonion and Jordan algebras.
 
-status: dev
+status: deposited
 doc-html: doc/chap0.html
 doc-pdf: doc/manual.pdf
 keywords: |
@@ -35,7 +35,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Nas25</span>]   <b class='BibAuthor'>Nasmith, B.</b>,
      <i class='BibTitle'>ALCO, Tools for algebraic combinatorics,
-             Version 1.0</i>
+             Version 1.1</i>
      (<span class='BibYear'>2025</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://bnasmith.github.io/alco/">https://bnasmith.github.io/alco/</a></span>.
@@ -43,17 +43,18 @@ citeas: |
     
 
 bibtex: |
-    @misc{ ALCO1.0,
+    @misc{ ALCO,
       author =           {Nasmith, B.},
-      title =            {{ALCO},  Tools  for algebraic combinatorics, {V}ersion
-                          1.0},
+      title =            {{ALCO}, {Tools for algebraic combinatorics}, {V}ersion
+                          1.1},
       month =            {Jan},
       year =             {2025},
       note =             {GAP package},
       howpublished =     {\href               {https://bnasmith.github.io/alco/}
                           {\texttt{https://bnasmith.github.io/}\discretionary
                           {}{}{}\texttt{alco/}}},
-      keywords =         {Octonions; Jordan algebras; t-Designs},
+      keywords =         {Octonions;               Jordan              algebras;
+                          t\texttt{\symbol{45}}Designs},
       printedkey =       {Nas25}
     }
 

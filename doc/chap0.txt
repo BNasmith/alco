@@ -6,10 +6,10 @@
                       [1X Tools for algebraic combinatorics [101X
   
   
-                                      1.0
+                                      1.1
   
   
-                                16 January 2025
+                                25 January 2025
   
   
                                 Benjamin Nasmith
@@ -110,37 +110,37 @@
       4.1-2 [33X[0;0YRenormalized Jacobi Polynomials[133X
     4.2 [33X[0;0YJordan Designs[133X
       4.2-1 [33X[0;0YJordan Design Categories[133X
-      4.2-2 DesignByJordanParameters
+      4.2-2 JordanDesignByParameters
       4.2-3 [33X[0;0YJordan Rank and Degree[133X
-      4.2-4 DesignQPolynomials
-      4.2-5 DesignConnectionCoefficients
+      4.2-4 JordanDesignQPolynomials
+      4.2-5 JordanDesignConnectionCoefficients
     4.3 [33X[0;0YDesigns with an Angle Set[133X
-      4.3-1 IsDesignWithAngleSet
+      4.3-1 IsJordanDesignWithAngleSet
       4.3-2 [33X[0;0YDesign Angle Sets[133X
-      4.3-3 DesignByAngleSet
-      4.3-4 DesignNormalizedAnnihilatorPolynomial
-      4.3-5 DesignNormalizedIndicatorCoefficients
-      4.3-6 IsDesignWithPositiveIndicatorCoefficients
-      4.3-7 DesignSpecialBound
+      4.3-3 JordanDesignByAngleSet
+      4.3-4 JordanDesignNormalizedAnnihilatorPolynomial
+      4.3-5 JordanDesignNormalizedIndicatorCoefficients
+      4.3-6 IsJordanDesignWithPositiveIndicatorCoefficients
+      4.3-7 JordanDesignSpecialBound
     4.4 [33X[0;0YDesigns with Angle Set and Cardinality[133X
       4.4-1 [33X[0;0YDesign Cardinality[133X
       4.4-2 [33X[0;0YDesigns at the Special Bound[133X
-      4.4-3 DesignAnnihilatorPolynomial
-      4.4-4 DesignIndicatorCoefficients
+      4.4-3 JordanDesignAnnihilatorPolynomial
+      4.4-4 JordanDesignIndicatorCoefficients
       4.4-5 [33X[0;0YDesign Strength[133X
       4.4-6 [33X[0;0YSchemes and Tight Designs[133X
     4.5 [33X[0;0YDesigns Admitting a Regular Scheme[133X
-      4.5-1 DesignSubdegrees
+      4.5-1 JordanDesignSubdegrees
     4.6 [33X[0;0YDesigns Admitting an Association Scheme[133X
-      4.6-1 DesignBoseMesnerAlgebra
-      4.6-2 DesignBoseMesnerIdempotentBasis
-      4.6-3 DesignIntersectionNumbers
-      4.6-4 DesignKreinNumbers
-      4.6-5 DesignFirstEigenmatrix
-      4.6-6 DesignSecondEigenmatrix
-      4.6-7 DesignMultiplicities
+      4.6-1 JordanDesignBoseMesnerAlgebra
+      4.6-2 JordanDesignBoseMesnerIdempotentBasis
+      4.6-3 JordanDesignIntersectionNumbers
+      4.6-4 JordanDesignKreinNumbers
+      4.6-5 JordanDesignFirstEigenmatrix
+      4.6-6 JordanDesignSecondEigenmatrix
+      4.6-7 JordanDesignMultiplicities
       4.6-8 DesignValencies
-      4.6-9 DesignReducedAdjacencyMatrices
+      4.6-9 JordanDesignReducedAdjacencyMatrices
     4.7 [33X[0;0YExamples[133X
   5 [33X[0;0YOctonion Lattice Constructions[133X
     5.1 [33X[0;0YGram Matrices and Octonion Lattices[133X
@@ -166,7 +166,7 @@
     6.1 [33X[0;0YBrute Force Method[133X
       6.1-1 Closure
     6.2 [33X[0;0YRandom Choice Methods[133X
-      6.2-1 RandomClosure
+      6.2-1 RandomElementClosure
       6.2-2 RandomOrbitOnSets
   
   

@@ -50,9 +50,9 @@
   provide  tools  to  generate more elements of a set under a binary operation
   without directly proving closure.[133X
   
-  [1X6.2-1 RandomClosure[101X
+  [1X6.2-1 RandomElementClosure[101X
   
-  [33X[1;0Y[29X[2XRandomClosure[102X( [3Xgens[103X, [3Xop[103X[, [3XN[103X[, [3Xprint[103X]] ) [32X function[133X
+  [33X[1;0Y[29X[2XRandomElementClosure[102X( [3Xgens[103X, [3Xop[103X[, [3XN[103X[, [3Xprint[103X]] ) [32X function[133X
   
   [33X[0;0YFor  [3Xgens[103X  satisfying  [10XIsHomogeneousList[110X,  this  function  selects  a random
   element  [3Xr[103X  in  [3Xgens[103X  and  computes  all elements of the form [10X[3X op[103X[10X([3Xr[103X[10X,[3Xx[103X[10X)[110X for [3Xx[103X
@@ -75,7 +75,7 @@
     [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[2,3]};[127X[104X
     [4X[28X[ i, j ][128X[104X
     [4X[25Xgap>[125X [27Xrepeat[127X[104X
-    [4X[25X>[125X [27Xstart := RandomClosure(start, \*);[127X[104X
+    [4X[25X>[125X [27Xstart := RandomElementClosure(start, \*);[127X[104X
     [4X[25X>[125X [27Xuntil Length(start) = 8;[127X[104X
     [4X[25Xgap>[125X [27Xstart;[127X[104X
     [4X[28X[ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ][128X[104X
@@ -85,17 +85,17 @@
   
   [33X[1;0Y[29X[2XRandomOrbitOnSets[102X( [3Xgens[103X, [3Xstart[103X, [3Xop[103X[, [3XN[103X[, [3Xprint[103X]] ) [32X function[133X
   
-  [33X[0;0YThis  function  proceeds  in  a manner very similar to [2XRandomClosure[102X ([14X6.2-1[114X)
-  with  the  following  differences.  This  function  instead selects a random
-  element  [3Xr[103X  in  [3Xgens[103X and then for every [3Xx[103X in [3Xstart[103X, or the set of previously
-  generated  elements,  computes  [10X[3Xop[103X[10X([3Xr[103X[10X,[3Xx[103X[10X)[110X. At each step the cardinality of the
-  union  of  [3Xstart[103X and any previously generated elements is computed. Once the
-  cardinality  is  fixed  for  [3XN  +  1[103X  steps, the function returns the set of
-  generated elements.[133X
+  [33X[0;0YThis  function  proceeds  in  a  manner very similar to [2XRandomElementClosure[102X
+  ([14X6.2-1[114X)  with  the  following  differences.  This function instead selects a
+  random  element  [3Xr[103X  in  [3Xgens[103X  and  then  for every [3Xx[103X in [3Xstart[103X, or the set of
+  previously   generated   elements,   computes  [10X[3Xop[103X[10X([3Xr[103X[10X,[3Xx[103X[10X)[110X.  At  each  step  the
+  cardinality  of  the union of [3Xstart[103X and any previously generated elements is
+  computed.  Once  the  cardinality  is  fixed  for  [3XN + 1[103X steps, the function
+  returns the set of generated elements.[133X
   
-  [33X[0;0YThe  same  cautions  as  described in [2XRandomClosure[102X ([14X6.2-1[114X) apply. Note that
-  while  [3Xstart[103X  is always a subset of the output, the elements of [3Xgens[103X are not
-  necessarily included in the output.[133X
+  [33X[0;0YThe  same  cautions as described in [2XRandomElementClosure[102X ([14X6.2-1[114X) apply. Note
+  that  while [3Xstart[103X is always a subset of the output, the elements of [3Xgens[103X are
+  not necessarily included in the output.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27Xstart := Basis(QuaternionAlgebra(Rationals)){[1,2]};[127X[104X

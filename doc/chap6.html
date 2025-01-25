@@ -30,7 +30,7 @@
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X7F865ED67CC5740F">6.2 <span class="Heading">Random Choice Methods</span></a>
 </span>
 <div class="ContSSBlock">
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X826F76067E4D7122">6.2-1 RandomClosure</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X78DC531B815591E8">6.2-1 RandomElementClosure</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6.html#X7A4675E27B489038">6.2-2 RandomOrbitOnSets</a></span>
 </div></div>
 </div>
@@ -76,11 +76,11 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 
 <p>In many cases the <code class="func">Closure</code> (<a href="chap6.html#X87E8AA6582245C3E"><span class="RefLink">6.1-1</span></a>) function is impractical to use due to the long computation time of the brute force method. The following functions provide tools to generate more elements of a set under a binary operation without directly proving closure.</p>
 
-<p><a id="X826F76067E4D7122" name="X826F76067E4D7122"></a></p>
+<p><a id="X78DC531B815591E8" name="X78DC531B815591E8"></a></p>
 
-<h5>6.2-1 RandomClosure</h5>
+<h5>6.2-1 RandomElementClosure</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RandomClosure</code>( <var class="Arg">gens</var>, <var class="Arg">op</var>[, <var class="Arg">N</var>[, <var class="Arg">print</var>]] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RandomElementClosure</code>( <var class="Arg">gens</var>, <var class="Arg">op</var>[, <var class="Arg">N</var>[, <var class="Arg">print</var>]] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
 <p>For <var class="Arg">gens</var> satisfying <code class="code">IsHomogeneousList</code>, this function selects a random element <var class="Arg">r</var> in <var class="Arg">gens</var> and computes all elements of the form <code class="code"><var class="Arg"> op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code> for <var class="Arg">x</var> either in <var class="Arg">gens</var> or obtained in a previous closure step. Once this process yields a set of elements with equal cardinality <code class="code"><var class="Arg">N</var>+1</code> times, the function terminates and returns all elements obtained so far as a set. The default value of <var class="Arg">N</var> is <code class="code">1</code>. The optional <var class="Arg">print</var> argument, if supplied, prints the cardinality of the set of elements obtain so far at each iteration.</p>
 
 <p>Caution must be exercised when using this function to prevent attempting to compute the random closure of an infinite set. Caution is also required in interpreting the output. Even for large values of <var class="Arg">N</var>, the result is not necessarily the full closure of set <var class="Arg">gens</var>. Furthermore, repeated calls to this function may result in different outputs due to the random selection of elements involved throughout. If the size of the expected closed set is known, use of a <code class="code">repeat</code>-<code class="code">until</code> loop can permit generating the full set of elements faster than <code class="func">Closure</code> (<a href="chap6.html#X87E8AA6582245C3E"><span class="RefLink">6.1-1</span></a>) would.</p>
@@ -89,7 +89,7 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(QuaternionAlgebra(Rationals)){[2,3]};</span>
 [ i, j ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">repeat</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">start := RandomClosure(start, \*);</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">start := RandomElementClosure(start, \*);</span>
 <span class="GAPprompt">&gt;</span> <span class="GAPinput">until Length(start) = 8;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start;</span>
 [ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ]</pre></div>
@@ -99,9 +99,9 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <h5>6.2-2 RandomOrbitOnSets</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; RandomOrbitOnSets</code>( <var class="Arg">gens</var>, <var class="Arg">start</var>, <var class="Arg">op</var>[, <var class="Arg">N</var>[, <var class="Arg">print</var>]] )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>This function proceeds in a manner very similar to <code class="func">RandomClosure</code> (<a href="chap6.html#X826F76067E4D7122"><span class="RefLink">6.2-1</span></a>) with the following differences. This function instead selects a random element <var class="Arg">r</var> in <var class="Arg">gens</var> and then for every <var class="Arg">x</var> in <var class="Arg">start</var>, or the set of previously generated elements, computes <code class="code"><var class="Arg">op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code>. At each step the cardinality of the union of <var class="Arg">start</var> and any previously generated elements is computed. Once the cardinality is fixed for <var class="Arg">N + 1</var> steps, the function returns the set of generated elements.</p>
+<p>This function proceeds in a manner very similar to <code class="func">RandomElementClosure</code> (<a href="chap6.html#X78DC531B815591E8"><span class="RefLink">6.2-1</span></a>) with the following differences. This function instead selects a random element <var class="Arg">r</var> in <var class="Arg">gens</var> and then for every <var class="Arg">x</var> in <var class="Arg">start</var>, or the set of previously generated elements, computes <code class="code"><var class="Arg">op</var>(<var class="Arg">r</var>,<var class="Arg">x</var>)</code>. At each step the cardinality of the union of <var class="Arg">start</var> and any previously generated elements is computed. Once the cardinality is fixed for <var class="Arg">N + 1</var> steps, the function returns the set of generated elements.</p>
 
-<p>The same cautions as described in <code class="func">RandomClosure</code> (<a href="chap6.html#X826F76067E4D7122"><span class="RefLink">6.2-1</span></a>) apply. Note that while <var class="Arg">start</var> is always a subset of the output, the elements of <var class="Arg">gens</var> are not necessarily included in the output.</p>
+<p>The same cautions as described in <code class="func">RandomElementClosure</code> (<a href="chap6.html#X78DC531B815591E8"><span class="RefLink">6.2-1</span></a>) apply. Note that while <var class="Arg">start</var> is always a subset of the output, the elements of <var class="Arg">gens</var> are not necessarily included in the output.</p>
 
 
 <div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(QuaternionAlgebra(Rationals)){[1,2]};</span>
@@ -121,6 +121,6 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chapBib.html">Bib</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <hr />
-<p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
+<p class="foot">generated by <a href="https://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>
 </body>
 </html>
