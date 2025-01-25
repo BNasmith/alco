@@ -19,20 +19,20 @@
   product:[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XO := OctavianIntegers;[127X[104X
-    [4X[28XOctavianIntegers[128X[104X
-    [4X[25Xgap>[125X [27Xg := List(Basis(O), x -> List(Basis(O), y -> [127X[104X
-    [4X[25X>[125X [27XNorm(x+y) - Norm(x) - Norm(y)));;[127X[104X
-    [4X[25Xgap>[125X [27XDisplay(g);[127X[104X
-    [4X[28X[ [   2,   0,  -1,   0,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   2,   0,  -1,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [  -1,   0,   2,  -1,   0,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,  -1,  -1,   2,  -1,   0,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,  -1,   2,  -1,   0,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   0,  -1,   2,  -1,   0 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   0,   0,  -1,   2,  -1 ],[128X[104X
-    [4X[28X  [   0,   0,   0,   0,   0,   0,  -1,   2 ] ][128X[104X
-    [4X[25Xgap>[125X [27XIsGossetLatticeGramMatrix(g);[127X[104X
+    [4X[25Xgap>[125X [27XO := OctavianIntegers;[127X[104X
+    [4X[28XOctavianIntegers[128X[104X
+    [4X[25Xgap>[125X [27Xg := List(Basis(O), x -> List(Basis(O), y -> [127X[104X
+    [4X[25X>[125X [27XNorm(x+y) - Norm(x) - Norm(y)));;[127X[104X
+    [4X[25Xgap>[125X [27XDisplay(g);[127X[104X
+    [4X[28X[ [   2,   0,  -1,   0,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   2,   0,  -1,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [  -1,   0,   2,  -1,   0,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,  -1,  -1,   2,  -1,   0,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,  -1,   2,  -1,   0,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   0,  -1,   2,  -1,   0 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   0,   0,  -1,   2,  -1 ],[128X[104X
+    [4X[28X  [   0,   0,   0,   0,   0,   0,  -1,   2 ] ][128X[104X
+    [4X[25Xgap>[125X [27XIsGossetLatticeGramMatrix(g);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -45,16 +45,16 @@
   Leech lattice.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xshort := Set(ShortestVectors(g,4).vectors, y -> [127X[104X
-    [4X[25X>[125X [27XLinearCombination(Basis(OctavianIntegers), y));;[127X[104X
-    [4X[25Xgap>[125X [27Xs := First(short, x -> x^2 + x + 2*One(x) = Zero(x));[127X[104X
-    [4X[28X(-1)*e1+(-1/2)*e2+(-1/2)*e3+(-1/2)*e4+(-1/2)*e8[128X[104X
-    [4X[25Xgap>[125X [27Xgens := List(Basis(OctavianIntegers), x -> [127X[104X
-    [4X[25X>[125X [27Xx*[[s,s,0],[0,s,s],ComplexConjugate([s,s,s])]);;[127X[104X
-    [4X[25Xgap>[125X [27Xgens := Concatenation(gens);; [127X[104X
-    [4X[25Xgap>[125X [27XL := OctonionLatticeByGenerators(gens, One(O)*IdentityMat(3)/2);[127X[104X
-    [4X[28X<free left module over Integers, with 24 generators>[128X[104X
-    [4X[25Xgap>[125X [27XIsLeechLatticeGramMatrix(GramMatrix(L));[127X[104X
+    [4X[25Xgap>[125X [27Xshort := Set(ShortestVectors(g,4).vectors, y -> [127X[104X
+    [4X[25X>[125X [27XLinearCombination(Basis(OctavianIntegers), y));;[127X[104X
+    [4X[25Xgap>[125X [27Xs := First(short, x -> x^2 + x + 2*One(x) = Zero(x));[127X[104X
+    [4X[28X(-1)*e1+(-1/2)*e2+(-1/2)*e3+(-1/2)*e4+(-1/2)*e8[128X[104X
+    [4X[25Xgap>[125X [27Xgens := List(Basis(OctavianIntegers), x -> [127X[104X
+    [4X[25X>[125X [27Xx*[[s,s,0],[0,s,s],ComplexConjugate([s,s,s])]);;[127X[104X
+    [4X[25Xgap>[125X [27Xgens := Concatenation(gens);; [127X[104X
+    [4X[25Xgap>[125X [27XL := OctonionLatticeByGenerators(gens, One(O)*IdentityMat(3)/2);[127X[104X
+    [4X[28X<free left module over Integers, with 24 generators>[128X[104X
+    [4X[25Xgap>[125X [27XIsLeechLatticeGramMatrix(GramMatrix(L));[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -62,29 +62,29 @@
   well in [FK94]), including the Albert algebra:[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJ := AlbertAlgebra(Rationals);[127X[104X
-    [4X[28X<algebra-with-one of dimension 27 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(J)));[127X[104X
-    [4X[28X"F4"[128X[104X
-    [4X[25Xgap>[125X [27Xi := Basis(J){[1..8]};[127X[104X
-    [4X[28X[ i1, i2, i3, i4, i5, i6, i7, i8 ][128X[104X
-    [4X[25Xgap>[125X [27Xj := Basis(J){[9..16]};[127X[104X
-    [4X[28X[ j1, j2, j3, j4, j5, j6, j7, j8 ][128X[104X
-    [4X[25Xgap>[125X [27Xk := Basis(J){[17..24]};[127X[104X
-    [4X[28X[ k1, k2, k3, k4, k5, k6, k7, k8 ][128X[104X
-    [4X[25Xgap>[125X [27Xe := Basis(J){[25..27]};[127X[104X
-    [4X[28X[ ei, ej, ek ][128X[104X
-    [4X[25Xgap>[125X [27XForAll(e, IsIdempotent);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XSet(i, x -> x^2);[127X[104X
-    [4X[28X[ ej+ek ][128X[104X
-    [4X[25Xgap>[125X [27XSet(j, x -> x^2);[127X[104X
-    [4X[28X[ ei+ek ][128X[104X
-    [4X[25Xgap>[125X [27XOne(J);[127X[104X
-    [4X[28Xei+ej+ek[128X[104X
-    [4X[25Xgap>[125X [27XDeterminant(One(J));[127X[104X
-    [4X[28X1[128X[104X
-    [4X[25Xgap>[125X [27XTrace(One(J));[127X[104X
+    [4X[25Xgap>[125X [27XJ := AlbertAlgebra(Rationals);[127X[104X
+    [4X[28X<algebra-with-one of dimension 27 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XSemiSimpleType(Derivations(Basis(J)));[127X[104X
+    [4X[28X"F4"[128X[104X
+    [4X[25Xgap>[125X [27Xi := Basis(J){[1..8]};[127X[104X
+    [4X[28X[ i1, i2, i3, i4, i5, i6, i7, i8 ][128X[104X
+    [4X[25Xgap>[125X [27Xj := Basis(J){[9..16]};[127X[104X
+    [4X[28X[ j1, j2, j3, j4, j5, j6, j7, j8 ][128X[104X
+    [4X[25Xgap>[125X [27Xk := Basis(J){[17..24]};[127X[104X
+    [4X[28X[ k1, k2, k3, k4, k5, k6, k7, k8 ][128X[104X
+    [4X[25Xgap>[125X [27Xe := Basis(J){[25..27]};[127X[104X
+    [4X[28X[ ei, ej, ek ][128X[104X
+    [4X[25Xgap>[125X [27XForAll(e, IsIdempotent);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XSet(i, x -> x^2);[127X[104X
+    [4X[28X[ ej+ek ][128X[104X
+    [4X[25Xgap>[125X [27XSet(j, x -> x^2);[127X[104X
+    [4X[28X[ ei+ek ][128X[104X
+    [4X[25Xgap>[125X [27XOne(J);[127X[104X
+    [4X[28Xei+ej+ek[128X[104X
+    [4X[25Xgap>[125X [27XDeterminant(One(J));[127X[104X
+    [4X[28X1[128X[104X
+    [4X[25Xgap>[125X [27XTrace(One(J));[127X[104X
     [4X[28X3[128X[104X
   [4X[32X[104X
   

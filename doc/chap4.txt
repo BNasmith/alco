@@ -40,14 +40,14 @@
   greater than [23X-1[123X or must satisfy [10XIsPolynomial[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27Xa := Indeterminate(Rationals, "a");; [127X[104X
-    [4X[25Xgap>[125X [27Xb := Indeterminate(Rationals, "b");; [127X[104X
-    [4X[25Xgap>[125X [27Xx := Indeterminate(Rationals, "x");;[127X[104X
-    [4X[25Xgap>[125X [27XJacobiPolynomial(0,a,b);[127X[104X
-    [4X[28X[ 1 ][128X[104X
-    [4X[25Xgap>[125X [27XJacobiPolynomial(1,a,b);[127X[104X
-    [4X[28X[ 1/2*a-1/2*b, 1/2*a+1/2*b+1 ][128X[104X
-    [4X[25Xgap>[125X [27XValuePol(last,x);[127X[104X
+    [4X[25Xgap>[125X [27Xa := Indeterminate(Rationals, "a");; [127X[104X
+    [4X[25Xgap>[125X [27Xb := Indeterminate(Rationals, "b");; [127X[104X
+    [4X[25Xgap>[125X [27Xx := Indeterminate(Rationals, "x");;[127X[104X
+    [4X[25Xgap>[125X [27XJacobiPolynomial(0,a,b);[127X[104X
+    [4X[28X[ 1 ][128X[104X
+    [4X[25Xgap>[125X [27XJacobiPolynomial(1,a,b);[127X[104X
+    [4X[28X[ 1/2*a-1/2*b, 1/2*a+1/2*b+1 ][128X[104X
+    [4X[25Xgap>[125X [27XValuePol(last,x);[127X[104X
     [4X[28X1/2*a*x+1/2*b*x+1/2*a-1/2*b+x[128X[104X
   [4X[32X[104X
   
@@ -87,17 +87,17 @@
   idempotents of rank [3Xrank[103X and degree [3Xdegree[103X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
-    [4X[28X<design with rank 3 and degree 8>[128X[104X
-    [4X[25Xgap>[125X [27XIsJordanDesign(D);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XIsSphericalJordanDesign(D);[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27XIsProjectiveJordanDesign(D);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByParameters(4,8);[127X[104X
-    [4X[28Xfail[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByParameters(3,9);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
+    [4X[28X<design with rank 3 and degree 8>[128X[104X
+    [4X[25Xgap>[125X [27XIsJordanDesign(D);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsSphericalJordanDesign(D);[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsProjectiveJordanDesign(D);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByParameters(4,8);[127X[104X
+    [4X[28Xfail[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByParameters(3,9);[127X[104X
     [4X[28Xfail[128X[104X
   [4X[32X[104X
   
@@ -111,9 +111,9 @@
   as attributes.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
-    [4X[28X<design with rank 3 and degree 8>[128X[104X
-    [4X[25Xgap>[125X [27X[JordanDesignRank(D), JordanDesignDegree(D)];[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
+    [4X[28X<design with rank 3 and degree 8>[128X[104X
+    [4X[25Xgap>[125X [27X[JordanDesignRank(D), JordanDesignDegree(D)];[127X[104X
     [4X[28X[ 3, 8 ][128X[104X
   [4X[32X[104X
   
@@ -128,15 +128,15 @@
   list of coefficients, where [3Xk[103X is a non-negative integer.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
-    [4X[28X<design with rank 3 and degree 8>[128X[104X
-    [4X[25Xgap>[125X [27Xr := JordanDesignRank(D);; d := JordanDesignDegree(D);;[127X[104X
-    [4X[25Xgap>[125X [27Xx := Indeterminate(Rationals, "x");;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignQPolynomials(D);[127X[104X
-    [4X[28Xfunction( k ) ... end[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignQPolynomials(D)(2);[127X[104X
-    [4X[28X[ 90, -585, 819 ][128X[104X
-    [4X[25Xgap>[125X [27XCoefficientsOfUnivariatePolynomial(Q_k_epsilon(2,0,r,d,x));[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
+    [4X[28X<design with rank 3 and degree 8>[128X[104X
+    [4X[25Xgap>[125X [27Xr := JordanDesignRank(D);; d := JordanDesignDegree(D);;[127X[104X
+    [4X[25Xgap>[125X [27Xx := Indeterminate(Rationals, "x");;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignQPolynomials(D);[127X[104X
+    [4X[28Xfunction( k ) ... end[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignQPolynomials(D)(2);[127X[104X
+    [4X[28X[ 90, -585, 819 ][128X[104X
+    [4X[25Xgap>[125X [27XCoefficientsOfUnivariatePolynomial(Q_k_epsilon(2,0,r,d,x));[127X[104X
     [4X[28X[ 90, -585, 819 ][128X[104X
   [4X[32X[104X
   
@@ -151,20 +151,20 @@
   coefficients of each power up to positive integer [3Xs[103X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
-    [4X[28X<design with rank 3 and degree 8>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignConnectionCoefficients(D);[127X[104X
-    [4X[28Xfunction( s ) ... end[128X[104X
-    [4X[25Xgap>[125X [27Xf := JordanDesignConnectionCoefficients(D)(3);; Display(f);[127X[104X
-    [4X[28X[ [        1,        0,        0,        0 ],[128X[104X
-    [4X[28X  [      1/3,     1/39,        0,        0 ],[128X[104X
-    [4X[28X  [     5/39,    5/273,    1/819,        0 ],[128X[104X
-    [4X[28X  [     5/91,     1/91,    1/728,  1/12376 ] ][128X[104X
-    [4X[25Xgap>[125X [27Xfor j in [1..4] do Display(Sum(List([1..4], i -> [127X[104X
-    [4X[25X>[125X [27Xf[j][i]*JordanDesignQPolynomials(D)(i-1)))); od;[127X[104X
-    [4X[28X[ 1, 0, 0, 0 ][128X[104X
-    [4X[28X[ 0, 1, 0, 0 ][128X[104X
-    [4X[28X[ 0, 0, 1, 0 ][128X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(3,8);[127X[104X
+    [4X[28X<design with rank 3 and degree 8>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignConnectionCoefficients(D);[127X[104X
+    [4X[28Xfunction( s ) ... end[128X[104X
+    [4X[25Xgap>[125X [27Xf := JordanDesignConnectionCoefficients(D)(3);; Display(f);[127X[104X
+    [4X[28X[ [        1,        0,        0,        0 ],[128X[104X
+    [4X[28X  [      1/3,     1/39,        0,        0 ],[128X[104X
+    [4X[28X  [     5/39,    5/273,    1/819,        0 ],[128X[104X
+    [4X[28X  [     5/91,     1/91,    1/728,  1/12376 ] ][128X[104X
+    [4X[25Xgap>[125X [27Xfor j in [1..4] do Display(Sum(List([1..4], i -> [127X[104X
+    [4X[25X>[125X [27Xf[j][i]*JordanDesignQPolynomials(D)(i-1)))); od;[127X[104X
+    [4X[28X[ 1, 0, 0, 0 ][128X[104X
+    [4X[28X[ 0, 1, 0, 0 ][128X[104X
+    [4X[28X[ 0, 0, 1, 0 ][128X[104X
     [4X[28X[ 0, 0, 0, 1 ][128X[104X
   [4X[32X[104X
   
@@ -199,15 +199,15 @@
   once set as an attribute of the design.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(4,4);[127X[104X
-    [4X[28X<design with rank 4 and degree 4>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddAngleSet(D, [2]);[127X[104X
-    [4X[28Xfail[128X[104X
-    [4X[25Xgap>[125X [27XD;[127X[104X
-    [4X[28X<design with rank 4 and degree 4>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddAngleSet(D, [1/3,1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAngleSet(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByParameters(4,4);[127X[104X
+    [4X[28X<design with rank 4 and degree 4>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddAngleSet(D, [2]);[127X[104X
+    [4X[28Xfail[128X[104X
+    [4X[25Xgap>[125X [27XD;[127X[104X
+    [4X[28X<design with rank 4 and degree 4>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddAngleSet(D, [1/3,1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAngleSet(D);[127X[104X
     [4X[28X[ 1/9, 1/3 ][128X[104X
   [4X[32X[104X
   
@@ -220,9 +220,9 @@
   in [2XJordanDesignAddAngleSet[102X ([14X4.3-2[114X) apply.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAngleSet(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAngleSet(D);[127X[104X
     [4X[28X[ 1/9, 1/3 ][128X[104X
   [4X[32X[104X
   
@@ -237,15 +237,15 @@
   an angle set.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27Xp := JordanDesignNormalizedAnnihilatorPolynomial(D);[127X[104X
-    [4X[28X[ 1/16, -3/4, 27/16 ][128X[104X
-    [4X[25Xgap>[125X [27XValuePol(p, 1/9);[127X[104X
-    [4X[28X0[128X[104X
-    [4X[25Xgap>[125X [27XValuePol(p, 1/3);[127X[104X
-    [4X[28X0[128X[104X
-    [4X[25Xgap>[125X [27XValuePol(p, 1);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xp := JordanDesignNormalizedAnnihilatorPolynomial(D);[127X[104X
+    [4X[28X[ 1/16, -3/4, 27/16 ][128X[104X
+    [4X[25Xgap>[125X [27XValuePol(p, 1/9);[127X[104X
+    [4X[28X0[128X[104X
+    [4X[25Xgap>[125X [27XValuePol(p, 1/3);[127X[104X
+    [4X[28X0[128X[104X
+    [4X[25Xgap>[125X [27XValuePol(p, 1);[127X[104X
     [4X[28X1[128X[104X
   [4X[32X[104X
   
@@ -260,13 +260,13 @@
   design with an angle set.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27Xf := JordanDesignNormalizedIndicatorCoefficients(D);[127X[104X
-    [4X[28X[ 1/64, 7/960, 9/3520 ][128X[104X
-    [4X[25Xgap>[125X [27XSum(List([1..3], i -> f[i]*JordanDesignQPolynomials(D)(i-1)));[127X[104X
-    [4X[28X[ 1/16, -3/4, 27/16 ][128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignNormalizedAnnihilatorPolynomial(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xf := JordanDesignNormalizedIndicatorCoefficients(D);[127X[104X
+    [4X[28X[ 1/64, 7/960, 9/3520 ][128X[104X
+    [4X[25Xgap>[125X [27XSum(List([1..3], i -> f[i]*JordanDesignQPolynomials(D)(i-1)));[127X[104X
+    [4X[28X[ 1/16, -3/4, 27/16 ][128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignNormalizedAnnihilatorPolynomial(D);[127X[104X
     [4X[28X[ 1/16, -3/4, 27/16 ][128X[104X
   [4X[32X[104X
   
@@ -288,11 +288,11 @@
   attribute stores the special bound when it exists for a design.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3,1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XIsJordanDesignWithPositiveIndicatorCoefficients(D);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignSpecialBound(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3,1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XIsJordanDesignWithPositiveIndicatorCoefficients(D);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignSpecialBound(D);[127X[104X
     [4X[28X64[128X[104X
   [4X[32X[104X
   
@@ -320,13 +320,13 @@
   ([14X4.4-5[114X).[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4, [1/3,1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XHasJordanDesignCardinality(D);[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(D, 64);[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignCardinality(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4, [1/3,1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XHasJordanDesignCardinality(D);[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(D, 64);[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignCardinality(D);[127X[104X
     [4X[28X64[128X[104X
   [4X[32X[104X
   
@@ -350,12 +350,12 @@
   [10XJordanDesignCardinality([3XD[103X[10X)[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; [127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAnnihilatorPolynomial(D);[127X[104X
-    [4X[28X[ 4, -48, 108 ][128X[104X
-    [4X[25Xgap>[125X [27XValuePol(last, 1);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; [127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAnnihilatorPolynomial(D);[127X[104X
+    [4X[28X[ 4, -48, 108 ][128X[104X
+    [4X[25Xgap>[125X [27XValuePol(last, 1);[127X[104X
     [4X[28X64[128X[104X
   [4X[32X[104X
   
@@ -369,9 +369,9 @@
   for directly determining the strength of a design at the special bound.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignIndicatorCoefficients(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignIndicatorCoefficients(D);[127X[104X
     [4X[28X[ 1, 7/15, 9/55 ][128X[104X
   [4X[32X[104X
   
@@ -396,13 +396,13 @@
   has been successfully computed.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4, [1/3,1/9]);[127X[104X
-    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(D, 64);[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XIsJordanDesignWithStrength(D);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignStrength(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4, [1/3,1/9]);[127X[104X
+    [4X[28X<design with rank 4, degree 4, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(D, 64);[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XIsJordanDesignWithStrength(D);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignStrength(D);[127X[104X
     [4X[28X2[128X[104X
   [4X[32X[104X
   
@@ -445,9 +445,9 @@
   (inner product) of [23X1/9[123X with some representative design element.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignSubdegrees(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignSubdegrees(D);[127X[104X
     [4X[28X[ 27, 36 ][128X[104X
   [4X[32X[104X
   
@@ -471,14 +471,14 @@
   constants so that elements of this algebra satisfy [10XIsSCAlgebraObj[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XB := JordanDesignBoseMesnerAlgebra(D);[127X[104X
-    [4X[28X<algebra of dimension 3 over Rationals>[128X[104X
-    [4X[25Xgap>[125X [27XBasisVectors(CanonicalBasis(B));[127X[104X
-    [4X[28X[ A1, A2, A3 ][128X[104X
-    [4X[25Xgap>[125X [27XOne(B); IsSCAlgebraObj(last);[127X[104X
-    [4X[28XA3[128X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XB := JordanDesignBoseMesnerAlgebra(D);[127X[104X
+    [4X[28X<algebra of dimension 3 over Rationals>[128X[104X
+    [4X[25Xgap>[125X [27XBasisVectors(CanonicalBasis(B));[127X[104X
+    [4X[28X[ A1, A2, A3 ][128X[104X
+    [4X[25Xgap>[125X [27XOne(B); IsSCAlgebraObj(last);[127X[104X
+    [4X[28XA3[128X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -491,14 +491,14 @@
   [BBIT21, pp. 53-57].[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27Xfor x in BasisVectors(JordanDesignBoseMesnerIdempotentBasis(D)) do Display(x); [127X[104X
-    [4X[25X>[125X [27Xod;[127X[104X
-    [4X[28X(-5/64)*A1+(3/64)*A2+(27/64)*A3[128X[104X
-    [4X[28X(1/16)*A1+(-1/16)*A2+(9/16)*A3[128X[104X
-    [4X[28X(1/64)*A1+(1/64)*A2+(1/64)*A3[128X[104X
-    [4X[25Xgap>[125X [27XForAll(JordanDesignBoseMesnerIdempotentBasis(D), IsIdempotent);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xfor x in BasisVectors(JordanDesignBoseMesnerIdempotentBasis(D)) do Display(x); [127X[104X
+    [4X[25X>[125X [27Xod;[127X[104X
+    [4X[28X(-5/64)*A1+(3/64)*A2+(27/64)*A3[128X[104X
+    [4X[28X(1/16)*A1+(-1/16)*A2+(9/16)*A3[128X[104X
+    [4X[28X(1/64)*A1+(1/64)*A2+(1/64)*A3[128X[104X
+    [4X[25Xgap>[125X [27XForAll(JordanDesignBoseMesnerIdempotentBasis(D), IsIdempotent);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -513,11 +513,11 @@
   53-57]).[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XA := BasisVectors(Basis(JordanDesignBoseMesnerAlgebra(D)));;[127X[104X
-    [4X[25Xgap>[125X [27Xp := JordanDesignIntersectionNumbers(D);;[127X[104X
-    [4X[25Xgap>[125X [27XA[1]*A[2] = Sum(List([1..3]), k -> p[k][1][2]*A[k]);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XA := BasisVectors(Basis(JordanDesignBoseMesnerAlgebra(D)));;[127X[104X
+    [4X[25Xgap>[125X [27Xp := JordanDesignIntersectionNumbers(D);;[127X[104X
+    [4X[25Xgap>[125X [27XA[1]*A[2] = Sum(List([1..3]), k -> p[k][1][2]*A[k]);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -534,13 +534,13 @@
   (see [BBIT21, pp. 53-57]).[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27Xq := JordanDesignKreinNumbers(D);; [127X[104X
-    [4X[25Xgap>[125X [27XDisplay(q);[127X[104X
-    [4X[28X[ [ [ 10, 16, 1 ], [ 16, 20, 0 ], [ 1, 0, 0 ] ], [128X[104X
-    [4X[28X  [ [ 12, 15, 0 ], [ 15, 20, 1 ], [ 0, 1, 0 ] ], [128X[104X
-    [4X[28X  [ [ 27, 0, 0 ], [ 0, 36, 0 ], [ 0, 0, 1 ] ] ][128X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 4, [1/3, 1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xq := JordanDesignKreinNumbers(D);; [127X[104X
+    [4X[25Xgap>[125X [27XDisplay(q);[127X[104X
+    [4X[28X[ [ [ 10, 16, 1 ], [ 16, 20, 0 ], [ 1, 0, 0 ] ], [128X[104X
+    [4X[28X  [ [ 12, 15, 0 ], [ 15, 20, 1 ], [ 0, 1, 0 ] ], [128X[104X
+    [4X[28X  [ [ 27, 0, 0 ], [ 0, 36, 0 ], [ 0, 0, 1 ] ] ][128X[104X
     [4X[28X  [128X[104X
   [4X[32X[104X
   
@@ -555,12 +555,12 @@
   [10XJordanDesignFirstEigenmatrix([3XD[103X[10X)[i][j][110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27Xa := Basis(JordanDesignBoseMesnerAlgebra(D));;[127X[104X
-    [4X[25Xgap>[125X [27Xe := JordanDesignBoseMesnerIdempotentBasis(D);;[127X[104X
-    [4X[25Xgap>[125X [27XForAll([1..3], i -> a[i] = Sum([1..3], j ->[127X[104X
-    [4X[25X>[125X [27XJordanDesignFirstEigenmatrix(D)[i][j]*e[j]));[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xa := Basis(JordanDesignBoseMesnerAlgebra(D));;[127X[104X
+    [4X[25Xgap>[125X [27Xe := JordanDesignBoseMesnerIdempotentBasis(D);;[127X[104X
+    [4X[25Xgap>[125X [27XForAll([1..3], i -> a[i] = Sum([1..3], j ->[127X[104X
+    [4X[25X>[125X [27XJordanDesignFirstEigenmatrix(D)[i][j]*e[j]));[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -575,15 +575,15 @@
   [10XJordanDesignSecondEigenmatrix([3XD[103X[10X)[i][j][110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27Xa := Basis(JordanDesignBoseMesnerAlgebra(D));;[127X[104X
-    [4X[25Xgap>[125X [27Xe := JordanDesignBoseMesnerIdempotentBasis(D);;[127X[104X
-    [4X[25Xgap>[125X [27XForAll([1..3], i -> e[i]*JordanDesignCardinality(D) =[127X[104X
-    [4X[25X>[125X [27XSum([1..3], j -> JordanDesignSecondEigenmatrix(D)[i][j]*a[j]));[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignFirstEigenmatrix(D) = Inverse(JordanDesignSecondEigenmatrix(D))[127X[104X
-    [4X[25X>[125X [27X*JordanDesignCardinality(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xa := Basis(JordanDesignBoseMesnerAlgebra(D));;[127X[104X
+    [4X[25Xgap>[125X [27Xe := JordanDesignBoseMesnerIdempotentBasis(D);;[127X[104X
+    [4X[25Xgap>[125X [27XForAll([1..3], i -> e[i]*JordanDesignCardinality(D) =[127X[104X
+    [4X[25X>[125X [27XSum([1..3], j -> JordanDesignSecondEigenmatrix(D)[i][j]*a[j]));[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignFirstEigenmatrix(D) = Inverse(JordanDesignSecondEigenmatrix(D))[127X[104X
+    [4X[25X>[125X [27X*JordanDesignCardinality(D);[127X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
   
@@ -596,9 +596,9 @@
   = \mathrm{Tr}(E_i)[123X. We also have [23Xm_i = Q_i(s+1)[123X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignMultiplicities(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignMultiplicities(D);[127X[104X
     [4X[28X[ 27, 36, 1 ][128X[104X
   [4X[32X[104X
   
@@ -611,9 +611,9 @@
   (also known as the subdegree). We also have [23Xk_i = P_i(s+1)[123X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XDesignValencies(D);[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4,4,[1/3,1/9]);; JordanDesignAddCardinality(D, 64);; D;[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XDesignValencies(D);[127X[104X
     [4X[28X[ 27, 36, 1 ][128X[104X
   [4X[32X[104X
   
@@ -635,57 +635,57 @@
   [Hog82, Examples 1-11].[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 1, [0,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 2, degree 1, cardinality 4, and angle set [128X[104X
-    [4X[28X[ 0, 1/2 ]> [128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 2, [0,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 2, degree 2, cardinality 6, and angle set[128X[104X
-    [4X[28X[ 0, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 4, [0,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 2, degree 4, cardinality 10, and angle set[128X[104X
-    [4X[28X[ 0, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 8, [0,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 2, degree 8, cardinality 18, and angle set[128X[104X
-    [4X[28X[ 0, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 2, [1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 2-design with rank 3, degree 2, cardinality 9, and angle set [ 1/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 2, [0,1/3]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 4, degree 2, cardinality 40, and angle set[128X[104X
-    [4X[28X[ 0, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(6, 2, [0,1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 6, degree 2, cardinality 126, and angle set[128X[104X
-    [4X[28X[ 0, 1/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(8, 2, [1/9]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 2-design with rank 8, degree 2, cardinality 64, and angle set [ 1/9 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(5, 4, [0,1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 3-design with rank 5, degree 4, cardinality 165, and angle set[128X[104X
-    [4X[28X[ 0, 1/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 8, [0,1/4,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 5-design with rank 3, degree 8, cardinality 819, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(24, 1, [0,1/16,1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 5-design with rank 24, degree 1, cardinality 98280, and angle set[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 1, [0,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 2, degree 1, cardinality 4, and angle set [128X[104X
+    [4X[28X[ 0, 1/2 ]> [128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 2, [0,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 2, degree 2, cardinality 6, and angle set[128X[104X
+    [4X[28X[ 0, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 4, [0,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 2, degree 4, cardinality 10, and angle set[128X[104X
+    [4X[28X[ 0, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 8, [0,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 2, degree 8, cardinality 18, and angle set[128X[104X
+    [4X[28X[ 0, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 2, [1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 2-design with rank 3, degree 2, cardinality 9, and angle set [ 1/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 2, [0,1/3]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 4, degree 2, cardinality 40, and angle set[128X[104X
+    [4X[28X[ 0, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(6, 2, [0,1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 6, degree 2, cardinality 126, and angle set[128X[104X
+    [4X[28X[ 0, 1/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(8, 2, [1/9]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 2-design with rank 8, degree 2, cardinality 64, and angle set [ 1/9 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(5, 4, [0,1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 3-design with rank 5, degree 4, cardinality 165, and angle set[128X[104X
+    [4X[28X[ 0, 1/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 8, [0,1/4,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 5-design with rank 3, degree 8, cardinality 819, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(24, 1, [0,1/16,1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 5-design with rank 24, degree 1, cardinality 98280, and angle set[128X[104X
     [4X[28X[ 0, 1/16, 1/4 ]>[128X[104X
   [4X[32X[104X
   
   [33X[0;0YAn additional icosahedron projective example is identified in [Lyu09].[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 2, [ 0, (5-Sqrt(5))/10, (5+Sqrt(5))/10 ]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 5-design with rank 2, degree 2, cardinality 12, and angle set[128X[104X
-    [4X[28X[ 0, -3/5*E(5)-2/5*E(5)^2-2/5*E(5)^3-3/5*E(5)^4,[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 2, [ 0, (5-Sqrt(5))/10, (5+Sqrt(5))/10 ]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 5-design with rank 2, degree 2, cardinality 12, and angle set[128X[104X
+    [4X[28X[ 0, -3/5*E(5)-2/5*E(5)^2-2/5*E(5)^3-3/5*E(5)^4,[128X[104X
     [4X[28X  -2/5*E(5)-3/5*E(5)^2-3/5*E(5)^3-2/5*E(5)^4 ]>[128X[104X
   [4X[32X[104X
   
@@ -693,33 +693,33 @@
   designs are given below:[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 23, [ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 11-design with rank 2, degree 23, cardinality 196560, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 5, [ 1/4, 5/8 ]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 4-design with rank 2, degree 5, cardinality 27, and angle set[128X[104X
-    [4X[28X[ 1/4, 5/8 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 6, [0,1/3,2/3]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 5-design with rank 2, degree 6, cardinality 56, and angle set[128X[104X
-    [4X[28X[ 0, 1/3, 2/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 21, [3/8, 7/12]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 4-design with rank 2, degree 21, cardinality 275, and angle set[128X[104X
-    [4X[28X[ 3/8, 7/12 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 22, [0,2/5,3/5]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 5-design with rank 2, degree 22, cardinality 552, and angle set[128X[104X
-    [4X[28X[ 0, 2/5, 3/5 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 7, [0,1/4,1/2,3/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 7-design with rank 2, degree 7, cardinality 240, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2, 3/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 22, [0,1/3,1/2,2/3]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<Tight 7-design with rank 2, degree 22, cardinality 4600, and angle set[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 23, [ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 11-design with rank 2, degree 23, cardinality 196560, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 3/8, 1/2, 5/8, 3/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 5, [ 1/4, 5/8 ]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 4-design with rank 2, degree 5, cardinality 27, and angle set[128X[104X
+    [4X[28X[ 1/4, 5/8 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 6, [0,1/3,2/3]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 5-design with rank 2, degree 6, cardinality 56, and angle set[128X[104X
+    [4X[28X[ 0, 1/3, 2/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 21, [3/8, 7/12]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 4-design with rank 2, degree 21, cardinality 275, and angle set[128X[104X
+    [4X[28X[ 3/8, 7/12 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 22, [0,2/5,3/5]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 5-design with rank 2, degree 22, cardinality 552, and angle set[128X[104X
+    [4X[28X[ 0, 2/5, 3/5 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 7, [0,1/4,1/2,3/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 7-design with rank 2, degree 7, cardinality 240, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2, 3/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(2, 22, [0,1/3,1/2,2/3]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<Tight 7-design with rank 2, degree 22, cardinality 4600, and angle set[128X[104X
     [4X[28X[ 0, 1/3, 1/2, 2/3 ]>[128X[104X
   [4X[32X[104X
   
@@ -727,71 +727,71 @@
   Examples 1-11]:[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 4, [0,1/4,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<3-design with rank 4, degree 4, cardinality 180, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 2, [0,1/3]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 3, degree 2, cardinality 12, and angle set [ 0, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(5, 2, [0,1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 5, degree 2, cardinality 45, and angle set [ 0, 1/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(9, 2, [0,1/9]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 9, degree 2, cardinality 90, and angle set [ 0, 1/9 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(28, 2, [0,1/16]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 28, degree 2, cardinality 4060, and angle set [ 0, 1/16 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 4, [0,1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 36, and angle set [ 0, 1/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 4, [1/9,1/3]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(16, 1, [0,1/9]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<2-design with rank 16, degree 1, cardinality 256, and angle set [ 0, 1/9 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 2, [0,1/4,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<3-design with rank 4, degree 2, cardinality 60, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(16, 1, [0,1/16,1/4]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<3-design with rank 16, degree 1, cardinality 2160, and angle set[128X[104X
-    [4X[28X[ 0, 1/16, 1/4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 4, [0,1/4,1/2]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<3-design with rank 3, degree 4, cardinality 63, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 4, [0,1/4,1/2,(3+Sqrt(5))/8, (3-Sqrt(5))/8]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<5-design with rank 3, degree 4, cardinality 315, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,[128X[104X
-    [4X[28X  -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(12, 2, [0,1/3,1/4,1/12]);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<5-design with rank 12, degree 2, cardinality 32760, and angle set[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 4, [0,1/4,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<3-design with rank 4, degree 4, cardinality 180, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 2, [0,1/3]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 3, degree 2, cardinality 12, and angle set [ 0, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(5, 2, [0,1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 5, degree 2, cardinality 45, and angle set [ 0, 1/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(9, 2, [0,1/9]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 9, degree 2, cardinality 90, and angle set [ 0, 1/9 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(28, 2, [0,1/16]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 28, degree 2, cardinality 4060, and angle set [ 0, 1/16 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 4, [0,1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 36, and angle set [ 0, 1/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 4, [1/9,1/3]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 4, degree 4, cardinality 64, and angle set [ 1/9, 1/3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(16, 1, [0,1/9]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<2-design with rank 16, degree 1, cardinality 256, and angle set [ 0, 1/9 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(4, 2, [0,1/4,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<3-design with rank 4, degree 2, cardinality 60, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(16, 1, [0,1/16,1/4]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<3-design with rank 16, degree 1, cardinality 2160, and angle set[128X[104X
+    [4X[28X[ 0, 1/16, 1/4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 4, [0,1/4,1/2]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<3-design with rank 3, degree 4, cardinality 63, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(3, 4, [0,1/4,1/2,(3+Sqrt(5))/8, (3-Sqrt(5))/8]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<5-design with rank 3, degree 4, cardinality 315, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,[128X[104X
+    [4X[28X  -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XJordanDesignByAngleSet(12, 2, [0,1/3,1/4,1/12]);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<5-design with rank 12, degree 2, cardinality 32760, and angle set[128X[104X
     [4X[28X[ 0, 1/12, 1/4, 1/3 ]>[128X[104X
   [4X[32X[104X
   
   [33X[0;0YTwo important designs related to the [23XH_4[123X Weyl group are as follows:[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[25Xgap>[125X [27XA := [ 0, 1/4, 1/2, 3/4, (5-Sqrt(5))/8, (5+Sqrt(5))/8,[127X[104X
-    [4X[25X>[125X [27X(3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;[127X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(2, 3, A);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<11-design with rank 2, degree 3, cardinality 120, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, 1/2, 3/4, -3/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-3/4*E(5)^4,[128X[104X
-    [4X[28X  -1/2*E(5)-3/4*E(5)^2-3/4*E(5)^3-1/2*E(5)^4,[128X[104X
-    [4X[28X  -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,[128X[104X
-    [4X[28X  -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]>[128X[104X
-    [4X[25Xgap>[125X [27XA := [ 0, 1/4, (3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;[127X[104X
-    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 1, A);;[127X[104X
-    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
-    [4X[28X<5-design with rank 4, degree 1, cardinality 60, and angle set[128X[104X
-    [4X[28X[ 0, 1/4, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,[128X[104X
+    [4X[25Xgap>[125X [27XA := [ 0, 1/4, 1/2, 3/4, (5-Sqrt(5))/8, (5+Sqrt(5))/8,[127X[104X
+    [4X[25X>[125X [27X(3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(2, 3, A);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<11-design with rank 2, degree 3, cardinality 120, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, 1/2, 3/4, -3/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-3/4*E(5)^4,[128X[104X
+    [4X[28X  -1/2*E(5)-3/4*E(5)^2-3/4*E(5)^3-1/2*E(5)^4,[128X[104X
+    [4X[28X  -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,[128X[104X
+    [4X[28X  -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]>[128X[104X
+    [4X[25Xgap>[125X [27XA := [ 0, 1/4, (3-Sqrt(5))/8, (3+Sqrt(5))/8 ];;[127X[104X
+    [4X[25Xgap>[125X [27XD := JordanDesignByAngleSet(4, 1, A);;[127X[104X
+    [4X[25Xgap>[125X [27XJordanDesignAddCardinality(last, JordanDesignSpecialBound(last));[127X[104X
+    [4X[28X<5-design with rank 4, degree 1, cardinality 60, and angle set[128X[104X
+    [4X[28X[ 0, 1/4, -1/2*E(5)-1/4*E(5)^2-1/4*E(5)^3-1/2*E(5)^4,[128X[104X
     [4X[28X  -1/4*E(5)-1/2*E(5)^2-1/2*E(5)^3-1/4*E(5)^4 ]>[128X[104X
   [4X[32X[104X
   

@@ -56,13 +56,13 @@
 <p>Caution must be exercised when using this function to prevent attempting to compute the closure of large or possibly infinite sets.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure([1,E(7)], \*);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure([1,E(7)], \*);</span>
 [ 1, E(7)^6, E(7)^5, E(7)^4, E(7)^3, E(7)^2, E(7) ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QuaternionD4Basis;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">QuaternionD4Basis;</span>
 Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 [ (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,
   (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k, e ] )
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure(QuaternionD4Basis,\*);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Closure(QuaternionD4Basis,\*);</span>
 [ (-1)*e, (-1/2)*e+(-1/2)*i+(-1/2)*j+(-1/2)*k,
   (-1/2)*e+(-1/2)*i+(-1/2)*j+(1/2)*k, (-1/2)*e+(-1/2)*i+(1/2)*j+(-1/2)*k,
   (-1/2)*e+(-1/2)*i+(1/2)*j+(1/2)*k, (-1/2)*e+(1/2)*i+(-1/2)*j+(-1/2)*k,
@@ -89,12 +89,12 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <p>Caution must be exercised when using this function to prevent attempting to compute the random closure of an infinite set. Caution is also required in interpreting the output. Even for large values of <var class="Arg">N</var>, the result is not necessarily the full closure of set <var class="Arg">gens</var>. Furthermore, repeated calls to this function may result in different outputs due to the random selection of elements involved throughout. If the size of the expected closed set is known, use of a <code class="code">repeat</code>-<code class="code">until</code> loop can permit generating the full set of elements faster than <code class="func">Closure</code> (<a href="chap6_mj.html#X87E8AA6582245C3E"><span class="RefLink">6.1-1</span></a>) would.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(QuaternionAlgebra(Rationals)){[2,3]};</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(QuaternionAlgebra(Rationals)){[2,3]};</span>
 [ i, j ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">repeat</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">start := RandomElementClosure(start, \*);</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">until Length(start) = 8;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">repeat</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">start := RandomElementClosure(start, \*);</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">until Length(start) = 8;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start;</span>
 [ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ]</pre></div>
 
 <p><a id="X7A4675E27B489038" name="X7A4675E27B489038"></a></p>
@@ -107,14 +107,14 @@ Basis( &lt;algebra-with-one of dimension 4 over Rationals&gt;,
 <p>The same cautions as described in <code class="func">RandomElementClosure</code> (<a href="chap6_mj.html#X78DC531B815591E8"><span class="RefLink">6.2-1</span></a>) apply. Note that while <var class="Arg">start</var> is always a subset of the output, the elements of <var class="Arg">gens</var> are not necessarily included in the output.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(QuaternionAlgebra(Rationals)){[1,2]};</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start := Basis(QuaternionAlgebra(Rationals)){[1,2]};</span>
 [ e, i ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Basis(QuaternionAlgebra(Rationals)){[3]};</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Basis(QuaternionAlgebra(Rationals)){[3]};</span>
 [ j ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">repeat </span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">start := RandomOrbitOnSets(gens, start, {x,y} -&gt; x*y);</span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">until Length(start) = 8;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">repeat </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">start := RandomOrbitOnSets(gens, start, {x,y} -&gt; x*y);</span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">until Length(start) = 8;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">start;</span>
 [ (-1)*e, (-1)*i, (-1)*j, (-1)*k, k, j, i, e ]</pre></div>
 
 

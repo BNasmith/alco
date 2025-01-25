@@ -34,11 +34,11 @@
 <p>The <strong class="pkg">ALCO</strong> package allows users to work with the octavian integer ring (also known as the octonion arithmetic), which is described carefully in <a href="chapBib_mj.html#biBconway_quaternions_2003">[CS03, chaps. 9-11]</a>. In the example below, we verify that the octavian integers define an <span class="SimpleMath">\(E_8\)</span> (Gossett) lattice relative to the standard octonion inner product:</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O := OctavianIntegers;</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">O := OctavianIntegers;</span>
 OctavianIntegers
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">g := List(Basis(O), x -&gt; List(Basis(O), y -&gt; </span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">Norm(x+y) - Norm(x) - Norm(y)));;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(g);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">g := List(Basis(O), x -&gt; List(Basis(O), y -&gt; </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">Norm(x+y) - Norm(x) - Norm(y)));;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(g);</span>
 [ [   2,   0,  -1,   0,   0,   0,   0,   0 ],
   [   0,   2,   0,  -1,   0,   0,   0,   0 ],
   [  -1,   0,   2,  -1,   0,   0,   0,   0 ],
@@ -47,50 +47,50 @@ OctavianIntegers
   [   0,   0,   0,   0,  -1,   2,  -1,   0 ],
   [   0,   0,   0,   0,   0,  -1,   2,  -1 ],
   [   0,   0,   0,   0,   0,   0,  -1,   2 ] ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsGossetLatticeGramMatrix(g);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsGossetLatticeGramMatrix(g);</span>
 true</pre></div>
 
 <p>The <strong class="pkg">ALCO</strong> package also provides tools to construct octonion lattices, including octonion Leech lattices (see for example <a href="chapBib_mj.html#biBwilson_octonions_2009">[Wil09b]</a>). In the following example we compute the shortest vectors in the <code class="code">OctavianIntegers</code> lattice and select one that is a root of polynomial <span class="SimpleMath">\(x^2 + x + 2\)</span>. We use this root <code class="code">s</code> to define a set <code class="code">gens</code> of octonion triples to serve as generators for the lattice. Finally, we construct the lattice <code class="code">L</code> and confirm that it is a Leech lattice.</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">short := Set(ShortestVectors(g,4).vectors, y -&gt; </span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">LinearCombination(Basis(OctavianIntegers), y));;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := First(short, x -&gt; x^2 + x + 2*One(x) = Zero(x));</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">short := Set(ShortestVectors(g,4).vectors, y -&gt; </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">LinearCombination(Basis(OctavianIntegers), y));;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">s := First(short, x -&gt; x^2 + x + 2*One(x) = Zero(x));</span>
 (-1)*e1+(-1/2)*e2+(-1/2)*e3+(-1/2)*e4+(-1/2)*e8
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := List(Basis(OctavianIntegers), x -&gt; </span>
-<span class="GAPprompt">&gt;</span> <span class="GAPinput">x*[[s,s,0],[0,s,s],ComplexConjugate([s,s,s])]);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Concatenation(gens);; </span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L := OctonionLatticeByGenerators(gens, One(O)*IdentityMat(3)/2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := List(Basis(OctavianIntegers), x -&gt; </span>
+<span class="GAPprompt">&gt;</span> <span class="GAPinput">x*[[s,s,0],[0,s,s],ComplexConjugate([s,s,s])]);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">gens := Concatenation(gens);; </span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">L := OctonionLatticeByGenerators(gens, One(O)*IdentityMat(3)/2);</span>
 &lt;free left module over Integers, with 24 generators&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeechLatticeGramMatrix(GramMatrix(L));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsLeechLatticeGramMatrix(GramMatrix(L));</span>
 true</pre></div>
 
 <p>We can also construct and study simple Euclidean Jordan algebras (described well in <a href="chapBib_mj.html#biBfaraut_analysis_1994">[FK94]</a>), including the Albert algebra:</p>
 
 
-<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := AlbertAlgebra(Rationals);</span>
+<div class="example"><pre><span class="GAPprompt">gap&gt;</span> <span class="GAPinput">J := AlbertAlgebra(Rationals);</span>
 &lt;algebra-with-one of dimension 27 over Rationals&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(J)));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SemiSimpleType(Derivations(Basis(J)));</span>
 "F4"
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">i := Basis(J){[1..8]};</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">i := Basis(J){[1..8]};</span>
 [ i1, i2, i3, i4, i5, i6, i7, i8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">j := Basis(J){[9..16]};</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">j := Basis(J){[9..16]};</span>
 [ j1, j2, j3, j4, j5, j6, j7, j8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k := Basis(J){[17..24]};</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k := Basis(J){[17..24]};</span>
 [ k1, k2, k3, k4, k5, k6, k7, k8 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := Basis(J){[25..27]};</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := Basis(J){[25..27]};</span>
 [ ei, ej, ek ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ForAll(e, IsIdempotent);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ForAll(e, IsIdempotent);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set(i, x -&gt; x^2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set(i, x -&gt; x^2);</span>
 [ ej+ek ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set(j, x -&gt; x^2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set(j, x -&gt; x^2);</span>
 [ ei+ek ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One(J);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">One(J);</span>
 ei+ej+ek
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Determinant(One(J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Determinant(One(J));</span>
 1
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Trace(One(J));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Trace(One(J));</span>
 3</pre></div>
 
 
